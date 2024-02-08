@@ -54,7 +54,7 @@ def add_markdown_format_to_header(text, annotations):
     
     return ''.join(new_text_pieces)
 
-def generate_markdown_files():
+def generate_markdown_files(overwrite=True):
     # ref: https://mdutils.readthedocs.io/en/latest/examples/Example_Python.html
     json_folder = data_folder / 'sample_survey' / 's2orc_part1'
     
@@ -63,6 +63,9 @@ def generate_markdown_files():
     json_files = glob.glob(os.path.join(json_folder, '*.json'))
 
     for idx, json_file in enumerate(tqdm(json_files)):
+        markdown_filename = json_file.split('-')[-1].replace('.json', '.md')
+        if not overwrite and os.path.exists(markdown_filename):
+            continue
         with open(json_file) as f:
             json_data = json.load(f)
         s2orc_data, metadata = json_data['s2orc'], json_data['metadata'] 
@@ -71,8 +74,10 @@ def generate_markdown_files():
         text = add_markdown_format_to_header(text, annotations)
         url = metadata['url'] if 'url' in metadata.keys() else 'N/A'
 
-        s2FieldsOfStudy_unique = list(set([item['category'].title() for item in metadata['s2FieldsOfStudy']]))
-        s2FieldsOfStudy_unique_tag = [f"#{item.replace(' ', '_')}" for item in s2FieldsOfStudy_unique]
+        s2FieldsOfStudy_unique_tag = []
+        if 's2FieldsOfStudy' in metadata.keys():
+            s2FieldsOfStudy_unique = list(set([item['category'].title() for item in metadata['s2FieldsOfStudy']]))
+            s2FieldsOfStudy_unique_tag = [f"#{item.replace(' ', '_')}" for item in s2FieldsOfStudy_unique]
 
         filter_survey_df_temp = filter_survey_df[filter_survey_df['corpusid'] == corpusid]
         is_survey_by_classifier = bool(filter_survey_df_temp['is_survey_by_classifier'].values[0])
@@ -90,7 +95,6 @@ URL: [{url}]({url})\n
 ---
 {text}
 """
-        markdown_filename = json_file.split('-')[-1].replace('.json', '.md')
         
         #TODO: temporary fix to add 'annotated' to the filename so that we can differentiate between annotated and non-annotated files
         if is_survey_by_annotator != '(Not Annotated)': 
@@ -99,9 +103,5 @@ URL: [{url}]({url})\n
         with open(markdown_filename, 'w', encoding='utf-8') as md_file:
             md_file.write(markdown_output.strip()) 
 
-        if idx == 2:
-            break
-
-
 if __name__ == "__main__":
-    generate_markdown_files()
+    generate_markdown_files(False)
