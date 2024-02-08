@@ -99,6 +99,9 @@ URL: [{url}]({url})\n
         #TODO: temporary fix to add 'annotated' to the filename so that we can differentiate between annotated and non-annotated files
         if is_survey_by_annotator != '(Not Annotated)': 
             markdown_filename = f"a_{markdown_filename}"
+            # remove the unannotated file if it exists
+            if os.path.exists(markdown_filename.replace('a_', '')):
+                os.remove(markdown_filename.replace('a_', ''))
 
         with open(markdown_filename, 'w', encoding='utf-8') as md_file:
             md_file.write(markdown_output.strip()) 
