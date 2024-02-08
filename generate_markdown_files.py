@@ -86,6 +86,7 @@ URL: [{url}]({url})\n
 | ----------------- | --------------- |
 | By Classifier     | {is_survey_by_classifier} |
 | By Annotator      | {is_survey_by_annotator} |
+
 ---
 {text}
 """
