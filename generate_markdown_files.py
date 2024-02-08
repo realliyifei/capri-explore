@@ -61,6 +61,8 @@ def generate_markdown_files(overwrite=True):
     filter_survey_df = get_filter_survey_df()
 
     json_files = glob.glob(os.path.join(json_folder, '*.json'))
+    # Only get the first 2500 due to the limitation of the gitbook
+    json_files = json_files[:2500]
 
     for idx, json_file in enumerate(tqdm(json_files)):
         markdown_filename = json_file.split('-')[-1].replace('.json', '.md')
