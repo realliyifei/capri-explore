@@ -109,4 +109,4 @@ URL: [{url}]({url})\n
             md_file.write(markdown_output.strip()) 
 
 if __name__ == "__main__":
-    generate_markdown_files(False)
+    generate_markdown_files()
