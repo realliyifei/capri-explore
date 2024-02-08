@@ -39,8 +39,8 @@ def generate_markdown_files():
         url = metadata['url'] if 'url' in metadata.keys() else 'N/A'
         s2FieldsOfStudy_unique = list(set([item['category'].title() for item in metadata['s2FieldsOfStudy']]))
         markdown_output = f"""# {title}\n
-Fields: {', '.join(s2FieldsOfStudy_unique)}\n 
-URL: {url}
+Field(s): {', '.join(s2FieldsOfStudy_unique)}\n 
+URL: [{url}]({url})
 {text}
 """
         markdown_filename = json_file.split('-')[-1].replace('.json', '.md')
