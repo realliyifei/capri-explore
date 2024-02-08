@@ -38,8 +38,9 @@ def generate_markdown_files():
         title = text_of(annotations, text, 'title')[0].strip()
         url = metadata['url'] if 'url' in metadata.keys() else 'N/A'
         s2FieldsOfStudy_unique = list(set([item['category'].title() for item in metadata['s2FieldsOfStudy']]))
+        s2FieldsOfStudy_unique_tag = [f"#{item.replace(' ', '_')}" for item in s2FieldsOfStudy_unique]
         markdown_output = f"""# {title}\n
-tags: {', '.join(s2FieldsOfStudy_unique)}\n 
+tags: {', '.join(s2FieldsOfStudy_unique_tag)}\n 
 URL: [{url}]({url})
 {text}
 """
