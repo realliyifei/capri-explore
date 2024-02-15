@@ -57,7 +57,8 @@ def add_markdown_format_to_header(text, annotations):
 def generate_markdown_files(overwrite=True):
     # ref: https://mdutils.readthedocs.io/en/latest/examples/Example_Python.html
     json_folder = data_folder / 'sample_survey' / 's2orc_part1'
-    
+    markdown_save_folder = Path('markdown_files')
+
     filter_survey_df = get_filter_survey_df()
 
     json_files = glob.glob(os.path.join(json_folder, '*.json'))
@@ -65,7 +66,7 @@ def generate_markdown_files(overwrite=True):
     json_files = json_files[:2500]
 
     for idx, json_file in enumerate(tqdm(json_files)):
-        markdown_filename = json_file.split('-')[-1].replace('.json', '.md')
+        markdown_filename = markdown_save_folder / json_file.split('-')[-1].replace('.json', '.md')
         if not overwrite and os.path.exists(markdown_filename):
             continue
         with open(json_file) as f:
@@ -100,7 +101,7 @@ URL: [{url}]({url})\n
         
         #TODO: temporary fix to add 'annotated' to the filename so that we can differentiate between annotated and non-annotated files
         if is_survey_by_annotator != '(Not Annotated)': 
-            markdown_filename = f"a_{markdown_filename}"
+            markdown_filename = markdown_save_folder / f"a_{markdown_filename}"
             # remove the unannotated file if it exists
             if os.path.exists(markdown_filename.replace('a_', '')):
                 os.remove(markdown_filename.replace('a_', ''))
