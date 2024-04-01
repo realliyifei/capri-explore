@@ -1,0 +1,3 @@
+cpu-bind=MASK - nlpgpu01, task  0  0 [55833]: mask 0x100000001 set
+To https://github.com/realliyifei/capri-explore.git
+   055bdde..54819da  main -> main
