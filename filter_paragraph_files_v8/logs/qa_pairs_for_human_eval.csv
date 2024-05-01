@@ -1,0 +1,1398 @@
+corpusid,title,domain,section,paragraph,QA pair,subquestions
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s1),(p1.1),"Question: What do studies reveal about BERT's embeddings and their characteristics in representation space?
+
+1. In the current studies of BERT's representation space, the term 'embedding' refers to the output vector of a given (typically final) Transformer layer.
+2. Wiedemann et al. (2019) find that BERT's contextualized embeddings form distinct and clear clusters corresponding to word senses, which confirms that the basic distributional hypothesis holds for these representations.
+3. However, Mickus et al. (2019) note that representations of the same word varies depending on position of the sentence in which it occurs, likely due to NSP objective.
+4. Ethayarajh (2019) measure how similar the embeddings for identical words are in every layer and find that later BERT layers produce more contextspecific representations.
+5. They also find that BERT embeddings occupy a narrow cone in the vector space, and this effect increases from lower to higher layers.",1. What do studies reveal about BERT's embeddings and their characteristics in representation space?
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s2),(p2.0),"Question: What methods and findings characterize studies on knowledge encoded in BERT's weights?
+
+1. A number of studies have looked at the types of knowledge encoded in BERT's weights.
+2. The popular approaches include fill-in-the-gap probes of BERT's MLM, analysis of self-attention weights, and probing classifiers using different BERT representations as inputs.
+3. showed that BERT representations are hierarchical rather than linear, i.e. there is something akin to syntactic tree structure in addition to the word order information.
+4. Tenney et al. (2019b) and  also showed that BERT embeddings encode information about parts of speech, syntactic chunks and roles.","1. What methods characterize studies on knowledge encoded in BERT's weights?
+2. What findings characterize studies on knowledge encoded in BERT's weights?"
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s3),(p3.2),"Question: How does BERT handle syntactic competence, subject-predicate agreement, and negation according to recent studies?
+
+1. Regarding syntactic competence of BERT's MLM, Goldberg (2019) showed that BERT takes subject-predicate agreement into account when performing the cloze task.
+2. This was the case even for sentences with distractor clauses between the subject and the verb, and meaningless sentences.
+3. A study of negative polarity items (NPIs) by Warstadt et al. (2019) showed that BERT is better able to detect the presence of NPIs (e.g. ""ever"") and the words that allow their use (e.g. ""whether"") than scope violations.
+4. The above evidence of syntactic knowledge is belied by the fact that BERT does not ""understand"" negation and is insensitive to malformed input.
+5. In particular, its predictions were not altered even with shuffled word order, truncated sentences, removed subjects and objects (Ettinger, 2019).","1. How does BERT handle syntactic competence?
+2. How does BERT handle subject-predicate agreement?
+3. How does BERT handle negation according to recent studies?"
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s4),(p4.0),"Question: What does research reveal about BERT's understanding of semantic roles and structures?
+
+1. To date, more studies were devoted to BERT's knowledge of syntactic rather than semantic phenomena.
+2. However, we do have evidence from an MLM probing study that BERT has some knowledge for semantic roles (Ettinger, 2019).
+3. BERT is even able to prefer the incorrect fillers for semantic roles that are semantically related to the correct ones, to those that are unrelated (e.g. ""to tip a chef"" should be better than ""to tip a robin"", but worse than ""to tip a waiter"").",1. What does research reveal about BERT's understanding of semantic roles and structures?
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s5),(p5.0),"Question: How does BERT perform in knowledge induction, extraction, and reasoning?
+
+1. MLM component of BERT is easy to adapt for knowledge induction by filling in the blanks (e.g. ""Cats like to chase [ ]"").
+2. There is at least one probing study of world knowledge in BERT (Ettinger, 2019), but the bulk of evidence comes from  (Petroni et al., 2019) numerous practitioners using BERT to extract such knowledge.
+3. Petroni et al. (2019) showed that, for some relation types, vanilla BERT is competitive with methods relying on knowledge bases (Figure 3).
+4. Davison et al. (2019) suggest that it generalizes better to unseen data.
+5. However, to retrieve BERT's knowledge we need good template sentences, and there is work on their automatic extraction and augmentation (Bouraoui et al., 2019; However, BERT cannot reason based on its world knowledge.
+6. Forbes et al. (2019) show that BERT can ""guess"" the affordances and properties of many objects, but does not have the information about their interactions (e.g. it ""knows"" that people can walk into houses, and that houses are big, but it cannot infer that houses are bigger than people.)  and  also show that the performance drops with the number of necessary inference steps.
+7. At the same time, Poerner et al. (2019) show that some of BERT's success in factoid knowledge retrieval comes from learning stereotypical character combinations, e.g.","1. How does BERT perform in knowledge induction?
+2. How does BERT perform in knowledge extraction?
+3. How does BERT perform in reasoning?"
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s7),(p7.9),"Question: What are the findings on BERT heads' roles in coreference resolution and task performance?
+
+1. Clark et al. (2019) identify a BERT head that can be directly used as a classifier to perform coreference resolution on par with a rule-based system,.
+2. Kovaleva et al. (2019) showed that even when attention heads specialize in tracking semantic relations, they do not necessarily contribute to BERT's performance on relevant tasks.
+3. Kovaleva et al. (2019) identified two heads of base BERT, in which self-attention maps were closely aligned with annotations of core frame semantic relations (Baker et al., 1998).","1. What are the findings on BERT heads' roles in coreference resolution?
+2. What are the findings on BERT heads' roles in task performance?"
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s8),(p8.0),"Question: What do the initial layers of BERT represent, and how does this representation evolve?
+
+1. The first layer of BERT receives as input representations that are a combination of token, segment, and positional embeddings.
+2. It stands to reason that the lower layers have the most linear word order information.
+3. report a decrease in the knowledge of linear word order around layer 4 in BERT-base.","1. What do the initial layers of BERT represent?
+2. How does this representation evolve?"
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s8),(p8.2),"Question: How do BERT's layer performances differ in handling syntactic and semantic information?
+
+1. The prominence of syntactic information in the middle BERT layers must be related to  observation that the middle layers of Transformers are overall the best-performing and the most transferable across tasks (see Figure 5).
+2. There is conflicting evidence about syntactic chunks.
+3. Tenney et al. (2019a) conclude that ""the basic syntactic information appears earlier in the network while high-level semantic features appears at the higher layers"", drawing parallels between this order and the order of components in a typical NLP pipeline -from POS-tagging to dependency parsing to semantic role labeling.
+4. Jawahar et al. (2019) also report that the lower layers were more useful for chunking, while middle layers were more useful for parsing.
+5. At the same time, the probing experiments by  find the opposite: both POS-3","1. How do BERT's layer performances differ in handling syntactic information?
+2. How do BERT's layer performances differ in handling semantic information?"
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s8),(p8.3),"Question: What explains the variability in BERT's layer functionality and its impact on model performance?
+
+1. The final layers of BERT are the most taskspecific.
+2. In pre-training, this means specificity to the MLM task, which would explain why the middle layers are more transferable .
+3. In fine-tuning, it explains why the final layers change the most (Kovaleva et al., 2019).
+4. At the same time, Hao et al. (2019) report that if the weights of lower layers of the fine-tuned BERT are restored to their original values, it does not dramatically hurt the model performance.
+5. Tenney et al. (2019a) suggest that while most of syntactic information can be localized in a few layers, semantics is spread across the entire model, which would explain why certain non-trivial examples get solved incorrectly at first but correctly at higher layers.
+6. This is rather to be expected: semantics permeates all language, and linguists debate whether meaningless structures can exist at all (Goldberg, 2006, p.166-182).
+7. But this raises the question of what stacking more Transformer layers actually achieves in BERT in terms of the spread of semantic knowledge, and whether that is beneficial.","1. What explains the variability in BERT's layer functionality?
+2. What is its impact on model performance?"
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s10),(p10.9),"Question: How can external knowledge integration and pre-training impact BERT model performance and robustness?
+
+1. Another way to integrate external knowledge is use entity embeddings as input, as in E-BERT (Poerner et al., 2019) and ERNIE .
+2. Alternatively, SemBERT  integrates semantic role information with BERT representations.
+3. Pre-training is the most expensive part of training BERT, and it would be informative to know how much benefit it provides.
+4. Hao et al. (2019) conclude that pre-trained weights help the fine-tuned BERT find wider and flatter areas with smaller generalization error, which makes the model more robust to overfitting (see Figure 6).","1. How can external knowledge integration impact BERT model performance and robustness?
+2. How can pre-training impact BERT model performance and robustness?"
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s12),(p12.0),"Question: How does fine-tuning affect BERT's attention to linguistic patterns in GLUE tasks?
+
+1. Pre-training + fine-tuning workflow is a crucial part of BERT.
+2. The former is supposed to provide taskindependent linguistic knowledge, and the finetuning process would presumably teach the model to rely on the representations that are more useful for the task at hand.
+3. Kovaleva et al. (2019) did not find that to be the case for BERT fine-tuned on GLUE tasks 5 : during fine-tuning, the most changes for 3 epochs occurred in the last two layers of the models, but those changes caused self-attention to focus on [SEP] rather than on linguistically interpretable patterns.",1. How does fine-tuning affect BERT's attention to linguistic patterns in GLUE tasks?
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s12),(p12.5),"Question: How does initialization affect NLP model training and reporting practices?
+
+1. Initialization can have a dramatic effect on the training process (Petrov, 2010).
+2. However, variation across initializations is not often reported, although the performance improvements claimed in many NLP modeling papers may be within the range of that variation (Crane, 2018).
+3. Dodge et al. (2020) report significant variation for BERT fine-tuned on GLUE tasks, where both weight initialization and training data order contribute to the variation.","1. How does initialization affect NLP model training?
+2. How does initialization affect reporting practices in NLP?"
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s13),(p13.1),"Question: How do studies suggest optimizing Transformer and BERT models for enhanced performance?
+
+1. Human language is incredibly complex, and would perhaps take many more parameters to describe fully, but the current models do not make good use of the parameters they already have.
+2. Voita et al. (2019) showed that all but a few Transformer heads could be pruned without significant losses in performance.
+3. For BERT, Clark et al. (2019) observe that most heads in the same layer show similar self-attention patterns (perhaps related to the fact that the output of all self-attention heads in Distillation Compression Performance Speedup Model Evaluation DistilBERT (Sanh et al., 2019) ×2.5 90% ×1.6 BERT 6 All GLUE tasks BERT 6 -PKD (Sun et al., 2019a) ×1.6 97% ×1.9 BERT 6 No WNLI, CoLA and STS-B BERT 3 -PKD (Sun et al., 2019a) ×2  a layer is passed through the same MLP), which explains why Michel et al. (2019) were able to reduce most layers to a single head.
+4. Depending on the task, some BERT heads/layers are not only useless, but also harmful to the downstream task performance.
+5. Positive effects from disabling heads were reported for machine translation (Michel et al., 2019), and for GLUE tasks, both heads and layers could be disabled (Kovaleva et al., 2019).","1. How do studies suggest optimizing Transformer models for enhanced performance?
+2. How do studies suggest optimizing BERT models for enhanced performance?"
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s15),(p15.0),"Question: What is mBERT and how does it perform across different language processing tasks?
+
+1. Multilingual BERT (mBERT 6 ) is a version of BERT that was trained on Wikipedia in 104 languages (110K wordpiece vocabulary).
+2. Languages with a lot of data were subsampled, and some were super-sampled using exponential smoothing.
+3. mBERT performs surprisingly well in zero-shot transfer on many tasks (Wu and Dredze, 2019;Pires et al., 2019), although not in language generation (Rönnqvist et al., 2019).
+4. The model seems to naturally learn high-quality cross-lingual word alignments (Libovický et al., 2019), with caveats for open-class parts of speech (Cao et al., 2019).","1. What is mBERT?
+2. How does it perform across different language processing tasks?"
+211532403,A Primer in BERTology: What we know about how BERT works,"Computer Science, Linguistics",(s15),(p15.3),"Question: What syntactic properties and crosslingual capabilities does mBERT exhibit across languages?
+
+1. At least some of the syntactic properties of English BERT hold for mBERT: its MLM is aware of 4 types of agreement in 26 languages (Bacon and Regier, 2019), and main auxiliary of the sentence can be detected in German and Nordic languages Rönnqvist et al. (2019).
+2. Pires et al. (2019) and Wu and Dredze (2019) hypothesize that shared word-pieces help mBERT, based on experiments where the task performance correlated with the amount of shared vocabulary between languages.
+3. However,  dispute this account, showing that bilingual BERT models are not hampered by the lack of shared vocabulary.","1. What syntactic properties does mBERT exhibit across languages?
+2. What crosslingual capabilities does mBERT exhibit across languages?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s1),(p1.2),"Question: What is a concept and its types according to Stock (2010)?
+
+1. Concept A concept represents a coherent fragment of knowledge, such as ""a class containing certain objects as elements, where the objects have certain properties"" (Stock, 2010).
+2. For example, a concept could be lexical: e.g. words ending with suffix ""ed"", morphological: e.g. gerund verbs, or semantic: e.g. names of cities.
+3. We loosely define a concept C as a group of words that are coherent w.r.t to a linguistic property.","1. What is a concept according to Stock (2010)?
+2. What are the types of concepts according to Stock (2010)?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s3),(p3.0),"Question: What are the limitations of using visualization to understand neuron roles in deep NLP models?
+
+1. A simple way to discover the role of a neuron is by visualizing its activations and manually identifying the underlying concept over a set of sentences (Karpathy et al., 2015;Fyshe et al., 2015;Li et al., 2016a).
+2. Given that deep NLP models are † Table 3 in Appendix gives a more comprehensive list.
+3. trained using billions of neurons, it is impossible to visualize all the neurons.
+4. A number of clues have been used to shortlist the neurons for visualization, for example, selecting saturated neurons, high/low variance neurons, or ignoring dead neurons (Karpathy et al., 2015) when using ReLU activation function.
+5. ‡ Limitation While visualization is a simple approach to find an explanation for a neuron, it has some major limitations: i)
+6. While visualization is a simple approach to find an explanation for a neuron, it has some major limitations: i)
+7. it is qualitative and subjective, ii) it cannot be scaled to the entire network due to an extensive human-in-the-loop effort, iii) it is difficult to interpret polysemous neurons that acquire multiple roles in different contexts, iv) it is ineffective in identifying group neurons, and lastly and v) not all neurons are visually interpretable.",1. What are the limitations of using visualization to understand neuron roles in deep NLP models?
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s4),(p4.1),"Question: What methods help identify concepts learned by neurons in AI research?
+
+1. Concept Search This set of methods take a neuron as an input and search for a concept that the neuron has learned.
+2. They sort the input instances based on the activation values of the given neuron.
+3. The top activating instances represent a concept the neuron represents.
+4. Kádár et al. (2017) discovered neurons that learn various linguistic con-cepts using this approach.
+5. They extracted top-20, 5-gram contexts for each neuron based on the magnitude of activations and manually identified the underlying concepts.
+6. This manual effort of identifying concepts is cumbersome and requires a human-in-the-loop.
+7. Na et al. (2019) addressed this by using lexical concepts of various granularities.
+8. Instead of 5-gram contexts, they extracted top-k activating sentences for each neuron.
+9. They parsed the sentences to create concepts (words and phrases) using the nodes of the parse trees.
+10. They then created synthetic sentences that highlight a concept e.g. a particular word occurring in all synthetic sentences.
+11. The neurons that activates largely on these sentences are considered to have learned the concept.
+12. This methodology is useful in analyzing neurons that are responsible for multi-word concepts such as phrases and idiomatic collocations.",1. What methods help identify concepts learned by neurons in AI research?
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s5),(p5.0),"Question: What methods do corpus-based approaches use to link concepts with neurons?
+
+1. The second class of corpusbased methods aim to discover neurons for a given concept.
+2. The underlying idea is the same i.e. to establish a link between the concept and neurons based on co-occurrences stats, but in the opposite direction.
+3. The activation values play a role in weighing these links to obtained a ranked list of neurons against the concept.
+4. Mu and Andreas (2020) achieved this by creating a binary mask of a neuron based on a threshold on its activation values for every sentence in the corpus.
+5. Similarly, they created a binary mask for every concept based on its presence or absence in a sentence.
+6. They then computed the overlap between a given neuron mask vector and a concept mask vector using intersection-over-union (IoU), and use these to generate compositional explanations.
+7. Differently from them, Suau et al. (2020) used the values of neuron activations as prediction scores and computed the average precision per neuron and per concept.",1. What methods do corpus-based approaches use to link concepts with neurons?
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s6),(p6.0),"Question: What are probing-based methods and how do they work in neural network interpretation?
+
+1. Probing-based methods train diagnostic classifiers (Hupkes et al., 2018) over activations to identify neurons with respect to pre-defined concepts.
+2. They are a global interpretation methods that discover a set of neurons with respect to each concept using supervised data annotations.
+3. They are highly scalable, and can be easily applied on a large set of neurons and over a large set of concepts.","1. What are probing-based methods?
+2. How do they work in neural network interpretation?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s7),(p7.0),"Question: How do different regularization techniques affect neuron importance in concept learning models?
+
+1. The idea is to train a linear classifier towards the concept of interest, using the activation vectors generated by the model being analyzed.
+2. The weights assigned to neurons (features to the classifier) serve as their importance score with respect to the concept.
+3. The regularization of the classifier directly effects the weights and therefore the ranking of neurons.
+4. Radford et al. (2019) used L1 regularization which forces the classifier to learn spiky weights, indicating the selection of very few specialized neurons learning a concept, while setting the majority of neurons' weights to zero.
+5. Lakretz et al. (2019) on the other hand used L2 regularization to encourage grouping of features.
+6. This translates to discovering group neurons that are jointly responsible for a concept.",1. How do different regularization techniques affect neuron importance in concept learning models?
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s7),(p7.1),"Question: What are the limitations and solutions in the accuracy of neuron probing classifiers?
+
+1. Limitation A pitfall to probing classifiers is whether a probe faithfully reflects the concept learned within the representation or just memorizes the task (Hewitt and Liang, 2019;Zhang and Bowman, 2018).
+2. Researchers have mitigated this pitfall for some analyses by using random initialization of neurons (Dalvi et al., 2019) and control tasks  to demonstrate that the knowledge is possessed within the neurons and not due to the probe's capacity for memorization.
+3. Another discrepancy in the neuron probing framework, that especially affects the linear classifiers, is that variance patterns in neurons differ strikingly across the layers.","1. What are the limitations in the accuracy of neuron probing classifiers?
+2. What are the solutions in the accuracy of neuron probing classifiers?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s8),(p8.1),"Question: What is ablation in neural networks and how is it used to identify salient neurons?
+
+1. Ablation The central idea behind ablation is to notice the affect of a neuron on model's performance by varying its value.
+2. The central idea behind ablation is to notice the affect of a neuron on model's performance by varying its value.
+3. This is done either by clamping its value to zero or a fixed value and observe the change in network's performance.
+4. Ablation has been effectively used to find i) salient neurons with respect to a model (unsupervised), ii) salient neurons with respect to a particular output class in the network (supervised).
+5. The former identifies neurons that incur a large drop in model's performance when ablated (Li et al., 2016a).
+6. The latter selects neurons that cause the model to flip its prediction with respect to a certain class (Lakretz et al., 2019).","1. What is ablation in neural networks?
+2. How is it used to identify salient neurons?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s8),(p8.3),"Question: How do attribution-based methods discover causal neurons in Transformer models?
+
+1. Knowledge Attribution Method Attributionbased methods highlight the importance of input features and neurons with respect to a prediction (Dhamdhere et al., 2018;Lundberg and Lee, 2017;Tran et al., 2018).
+2. Dai et al. (2021) used an attribution-based method to identify salient neurons with respect to a relational fact.
+3. They hypothesized that factual knowledge is stored in the neurons of the feed-forward neural networks of the Transformer model and used integrated gradient (Sundararajan et al., 2017) to identify top neu-rons that express a relational fact.",1. How do attribution-based methods discover causal neurons in Transformer models?
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s8),(p8.4),"Question: How do attribution-based methods and neuron analysis improve understanding of learned concepts in AI models?
+
+1. Limitation The attribution-based methods highlight salient neurons with respect to a prediction.
+2. What concepts these salient neurons have learned is unknown.
+3. Dai et al. (2021) worked around this by limiting their study to model classes where each class serves as a concept.","1. How do attribution-based methods improve understanding of learned concepts in AI models?
+2. How does neuron analysis improve understanding of learned concepts in AI models?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s9),(p9.1),"Question: How does corpus generation help in understanding neuron activations in NLP models?
+
+1. Corpus Generation A large body of neuron analysis methods identify neurons with respect to pre-defined concepts and the scope of search is only limited to the corpus used to extract the activations.
+2. It is possible that a neuron represents a diverse concept which is not featured in the corpus.
+3. The Corpus Generation method addresses this problem by generating novel sentences that maximize a neuron's activations.
+4. These sentences unravel hidden information about a neuron, facilitating the annotator to better describe its role.
+5. Corpus generation has been widely explored in Computer Vision.
+6. For example, Erhan et al. (2009) used gradient ascent to generate synthetic input images that maximize the activations of a neuron.
+7. However, a gradient ascent can not be directly applied in NLP, because of the discrete inputs.",1. How does corpus generation help in understanding neuron activations in NLP models?
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s9),(p9.3),"Question: What is Matrix Factorization and its application in analyzing vision and NLP models?
+
+1. Matrix Factorization Matrix Factorization (MF) method decomposes a large matrix into a product of smaller matrices of factors, where each factor represents a group of elements performing a similar function.
+2. Given a model, the activations of an input sentence form a matrix.
+3. MF can be effectively applied to decompose the activation matrix into smaller matrices of factors where each factor consists of a set of neurons that learn a concept.
+4. MF is a local interpretation method.
+5. It is commonly used in analyzing vision models (Olah et al., 2018).
+6. We could not find any research using MF on the NLP models.","1. What is Matrix Factorization?
+2. What is its application in analyzing vision and NLP models?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s9),(p9.5),"Question: How do clustering methods analyze and identify redundant neurons in neural networks?
+
+1. Clustering Methods Clustering is another effective way to analyze groups of neurons in an unsupervised fashion.
+2. The intuition is that if a group of neurons learns a specific concept, then their activations would form a cluster.
+3. Meyes et al. (2020) used UMAP (Mclnnes et al., 2020) to project activations to a low dimensional space and performed K-means clustering to group neurons.
+4. aimed at identifying redundant neurons in the network.
+5. They first computed correlation between neuron activation pairs and used hierarchical clustering to group them.","1. How do clustering methods analyze neural networks?
+2. How do they identify redundant neurons in neural networks?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s15),(p15.0),"Question: How is visualization utilized to evaluate neurons in linguistic models?
+
+1. Visualization has been used as a qualitative measure to evaluate the selected neurons.
+2. For example, Dalvi et al. (2019) visualized the top neurons and showed that they focus on very specific linguistic properties.
+3. They also visualized top-k activating words for the top neurons per concept to demonstrate the efficacy of their method.",1. How is visualization utilized to evaluate neurons in linguistic models?
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s18),(p18.1),"Question: What do studies reveal about neurons' roles in processing language and concepts in AI models?
+
+1. Visualizations Karpathy et al. (2015) found neurons that learn position of a word in the input sentence: activating positively in the beginning, becoming neutral in the middle and negatively towards the end.
+2. Li et al. (2016a) found intensification neurons that activate for words that intensify a sentiment.
+3. For example ""I like this movie a lot"" or ""the movie is incredibly good"".
+4. Similarly they discovered neurons that captured ""negation"".
+5. Both intensification neurons and sentiment neurons are relevant for the sentiment classification task, for which the understudied model was trained.
+6. Kádár et al. (2017) identified neurons that capture related groups of concepts in a multi-modal image captioning task.
+7. For example, they discovered neurons that learn electronic items ""camera, laptop, cables"" and salad items ""broccoli, noodles, carrots etc"".
+8. Similarly Na et al. (2019) found neurons that learn lexical concepts related to legislative terms, e.g. ""law, legal"" etc.
+9. They also found neurons that learn phrasal concepts.
+10. Poerner et al. (2018) showed that Concept Search can be enhanced via Corpus Generation.
+11. They provided finer interpretation of the neurons by generating synthetic instances.","1. What do studies reveal about neurons' roles in processing language in AI models?
+2. What do studies reveal about neurons' roles in processing concepts in AI models?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s20),(p20.2),"Question: How do neurons exhibit varying roles in language processing according to recent studies?
+
+1. Neurons exhibit monosemous and polysemous behavior.
+2. Xin et al. (2019) found neurons exhibiting a variety of roles where a few neurons were exclusive to a single concept while others were polysemous in nature and captured several § but is not the only reason to carry such an analysis.
+3. ¶ closed class concepts are part of language where new words are not added as the language evolves, for example functional words such as can, be etc.
+4. In contrast open class concepts are a pool where new words are constantly added as the language evolve, for example ""chillax"" a verb formed blending ""chill"" and ""relax"".
+5. concepts. Suau et al. (2020) discovered neurons that capture different senses of a word.
+6. Suau et al. (2020) discovered neurons that capture different senses of a word.",1. How do neurons exhibit varying roles in language processing according to recent studies?
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s20),(p20.3),"Question: How do neurons process syntax and semantics according to various studies?
+
+1. Neurons capture syntactic concepts and complex semantic concepts.
+2. Lakretz et al. (2019) discovered neurons that capture subject-verb agreement within LSTM gates.
+3. Karpathy et al. (2015) also found neurons that activate within quotes and brackets capturing long-range dependency.
+4. Na et al. (2019) aligned neurons with syntactic parses to show that neurons learn syntactic phrases.","1. How do neurons process syntax?
+2. How do neurons process semantics?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s23),(p23.0),"Question: How do pre-trained language models reflect the hierarchical structure of human languages?
+
+1. Human languages are hierarchical in structure where morphology and phonology sit at the bottom followed by lexemes, followed by syntactic structures.
+2. Concepts such as semantics and pragmatics are placed on the top of the hierarchy.
+3. analyzed linguistic hierarchy by studying the spread of neurons across layers in various pre-trained language models.
+4. They extracted salient neurons with respect to different linguistic concepts (e.g. morphology and syntax) and found that neurons that capture word morphology were predominantly found in the lower and middle layers and those learning about syntax were found at the higher layers.
+5. The observation was found to be true in both LSTMand the transformer-based architectures, and are inline with the findings of representation analysis (Liu et al., 2019;Tenney et al., 2019;Belinkov et al., 2020b).
+6. Similarly Suau et al. (2020) analyzed sub-modules within GPT and RoBERTa transformer blocks and showed that lower layers within a transformer block accumulate more salient neurons than higher layers on the tasks of word sense disambiguation or homograph detection.",1. How do pre-trained language models reflect the hierarchical structure of human languages?
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s25),(p25.0),"Question: How do neural network architectures differ in neuron behavior and representation distribution?
+
+1. The distribution of neurons across the network has led researchers to draw interesting crossarchitectural comparisons.
+2. Wu et al. (2020) performed correlation clustering of neurons across architectures and found that different architectures may have similar representations, but their individual neurons behave differently.
+3. Hennigen et al. (2020) compared neurons in contextualized (BERT) embedding with neurons in the static embedding (fastText) and found that fastText required two neurons to capture any morphosyntactic phenomenon as opposed to BERT which required up to 35 neurons to obtain the same performance.
+4. showed that the linguistic knowledge in BERT (auto-encoder) is highly distributed across the network as opposed to XLNet (auto-regressive) where neurons from a few layers are mainly responsible for a concept (see Figure 2).
+5. Similarly Suau et al. (2020) compared RoBERTa and GPT (auto-encoder vs. generative) models and found differences in the distribution of expert neurons.
+6. extended the cross-architectural comparison towards fine-tuned models.","1. How do neural network architectures differ in neuron behavior?
+2. How do they differ in representation distribution?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s26),(p26.0),"Question: What do neurons learn in Deep NLP models and how is linguistic information structured?
+
+1. Below is a summary of the key findings that emerged from the work we covered in this survey.
+2. Neurons learned within Deep NLP models capture non-trivial linguistic knowledge ranging from lexical phenomenon such as morphemes, words and multi-word expressions to highly complex global phenomenon such as semantic roles and syntactic dependencies.
+3. Neuron analysis resonates with the findings of representation analysis (Belinkov et al., 2017a,b;Tenney et al., 2019;Liu et al., 2019) in demonstrating that the networks follow linguistic hierarchy.
+4. Linguistic neurons are distributed across the network based on their complexity, with lower layers focused on the lexical concepts and middle and higher layers learning global phenomenon based on long-range contextual dependencies.
+5. While the networks preserve linguistic hierarchy, many authors showed that information is not discretely preserved, but is rather distributed and redundantly present in the network.
+6. It was also shown that a small optimal subset of neurons w.r.t any concept can be extracted from a network.
+7. On another dimension, a few works showed that some concepts are localized to fewer neurons while others are distributed to a large group.","1. What do neurons learn in Deep NLP models?
+2. How is linguistic information structured?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s28),(p28.0),"Question: How can identifying and manipulating specific neurons control a model's output, such as tense and bias?
+
+1. Once we have identified neurons that capture a certain concept learned in a model, these can be utilized for controlling the model's behavior w.r.t to that concept.
+2. Bau et al. (2019) identified Switch Neurons in NMT models that activate positively for the present-tense verbs and negatively for the past-tense verbs.
+3. By manipulating the values of these neurons, they were able to successfully change output translations from present to past tense during inference.
+4. The authors additionally found neurons that capture gender and number agreement concepts and manipulated them to control the system's output.","1. How can identifying specific neurons control a model's output?
+2. How can manipulating specific neurons control a model's output?
+3. What examples of model outputs can be affected, such as tense and bias?"
+237353268,Neuron-level Interpretation of Deep NLP Models: A Survey,Computer Science,(s31),(p31.0),"Question: How do neurons associated with concepts explain model predictions and generate adversarial examples?
+
+1. Knowing the association of a neuron with a concept enables explanation of model's output.
+2. Mu and Andreas (2020) identified neurons that learn certain concepts in vision and NLP models.
+3. Using a composition of logical operators, they provided an explanation of model's prediction.
+4. Figure 3 presents an explanation using a gender-sensitive neuron.
+5. The neuron activates for contradiction when the premise contains the word man.","1. How do neurons associated with concepts explain model predictions?
+2. How do they generate adversarial examples?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s3),(p3.0),"Question: What motivates unsupervised learning of natural language and how do Masked Language Models work?
+
+1. As natural language data is readily available and unsupervised training paradigms have been proposed to better utilize extremely large datasets, this motivates the unsupervised learning of natural language.
+2. One common approach is to predict masked words in a sentence while considering the surrounding context.
+3. This training paradigm is known as the Masked Language Model.
+4. This type of training allows the model to develop a deeper understanding of the relationships between words and the context in which they are used.
+5. These models are trained on a large corpus of texts using techniques such as the Transformer architecture and have achieved state-of-the-art results in many NLP tasks, such as sentiment analysis and named entity recognition.
+6. Notable examples of Masked Language Models include BERT [28], RoBERTa [65], and T5 [84].","1. What motivates unsupervised learning of natural language?
+2. How do Masked Language Models work?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s4),(p4.0),"Question: How do autoregressive language models enhance few-shot and zero-shot learning performance?
+
+1. Although language models are typically task-agnostic in architecture, these methods require fine-tuning on datasets of the specific downstream task.
+2. Researchers found that scaling up language models significantly improves the few-shot, even zero-shot performance [16].
+3. The most successful models for better few-shot and zero-show performance are Autoregressive Language Models, which are trained by generating the next word in a sequence given the preceding words.","1. How do autoregressive language models enhance few-shot learning performance?
+2. How do autoregressive language models enhance zero-shot learning performance?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s4),(p4.1),"Question: What are examples and advancements in autoregressive language models?
+
+1. Examples of Autoregressive Language Models include GPT-3 [16], OPT [126], PaLM [22], and BLOOM [92].
+2. The game changer, GPT-3, for the first time, demonstrated reasonable few-/zero-shot performance via prompting and in-context learning, thus showing the superiority of autoregressive language models.
+3. There are also models such as CodeX [2] that are optimized for specific tasks such as code generation, BloombergGPT [117] for the financial domain.","1. What are examples of autoregressive language models?
+2. What advancements have been made in autoregressive language models?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s7),(p7.0),"Question: How does pre-training data influence large language model performance and capabilities?
+
+1. Pre-training data plays a pivotal role in the development of large language models.
+2. As the foundation of remarkable capabilities [5,47] of LLMs, the quality, quantitative, and diversity of pre-training data influence the performance of LLMs significantly [124].
+3. The commonly used pretraining data consists of a myriad of text sources, including books, articles, and websites.
+4. The data is carefully curated to ensure a comprehensive representation of human knowledge, linguistic nuances, and cultural perspectives.
+5. The importance of pretraining data lies in its capacity to inform the language model with a rich understanding of word knowledge, grammar, syntax, and semantics, as well as the ability to recognize context and generate coherent responses.
+6. The diversity of pretraining data also plays a crucial role in shaping the model's performance, and the selection of LLMs highly depends on the components of the pretraining data.
+7. For example, PaLM [22] and BLOOM [92] excel in multilingual tasks and machine translation with an abundance of multilingual pretraining data.
+8. Moreover, PaLM's performance in Question Answering tasks is enhanced by incorporating a considerable amount of social media conversations and Books corpus [22].
+9. Likewise, code execution and code completion capabilities of GPT-3.5 (code-davinci-002) are amplified by the integration of code data in its pretraining dataset.","1. How does pre-training data influence large language model performance?
+2. What capabilities are affected by pre-training data in large language models?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s8),(p8.0),"Question: What models are best for zero, few, and abundant annotated data scenarios?
+
+1. When deploying a model for downstream tasks, it is essential to consider three primary scenarios based on the availability of annotated data: zero, few, and abundant.
+2. In this section, we provide a succinct overview of the appropriate models to employ for each scenario.
+3. Zero annotated data: In scenarios where annotated data is unavailable, utilizing LLMs in a zero-shot setting proves to be the most suitable approach.
+4. LLMs have been shown to outperform previous zero-shot methods [120].","1. What models are best for zero-annotated data scenarios?
+2. What models are best for few-annotated data scenarios?
+3. What models are best for abundant annotated data scenarios?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s9),(p9.0),"Question: What challenges do LLMs face when applied to real-world downstream tasks?
+
+1. When deploying LLMs for downstream tasks, we often face challenges stemming from distributional differences between the test/user data and that of the training data.
+2. These disparities may encompass domain shifts [132], out-of-distribution variations [31], or even adversarial examples [82].
+3. Such challenges significantly hinder fine-tuned modes' effectiveness in real-world applications.",1. What challenges do LLMs face when applied to real-world downstream tasks?
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s13),(p13.2),"Question: What is the effectiveness of different models in detecting online toxicity, including CivilComments and Perspective API 3?
+
+1. CivilComments [13] even the best one is only better than random guessing [59].
+2. On the other hand, most popular fine-tuned models can obtain much better performance [33].
+3. and the Perspective API 3 is still one of the best for detecting toxicity.
+4. This API is powered by a multilingual BERT-based model, which is tuned on publicly available toxicity data and several smaller single-language CNNs distilled from this model.","1. What is the effectiveness of different models in detecting online toxicity?
+2. What roles do CivilComments and Perspective API 3 play in this context?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s13),(p13.4),"Question: Why are LLMs not widely used in information retrieval tasks?
+
+1. In information retrieval (IR) tasks, LLMs are not widely exploited yet.
+2. One major reason is that IR tasks are fundamentally different from others.
+3. There's no natural way to transform the thousands of candidate texts into a few/zero-shot form which is required by LLMs.
+4. The existing evaluation results on MS MARCO(regular/TREC) [73] show that methods based on fine-tuned models have better performance [59].",1. Why are LLMs not widely used in information retrieval tasks?
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s13),(p13.8),"Question: What are the challenges and insights in adapting language models to NLP tasks?
+
+1. Transforming input from tasks like IR and sentence labeling into a few/zero-short instruction form is non-trivial.
+2. There may be better ways to adapt language models to traditional NLP tasks in the future.
+3. On the other hand, the upper limit of capabilities of fine-tuned models is not reached, and some methods like FLAN-tuning [67] can further boost the performance on NLU tasks.","1. What are the challenges in adapting language models to NLP tasks?
+2. What insights have been gathered in adapting language models to NLP tasks?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s13),(p13.10),"Question: What are examples of tasks showing LLMs' superior generalization in NLP?
+
+1. One of the representative tasks is miscellaneous text classification [59].
+2. In contrast to classic domain-specific text classification tasks such as sentiment analysis, miscellaneous text classification deals with a diverse range of topics and categories that may not have a clear or strong relationship with one another.
+3. It's closer to real-world cases and hard to be formatted for using fine-tuned models.
+4. Another is the Adversarial NLI (ANLI)
+5. [74]. It is a difficult dataset composed of adversarially mined natural language inference questions in three rounds (R1, R2, and R3).
+6. It is a difficult dataset composed of adversarially mined natural language inference questions in three rounds (R1, R2, and R3).
+7. LLMs have shown superior performance on ANLI, especially on the R3 and R2.
+8. Both examples demonstrate the exceptional ability of LLMs to generalize well on out-of-distribution and sparsely annotated data in traditional NLP tasks, surpassing that of fine-tuned models.",1. What are examples of tasks showing LLMs' superior generalization in NLP?
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s15),(p15.4),"Question: How do LLMs compare in machine translation performance to commercial tools and in low-resource languages?
+
+1. In machine translation (MT), LLMs can perform competent translation, although the average performance is slightly worse than some commercial translation tools [45] considering some automatic metrics like BLEU [78].
+2. LLMs are particularly good at translating some low-resource language texts to English texts, such as in the Romanian-English translation of WMT'16 [11], zero-shot or few-shot LLMs can perform better than SOTA fine-tuned model [22].
+3. This is mainly due to the fact that English resources compose the main part of the pre-training data.","1. How do LLMs compare in machine translation performance to commercial tools?
+2. How do LLMs perform in low-resource languages?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s15),(p15.6),"Question: What are the capabilities of LLMs in generating content and coding?
+
+1. Additionally, LLMs are highly skilled in open-ended generations.
+2. One example is that the news articles generated by LLMs are almost indistinguishable from real news articles by humans [16].
+3. LLMs are remarkably adept at code synthesis as well.
+4. Either for text-code generation, such as HumanEval [18] and MBPP [7], or for code repairing, such as DeepFix [39], LLMs can perform pretty well.
+5. GPT-4 can even pass 25% problems in Leetcode, which are not trivial for most human coders [76].","1. What are the capabilities of LLMs in generating content?
+2. What are the capabilities of LLMs in coding?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s18),(p18.3),"Question: What makes LLMs excel in closed-book question-answering tasks across various datasets?
+
+1. Closed-book question-answering tasks require the model to answer a given question about factual knowledge without any external information.
+2. It does require the memorization of real-world knowledge in the model.
+3. LLMs perform better on nearly all datasets, such as on NaturalQuestions [52], WebQuestions [9], and TriviaQA
+4. [46]. On TriviaQA, even zero-shot LLMs is still much better [22].",1. What makes LLMs excel in closed-book question-answering tasks across various datasets?
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s18),(p18.4),"Question: Why is machine reading comprehension considered a knowledge-intensive but manageable task for MMLU?
+
+1. The massive multitask language understanding (MMLU) [40] is also highly knowledge-intensive.
+2. Some tasks only require the model to capture the self-contained knowledge in the contexts.
+3. The knowledge in the contexts from the input is enough for the model to make predictions.
+4. For these tasks, small fine-tuned models can work pretty well.
+5. One such task is machine reading comprehension (MRC).
+6. An MRC task provides several paragraphs and requires the model to predict the answer to questions based on these paragraphs.","1. Why is machine reading comprehension considered a knowledge-intensive task?
+2. Why is it considered manageable for MMLU?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s19),(p19.0),"Question: How does scaling impact the capabilities and performance of large language models?
+
+1. Scaling of LLMs (e.g. parameters, training computation, etc.) can greatly empower pretrained language models.
+2. With the model scaling up, a model generally becomes more capable in a range of tasks.
+3. Reflected in some metrics, the performance shows a power-law relationship with the model scale.
+4. For example, the cross-entropy loss which is used to measure the performance for language modeling decreases linearly with the exponential increase in the model scale, which is also called 'scaling-law' [41,47].
+5. For some crucial abilities, such as reasoning, scaling the model has gradually transformed these abilities from a very low state to a usable state, and even approaching human capabilities.","1. How does scaling impact the capabilities of large language models?
+2. How does scaling impact the performance of large language models?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s22),(p22.0),"Question: What are emergent abilities in large-scale models, and why are they significant?
+
+1. Scaling of models also endows the model with some unprecedented, fantastic abilities that go beyond the power-law rule.
+2. These abilities are called ""emergent ability"".
+3. As defined in [113], emergent abilities of LLMs are abilities that are not present in smaller-scale models but are present in large-scale models.
+4. This means such abilities cannot be predicted by extrapolating the performance improvements on smaller-scale models and the model suddenly gains good performance on some tasks once the scale exceeds a certain range.
+5. The emergent ability is typically unpredictable and surprising, leading to tasks that emerge randomly or unexpectedly.","1. What are emergent abilities in large-scale models?
+2. Why are they significant?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s22),(p22.2),"Question: What emergent abilities do large language models like GPT-3 and PaLM exhibit?
+
+1. For example. GPT-3 [16] shows the emergent ability for word sorting, and word unscrambling tasks.
+2. GPT-3 [16] shows the emergent ability for word sorting, and word unscrambling tasks.
+3. PaLM [22] exhibits the emergent ability on ASCII word recognition 4 and hyperbaton 5 task.
+4. The logical abilities of language models tend to emerge as the model scales up, such as logical deduction, logical sequence, and logic grid puzzles.",1. What emergent abilities do large language models like GPT-3 and PaLM exhibit?
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s23),(p23.3),"Question: What explains the behavior of large language models scaling, including emergent abilities and U-shape phenomenon?
+
+1. Gaining a deeper understanding of emergent abilities, inverse scaling phenomenon and U-shape phenomenon in LLMs is essential for advancing research in this field.
+2. In a certain sense, the U-shape phenomenon suggests that small-scale models and huge-scale models make predictions with different internal mechanisms.
+3. From this perspective, the U-shape phenomenon can be seen as a transformation of the inverse-scaling phenomenon due to some emergent abilities from sufficiently large models [114].
+4. GPT-4 [76] exhibits a reversal of the inverse scaling phenomenon in some cases, such as on a task called Hindsight Neglect.
+5. The explanation for these behaviors of LLMs during scaling is still an open problem.
+6. Several hypotheses have been proposed.
+7. For emergent abilities, one explanation is that there may be multiple key steps for a task and the LLM cannot handle this task until it's large enough to handle every step, and another explanation is focused on the granularity of evaluation metrics [113].","1. What explains the behavior of large language models scaling?
+2. What are the emergent abilities associated with large language models scaling?
+3. What is the U-shape phenomenon in the context of large language models scaling?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s26),(p26.1),"Question: Why do LLMs underperform in regression and multimodal tasks despite their NLP success?
+
+1. Although LLMs have achieved remarkable success in various natural language processing tasks, their performance in regression tasks has been less impressive.
+2. For example, ChatGPT's performance on the GLUE STS-B dataset, which is a regression task evaluating sentence similarity, is inferior to a fine-tuned RoBERTa performance [130].
+3. The Regression tasks typically involve predicting a continuous value rather than a discrete label, posing unique challenges for LLMs.
+4. One primary reason for their subpar performance is the inherent difference between the language modeling objective and the regression task objective.
+5. LLMs are designed to predict the next word in a sequence or generate coherent text, with their pre-training focused on capturing linguistic patterns and relationships.
+6. Consequently, their internal representations may not be well-suited for modeling continuous numerical outputs.
+7. Besides, LLMs have predominantly been trained on text data, focusing on capturing the intricacies of natural language processing.
+8. As a result, their performance on multimodal data, which involves handling multiple data types such as text, images, audio, video, actions, and robotics, remains largely unexplored.
+9. And fine-tuned multimodal models, like BEiT [110] and PaLI [19], still dominate many tasks such as visual question answering (VQA) and image captioning.","1. Why do LLMs (Large Language Models) underperform in regression tasks despite their NLP success?
+2. Why do LLMs underperform in multimodal tasks despite their NLP success?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s27),(p27.3),"Question: How do LLMs perform in NLG task quality assessment compared to traditional metrics?
+
+1. LLMs can also be used for quality assessment on some NLG tasks, such as summarization and translation.
+2. On summarization tasks, GPT-4 as an evaluator achieves a higher correlation with humans than other methods with a large margin [64].
+3. Some other evaluators based on LLMs [34,50,64,108] also show good human alignment in more NLG tasks, especially compared with traditional automatic metrics.","1. How do LLMs perform in NLG task quality assessment?
+2. How does their performance compare to traditional metrics?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s29),(p29.2),"Question: What methods enhance LLMs' abilities to understand instructions and generate better responses?
+
+1. Additionally, some mechanics such as instruction tuning [91,112] and human alignment tuning [77] further boost the capabilities of LLMs to better comprehend and follow user instructions.
+2. These methods improve the model's ability to generate helpful, harmless, and honest responses while maintaining coherence and consistency [77,91,112].
+3. While both methods can make LLMs better generalize to unseen tasks and instructions, it has been noticed that while human labelers prefer models tuned for human alignment [77] to models tuned with instructions from public NLP tasks, such as FLAN [112] and T0 [91].","1. What methods enhance LLMs' abilities to understand instructions?
+2. What methods enhance LLMs' abilities to generate better responses?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s32),(p32.2),"Question: What are the computational and financial costs of large model training and using OpenAI's API?
+
+1. Flops, while a T5 11B model only requires 3.30 × 10 22 , which is 10 times less.
+2. In addition to these costs, hardware requirements are also substantial.
+3. OpenAI has collaborated with Microsoft on a supercomputer hosted in the Microsoft Azure cloud, consisting of 285k CPU cores and 10k high-end GPUs to support the training of large models.
+4. For users of the OpenAI API, pricing varies based on the model and usage, with options such as GPT-3.5-turbo charging $0.002 per 1k tokens for chat service.
+5. However, for users who require custom models, training costs $0.03 per 1k tokens, while usage costs $0.12 per 1k tokens [4].","1. What are the computational costs of large model training?
+2. What are the financial costs of large model training?
+3. What are the costs of using OpenAI's API?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s32),(p32.4),"Question: What is Parameter-Efficient Tuning and its common techniques in model optimization?
+
+1. Parameter-Efficient Tuning.
+2. In practice, we may tune the model on some specific datasets.
+3. Parameter-Efficient Tuning (PET) is an efficient technique to tune a small portation of model parameters (or extra parameters) while freezing most parameters of the pre-trained LLMs.
+4. The main goal of PEFT is to greatly decrease the computational and storage costs while keeping the performance of the original models.
+5. The common techniques for PET are LoRA [42], Prefix Tuning [58], P-Tuning [62,63].
+6. As an illustration, the LoRA method maintains the weights of the pre-trained model and incorporates low-rank matrices into every layer of the Transformer architecture.","1. What is Parameter-Efficient Tuning?
+2. What are its common techniques in model optimization?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s33),(p33.2),"Question: What affects the robustness and calibration of fine-tuned models, and how can these be enhanced?
+
+1. The models that have high accuracy on the scenario also have good robustness.
+2. However, the robustness of the zero-shot becomes worse after being tuned on extra application-specific tasks data [116].
+3. This may due to overfitting, which leads to poor generalizability due to the extremely high complexity of the model and the limited training samples from downstream tasks [43].
+4. In a similar vein, it has been observed that fine-tuning a model can result in significant miscalibrations, owing to over-parameterization [51].
+5. Therefore, fine-tuned models may not be an optimal choice when robustness and calibration are critical considerations.
+6. However, human alignment has been found as a potential solution for enhancing model robustness.
+7. InstructGPT davinci v2 (175B*) has been shown to outperform other models in terms of robustness.","1. What affects the robustness of fine-tuned models?
+2. What affects the calibration of fine-tuned models?
+3. How can the robustness and calibration of fine-tuned models be enhanced?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s33),(p33.3),"Question: What challenges do LLMs face in terms of fairness and bias, and how can they be addressed?
+
+1. Fairness and Bias.
+2. LLMs have been shown to exhibit disparate treatment and impact, perpetuating societal biases and potentially leading to discrimination [10,17].
+3. To ensure fairness and equity for all users, it is crucial to address these issues in the development and deployment of NLP models.
+4. Disparities in performance between demographic groups can serve as an indicator of fairness problems.
+5. LLMs are particularly susceptible to fairness issues, as significant performance disparities have been observed across demographic categories such as dialect, religion, gender, and race [59].","1. What challenges do LLMs face in terms of fairness and bias?
+2. How can these challenges be addressed?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s33),(p33.4),"Question: How do LLMs compare to fine-tuned models in managing shortcut learning in NLU tasks?
+
+1. Spurious Biases.
+2. The shortcut learning problem has been observed in various natural language understanding tasks under the pretraining and fine-tuning paradigm, where models heavily rely on spurious correlations between input and labels in the fine-tuning data for prediction [31,35,98].
+3. For example, in reading comprehension tasks, fine-tuned models tend to focus on the lexical matching of words between the question and the original passage, neglecting the intended reading comprehension task itself [53].
+4. In contrast, large language models are not directly trained on fine-tuned datasets, which makes it less likely for them to learn shortcut features present in the fine-tuned dataset, thereby enhancing the model's generalization capabilities.
+5. However, LLMs are not infallible and may exhibit some shortcut learning during in-context learning.
+6. For example, recent preliminary studies have begun investigating the robustness of prompt-based methods in large-scale language models [111,129].
+7. One such study evaluates the few-shot learning performance of GPT-3 on text classification and information extraction tasks [129].
+8. and reveal that the examined LLMs are susceptible to majority label bias and position bias, where they tend to predict answers based on the frequency or position of the answers in the training data.
+9. Moreover, these LLMs exhibit common token bias, favoring answers that are prevalent in their pre-training corpus.
+10. Recent studies show that this positional bias can be mitigated by selecting proper prompts [68].","1. How do LLMs compare to fine-tuned models?
+2. What is shortcut learning in NLU tasks?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s34),(p34.3),"Question: What are the risks and necessary safeguards associated with using Large Language Models (LLMs)?
+
+1. Harmful content.
+2. Due to the high coherence, quality, and plausibility of texts generated by LLMs, harmful contents from LLMs can cause significant harm, including hate speech, discrimination, incitement to violence, false narratives, and even social engineering attack.
+3. The implementation of safeguards to detect and correct those contents can be mitigation [97].
+4. These LLMs can also have dual-use potential by providing required illicit information, leading to risks such as the proliferation of weapons [75] and even terrorism attack planning.
+5. It is crucial to ensure using these LLMs responsibly, with safeguards in place to prevent harm.","1. What are the risks associated with using Large Language Models (LLMs)?
+2. What are the necessary safeguards associated with using Large Language Models (LLMs)?"
+258331833,Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"Computer Science, Linguistics",(s34),(p34.4),"Question: What privacy issues have LLMs faced, illustrated by Samsung and OpenAI incidents?
+
+1. Privacy. LLMs can face serious security issues.
+2. LLMs can face serious security issues.
+3. An example is the issue of user privacy.
+4. It is reported that Samsung employees were using ChatGPT to process their work when they inadvertently leaked top-secret data, including the source code proper of the new program, internal meeting minutes related to the hardware, etc.","1. What privacy issues have LLMs faced?
+2. How are these issues illustrated by Samsung and OpenAI incidents?"
+254408864,A Comprehensive Survey on Multi-hop Machine Reading Comprehension Approaches,"Computer Science, Linguistics",(s7),(p7.0),"Question: How does decomposition simplify multi-hop MRC into single-hop problems?
+
+1. Complicated question is a basic challenge of multi-hop MRC, unlike the single-hop questions, they cannot be answered easily and require complicated reasoning.
+2. Since the human reasoning about complex questions is done by decomposition, answering subquestions, summarizing, and comparing [26], then this technique has focused on simplifying the problem by decomposition of a complex question into multiple simple sub-questions.
+3. It means it reduces multi-hop MRC to multiple single-hop MRC.
+4. This technique mostly uses the single-hop MRC models to find the answers to sub-questions and then combine the answers to obtain the final answer.",1. How does decomposition simplify multi-hop MRC into single-hop problems?
+254408864,A Comprehensive Survey on Multi-hop Machine Reading Comprehension Approaches,"Computer Science, Linguistics",(s7),(p7.1),"Question: What is the self-assembling neural modular network for multi-hop reasoning described by Jiang and Bansal?
+
+1. Self-assembling MNM: Jiang and Bansal [18] focused on identifying the sub-questions in the correct reasoning order and presented an interpretable and controller-based self-assembling neural modular network for the multi-hop reasoning process which includes two main parts, Modular Network with a Controller (top) and the Dynamically-assembled Modular Network (bottom) that can be seen in Figure 10.
+2. The main idea of the model to handle multi-hop questions is done with Controller that computes an attention distribution over all question words at every reasoning step, which finds the sub-question that should be answered at the current step.
+3. In summary, Controller reads the question and predicts a series of modules that could be executed in order to answer the given question.
+4. Each module deals with a single-hop sub-question, then they will be chained together according to the predicated order by controller to get the final answer.",1. What is the self-assembling neural modular network for multi-hop reasoning described by Jiang and Bansal?
+254408864,A Comprehensive Survey on Multi-hop Machine Reading Comprehension Approaches,"Computer Science, Linguistics",(s11),(p11.0),"Question: What are state-based reasoning models in multi-hop MRC and their key features?
+
+1. The sequence models have been first used for single-hop MRC tasks, and most of them are based on Recurrent Neural Networks (RNNs), some studies focus on using them in multi-hop MRC.
+2. It can be called state-based reasoning models and they are closer to a standard attention-based RC model with an additional ""state"" representation that is iteratively updated.
+3. The changing state representation results in the model focusing on different parts of the passage during each iteration, allowing it to combine information from different parts of the passage [28].
+4. Most models, presented in this section, have used advanced neural network concepts, such as attention mechanism and network memory for multi-hop reasoning.","1. What are state-based reasoning models in multi-hop MRC?
+2. What are their key features?"
+254408864,A Comprehensive Survey on Multi-hop Machine Reading Comprehension Approaches,"Computer Science, Linguistics",(s15),(p15.2),"Question: What approach does PathNet use for multi-hop MRC passage representation?
+
+1. The Evidence Assembler (EA) module extracts a key sentence containing the proposed answer from every path and combines them to predict the final answer.
+2. Figure 14: Architecture of EPAr [33]
+3. PathNet: Kundu et al. [34] proposed a path-based reasoning approach for multi-hop MRC which first extracts all paths in the passages based on implicit relations between entities, and then composes the passage representations along each path to compute a passage-based representation.",1. What approach does PathNet use for multi-hop MRC passage representation?
+254408864,A Comprehensive Survey on Multi-hop Machine Reading Comprehension Approaches,"Computer Science, Linguistics",(s16),(p16.1),"Question: How does the SMR approach utilize sentence-level multi-hop reasoning for text comprehension?
+
+1. As Figure 16 shows, after embedding sentences into a matrix and constructing a graph, the policy is run to select the next sentence.
+2. In this regard, the convolution-based policy network is used to learn a traversal policy from current options, previously accepted sentences, and the current question.
+3. For example, in this figure, the policy has learned to select the correct next sentence (ct) from the previous sentence (ct-1).
+4. After this action, the answer sentence (o1) can be selected during the next step.
+5. SMR: Huo, Ge and Zhao [37] proposed a Sentence-level Multi-hop Reasoning approach named SMR while most existing approaches only use document-level or entity-level inferences.
+6. In this regard, an initial sentence is first found based on the main entity in the question, and that sentence is then used to find more relevant sentences to create multiple sentence-based reasoning chains as a memory network.
+7. Besides, some sentences are concatenated to prevent the mistakes of Co-Reference resolution methods and to reduce the number of hops.",1. How does the SMR approach utilize sentence-level multi-hop reasoning for text comprehension?
+254408864,A Comprehensive Survey on Multi-hop Machine Reading Comprehension Approaches,"Computer Science, Linguistics",(s16),(p16.2),"Question: What are the phases and methods in ChainEx's sentence-based model for multi-hop reasoning tasks?
+
+1. There are two phases in this model: 1) the Selecting phase to select the most relevant sentence to the network memory state as the initial sentence of the current hop, and 2) the Establishing phase to prepare to go to the next hop by updating the network memory state.
+2. Finally, the information of the reasoning chains is used to predict the final answer.
+3. Figure 17: Representation enrichment via concatenation of adjacent sentences [37] ChainEx: Chen, Lin and Durrett [38] proposed a sentence-based model that does not rely on gold annotated chains or supporting facts at the training and test phases, instead, pseudo-gold reasoning chains are derived using some heuristics based on named entity recognition and coreference resolution during the training time, and it learns to extract chains from raw texts at the test time.","1. What are the phases in ChainEx's sentence-based model for multi-hop reasoning tasks?
+2. What are the methods in ChainEx's sentence-based model for multi-hop reasoning tasks?"
+254408864,A Comprehensive Survey on Multi-hop Machine Reading Comprehension Approaches,"Computer Science, Linguistics",(s17),(p17.0),"Question: Why have graph-based techniques become attractive in multihop machine reading comprehension (MRC)?
+
+1. Graph-based techniques because of their natural language relationship representation ability [39] has attracted attention in multihop MRC.
+2. It is natural to model natural language context into graph structure and the process of multi-hop reasoning as moving among nodes [14].
+3. The main idea of the Graph-based technique is to construct a graph based on the context and question, and then the reasoning is performed by message passing over this structure using graph neural networks.
+4. The process of constructing the graph from large textual data and reasoning over it are challenging tasks.",1. Why have graph-based techniques become attractive in multihop machine reading comprehension (MRC)?
+254408864,A Comprehensive Survey on Multi-hop Machine Reading Comprehension Approaches,"Computer Science, Linguistics",(s19),(p19.0),"Question: What model did Song et al. propose for enhancing multi-hop reading comprehension's global context inference?
+
+1. Song et al. [40] focused on inferring global context as an important key in multi-hop reading comprehension, while previous studies approximate global evidence with local coreference information with DAG-styled GRU.
+2. They proposed a model for better connecting global evidence, with a more complex graph compared to DAGs.
+3. They construct an entity graph with three types of edges: the edge between the same entity within a passage, the edges between two mentions of different entities within a context window, and coreference-typed edges.
+4. The graph might also have cycles which makes it difficult to apply a DAG network to it.",1. What model did Song et al. propose for enhancing multi-hop reading comprehension's global context inference?
+254408864,A Comprehensive Survey on Multi-hop Machine Reading Comprehension Approaches,"Computer Science, Linguistics",(s22),(p22.0),"Question: What is the structure and purpose of the Heterogeneous Document-Entity graph proposed by Tu et al.?
+
+1. Tu et al. [46] proposed a more complex graph named Heterogeneous Document-Entity (HDE) graph with different types of nodes and edges.
+2. This graph can cover different granularity levels of information in context and also enables rich information interaction among different types of nodes for accurate reasoning.
+3. The nodes in the HDE graph are candidates, documents, and entities.","1. What is the structure of the Heterogeneous Document-Entity graph proposed by Tu et al.?
+2. What is the purpose of the Heterogeneous Document-Entity graph proposed by Tu et al.?"
+254408864,A Comprehensive Survey on Multi-hop Machine Reading Comprehension Approaches,"Computer Science, Linguistics",(s22),(p22.2),"Question: What does the SAE system by Tu et al. propose for enhancing model interpretability in multi-hop reasoning?
+
+1. However, [35] have shown that if the number of inferences increases, the complexity of models will rise sharply due to the iteration of cumbersome message passing algorithm, resulting in low efficiency.
+2. [46] SAE: Tu et al. [47] proposed an interpretable system named Select, Answer, and Explain (SAE) with multi-hop reasoning graphs based on GNN with contextual sentence embeddings as nodes.
+3. This kind of sentence graph makes lead to an interpretable model because it can directly output supporting sentences with the answer prediction.
+4. The edges capture the global information presented within each document and also the cross-document reasoning path.
+5. Also, the contextual sentence embedding used in GNN is summarized over token representations based on a novel mixed attentive pooling mechanism.
+6. The attention weight is calculated from both answer span logits and self-attention output on token representations.
+7. This attention-based interaction enables the exploitation of complementary information between ""answer"" and ""explain"" tasks.
+8. The SAE system first filters unrelated documents, and selects gold documents using a document classifier trained with a novel pairwise learning-to-rank",1. What does the SAE system by Tu et al. propose for enhancing model interpretability in multi-hop reasoning?
+254408864,A Comprehensive Survey on Multi-hop Machine Reading Comprehension Approaches,"Computer Science, Linguistics",(s24),(p24.1),"Question: What findings did studies by Shao et al. and Yuntao et al. reveal about graph structure and document filters in multi-hop question answering?
+
+1. GF: Shao et al. [53] attempted to answer this question: How much does graph structure contribute to answer a multi-hop question.
+2. They reimplement a graph-based model-Dynamically Fused Graph Network [54]-and claimed that the graph structure can play an important role only if the pre-trained models are used in a feature-based manner, while if the pre-trained models are used in the fine-tuning approach, the graph structure may not be helpful.
+3. Then the adjacency matrix based on manually defined rules and the graph structure can be regarded as prior knowledge, which could be learned by self-attention or Transformers.
+4. They proved that when texts have been modeled as an entity graph, both graph-attention and self-attention can achieve comparable results, but when texts have been modeled as a sequence structure, only a 2-layer Transformer could achieve similar results as DFGN.
+5. As you can see in Figure 40 when the entity graph is fully connected, a graph-attention layer will degenerate into a selfattention layer.
+6. However, this study as the first attempt of a graph-free model suffers from huge performance gap compared to the state-art-of the graph based-models [14].
+7. Figure 40: An example of the relation between the graph-attention network and the self-attention network [53] AMS: Yuntao et al. [52] proposed another non-graph model with a focus on the document filters step to denoise irrelevant documents, and proves that if this step has been done properly, even a single-hop model can be used for multi-hop.","1. What findings did studies by Shao et al. reveal about graph structure in multi-hop question answering?
+2. What findings did studies by Yuntao et al. reveal about document filters in multi-hop question answering?"
+254408864,A Comprehensive Survey on Multi-hop Machine Reading Comprehension Approaches,"Computer Science, Linguistics",(s29),(p29.0),"Question: How are model performances on HotpotQA evaluated using EM, F1, and various metrics sets?
+
+1. In this section, the performance of models on HotpotQA [11] will be investigated.
+2. Exact-match (EM) and F1 metrics have been used in this study to evaluate the model performance.
+3. EM is used to show whether the predicated answer and the ground-truth answer are exactly the same.
+4. F1 measures the average overlap between the predicted answer and the ground-truth answer.","1. How are model performances on HotpotQA evaluated?
+2. What role does EM play in evaluating model performances?
+3. What role does F1 play in evaluating model performances?
+4. What various metrics sets are used in evaluating model performances?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s1),(p1.2),"Question: What solution improves the tree-like architecture's expressive power for tasks in models?
+
+1. The tree-like architecture uses a single trunk to force all tasks to share the same low-level feature representation, which may limit the expressive power of the model for each task.
+2. A solution is to equip the shared trunk with task-specific encoders [47,58,137].
+3. For example, [65] combines a shared character embedding layer and languagespecific word embedding layers for different languages.
+4. Another way is to make different groups of tasks share different parts of the trunk [37,79,89].
+5. Moreover, this idea can be applied to the decoder.",1. What solution improves the tree-like architecture's expressive power for tasks in models?
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s1),(p1.5),"Question: How do models control information flow in multi-task learning to reduce inter-task interference?
+
+1. However, different parts of the shared features are not equally important to each task.
+2. To selectively choose features from the shared features and alleviate inter-task interference, several models have been devised to control information flow between tasks.
+3. For example, [69] adapts LSTMs to the MTL setting by adding a global memory module and pairwise local shared memory modules, and fuses shared features into hidden states of each LSTM by a read gate and a write gate.
+4. Similarly, GIRN [39] interleaves hidden states of LSTMs and [148] extends this idea to use pairwise coupling and local fusion layers with a global fusion layer to share information between tasks.
+5. The sifted multi-task learning method [133] filters useless features by per-task gating and selects useful information from the shared memory by a multi-head attention mechanism.
+6. The gated shared feature G and attention result A are combined, as in [82], to form the entire shared feature representation S = [G; |G − A|; G ⊙ A; A] for each task, where ⊙ represents the element-wise multiplication and | ·
+7. | compute the absolute value in an element-wise manner.","1. How do models control information flow in multi-task learning?
+2. How is inter-task interference reduced in multi-task learning?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s1),(p1.8),"Question: How does task routing contribute to feature fusion in neural network models?
+
+1. Task routing is another way to achieve feature fusion, where the paths that samples go through in the model differ by their task.
+2. Given tasks , the routing network [144] splits RNN cells into several shared blocks with task-specific blocks (one for each task) and then modulates the input to as well as output from each RNN block by a learned weight.
+3. , the routing network [144] splits RNN cells into several shared blocks with task-specific blocks (one for each task) and then modulates the input to as well as output from each RNN block by a learned weight.
+4. MCapsNet [136], which brings CapsNet [101] to NLP tasks, replaces dynamic routing in CapsNet with task routing to build different feature spaces for each task.",1. How does task routing contribute to feature fusion in neural network models?
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s2),(p2.0),"Question: How do models in parallel architecture manage tasks across different feature abstraction levels?
+
+1. Feature Levels. Models using the parallel architecture handle multiple tasks in parallel.
+2. Models using the parallel architecture handle multiple tasks in parallel.
+3. These tasks may concern features at different abstraction levels.
+4. For NLP tasks, such levels can be character-level, token-level, sentence-level, paragraph-level, and document-level.
+5. It is natural to give supervision signals at different depths of an MTL model for tasks at different levels [20,80,102,109] as illustrated in Fig. 1c.
+6. For example, in [28,57], token-level tasks receive supervisions at lower-layers while sentence-level tasks receive supervision at higher layers.
+7. [96] supervises a higher-level QA task on both sentence and document-level features in addition to a sentence similarity prediction task that only relies on sentence-level features.
+8. In addition, [33,93] add skip connections so that signals from higher-level tasks are amplified.","1. How do models in parallel architecture manage tasks?
+2. What are the different feature abstraction levels involved?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s2),(p2.1),"Question: How can MTL's performance be enhanced by incorporating auxiliary tasks at various levels?
+
+1. In some settings where MTL is used to improve the performance of a primary task, the introduction of auxiliary tasks at different levels could be helpful.
+2. Several works integrate a language modeling task on lower-level encoders for better performance on simile detection [97], sequence labeling [68], question generation [154], and task-oriented dialogue generation [154].
+3. [62] adds sentence-level sentiment classification and attention-level supervision to assist the primary stance detection task.
+4. [85] adds attention-level supervision to improve consistency of the two primary language generation tasks.
+5. [16] minimizes an auxiliary cosine softmax loss based on the audio encoder to learn more accurate speech-to-semantic mappings.","1. How can MTL's performance be enhanced?
+2. What are the various levels at which auxiliary tasks can be incorporated to enhance MTL's performance?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s4),(p4.1),"Question: What principle underlies the hierarchical feature pipeline in multi-task models?
+
+1. In hierarchical feature pipeline, the output of one task is used as extra features for another task.
+2. The tasks are assumed to be directly related so that outputs instead of hidden feature representations are helpful to other tasks.
+3. For example, [14] feeds the output of a question-review pair recognition model to the question answering model.
+4. [44] feeds the output of aspect term extraction to aspect-term sentiment classification.
+5. Targeting community question answering, [139] uses the result of question category prediction to enhance document representations.
+6. [110] feeds the result of morphological tagging to a POS tagging model and the two models are further tied by skip connections.",1. What principle underlies the hierarchical feature pipeline in multi-task models?
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s4),(p4.2),"Question: How do hierarchical feature pipelines enhance multi-task learning in natural language processing tasks?
+
+1. Hierarchical feature pipeline is especially useful for tasks with hierarchical relationships.
+2. [30] uses the output of neighboring word semantic type prediction as extra features for neighboring word prediction.
+3. [43] uses skip connections to forward predictions of lower-level POS tagging, chunking, and dependency parsing tasks to higherlevel entailment and relatedness classification tasks.
+4. In addition, deep cascade MTL [33] adds both residual connections and cascade connections to a single-trunk parallel MTL model with supervision at different levels, where residual connections forward hidden representations and cascade connections forward output distributions of a task to the prediction layer of another task.
+5. [112] includes the output of the low-level discourse element identification task in the organization grid, which consists of sentence-level, phrase-level, and document-level features of an essay, for the primary essay organization evaluation task.","1. How do hierarchical feature pipelines enhance multi-task learning?
+2. What is the role of hierarchical feature pipelines in natural language processing tasks?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s4),(p4.4),"Question: How are outputs in hierarchical signal pipelines used to enhance task performance?
+
+1. In hierarchical signal pipeline, the outputs of tasks are used indirectly as external signals to help improve the performance of other tasks.
+2. For example, the predicted probability of the sentence extraction task is used to weigh sentence embeddings for a document-level classification task [50].
+3. For the hashtag segmentation task, [74] first predicts the probability of a hashtag being single-token or multi-token as an auxiliary task and further uses the output to combine single-token and multi-token features.
+4. In [106], the output of an auxiliary entity type prediction task is used to disambiguate candidate entities for logical form prediction.
+5. The outputs of a task can also be used for post-processing.",1. How are outputs in hierarchical signal pipelines used to enhance task performance?
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s6),(p6.1),"Question: What are common practices and examples of modular architectures in multi-task and multi-lingual tasks?
+
+1. The simplest form of modular architectures is a single shared module coupled with task-specific modules as in tree-like architectures described in Section 2.1.1.
+2. Besides, another common practice is to share the first embedding layers across tasks as [58,156] did.
+3. [1] shares word and character embedding matrices and combines them differently for different tasks.
+4. [103] shares two encoding layers and a vocabulary lookup table between the primary neural machine translation task and the Relevance-based Auxiliary Task (RAT).
+5. Modular designs are also widely used in multi-lingual tasks.
+6. Unicoder [49] shares vocabulary and the entire transformer architecture among different languages and tasks.
+7. Shared embeddings can be used alongside task-specific embeddings [59,138] as well.
+8. In addition to word embeddings, [147] shares label embeddings between tasks.
+9. Researchers have also developed modular architectures at a finer granularity.
+10. For example, [119] splits the model into task-specific encoders and language-specific encoders for multi-lingual dialogue evaluation.
+11. In [24], each task has its own encoder and decoder, while all tasks share a representation learning layer and a joint encoding layer.","1. What are common practices in modular architectures for multi-task tasks?
+2. What are common practices in modular architectures for multi-lingual tasks?
+3. What are examples of modular architectures in multi-task tasks?
+4. What are examples of modular architectures in multi-lingual tasks?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s7),(p7.0),"Question: How do GANs improve performance in computer vision and MTL for NLP tasks?
+
+1. Recently Generative Adversarial Networks (GANs) have achieved great success in generative tasks for computer vision.
+2. The basic idea of GANs is to train a discriminator that distinguishes generated images from ground truth ones.
+3. By optimizing the discriminator, we can obtain a generator that can produce more vivid images and a discriminator that is good at spotting synthesized images.
+4. A similar idea can be used in MTL for NLP tasks.
+5. By introducing a discriminator that predicts which task a given training instance comes from, the shared feature extractor is forced to produce more generalized task-invariant features [70,78,119,127,138] and therefore improve the performance and robustness of the entire model.","1. How do GANs improve performance in computer vision?
+2. How do GANs improve performance in multi-task learning (MTL) for NLP tasks?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s7),(p7.1),"Question: How do generative adversarial architectures enhance document representation and machine reading comprehension?
+
+1. An additional benefit of generative adversarial architectures is that unlabeled data can be fully utilized.
+2. [124] adds an auxiliary generative model that reconstructs documents from document representations learned by the primary model and improves the quality of document representations by training the generative model on unlabeled documents.
+3. To improve the performance of an extractive machine reading comprehension model, [98] uses a self-supervised approach.
+4. First, a discriminator that rates the quality of candidate answers is trained on labeled samples.","1. How do generative adversarial architectures enhance document representation?
+2. How do they enhance machine reading comprehension?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s9),(p9.10),"Question: How does GradVac optimize multi-lingual model performance through gradient manipulation?
+
+1. Based on the observation that gradient similarity correlates well with language similarity and model performance, GradVac [129], which targets at optimization of multi-lingual models, regulates parameter updates according to geometry similarities between gradients.
+2. That is, GradVac alters both the direction and magnitude of gradients so that they are aligned with the cosine similarity between gradient vectors by modifying g as 1] is the cosine distance between gradients g and g .
+3. Notice that PCGrad is a special case of GradVac when = 0.","1. How does GradVac optimize multi-lingual model performance?
+2. What role does gradient manipulation play in this process?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s11),(p11.0),"Question: How does task scheduling influence multi-task learning model training methods?
+
+1. Task scheduling determines the order of tasks in which an MTL model is trained.
+2. A naive way is to train all tasks together.
+3. For example, [148] takes this way to train an MTL model, where data batches are organized as four-dimensional tensors of size × × × , where denotes the number of samples, denotes the number of tasks, denotes sequence length, and represents embedding dimensions.
+4. Similarly, [143] puts labeled data and unlabeled data together to form a batch and [134] learns the dependency parsing and semantic role labeling tasks together.
+5. In the case of auxiliary MTL, [3] trains the primary task and one of the auxiliary tasks together at each step.",1. How does task scheduling influence multi-task learning model training methods?
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s11),(p11.5),"Question: How do models learn multiple tasks sequentially while addressing dependency and difficulty levels?
+
+1. In some cases, multiple tasks are learned sequentially.
+2. Such tasks usually form a clear dependency relationship or are of different difficulty levels.
+3. For instance, [50] uses a baby step curriculum learning approach [18] and trains different tasks in the order of increasing difficulties.
+4. Similarly, [43] trains a multi-task model in the order of low-level tasks, high-level tasks, and at last mixed-level batches.
+5. [85] focuses on learning easy tasks at the beginning and then shifts its focus to more difficult tasks through loss scheduling as described in Eq. (1).
+6. Unicoder [49] trains its five pre-training objectives sequentially in each step.
+7. [90] applies sequential training for a multi-task neural architecture search algorithm to maintain performance on previously learned tasks while maximizing performance in the current domain.
+8. [94] first pre-trains language and invertible adapters on language modeling before training task adapters on different down-stream tasks, where the language and invertible adapters can also receive gradient when training task adapters.","1. How do models learn multiple tasks sequentially?
+2. How do they address dependency levels?
+3. How do they address difficulty levels?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s11),(p11.6),"Question: What is the pre-train then fine-tune methodology used in auxiliary MTL?
+
+1. For auxiliary MTL, some researchers adopt a pre-train then fine-tune methodology, which trains auxiliary tasks first before fine-tuning on the down-stream primary tasks.
+2. For example, [55] trains auxiliary POS tagging and domain prediction tasks first before the news headline popularity prediction task.
+3. [44] trains document-level tasks first and then the aspect-level primary task by fixing document-level model parameters so that parameters for domain-level tasks are not affected by the small amount of aspect-level data.
+4. [125] first pre -trains on self-supervised tasks and then fine-tunes on the smaller disfluency detection data.
+5. -trains on self-supervised tasks and then fine-tunes on the smaller disfluency detection data.",1. What is the pre-train then fine-tune methodology used in auxiliary MTL?
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s14),(p14.0),"Question: How is auxiliary multi-task learning applied to various classification and detection tasks?
+
+1. Researchers have also applied auxiliary MTL to classification tasks, such as explicit [71] and implicit [56] discourse relation classification.
+2. To improve automatic rumor identification, [53] jointly trains on the stance classification and veracity prediction tasks.
+3. [55] learns a headline popularity prediction model with the help of POS tagging and domain prediction.
+4. [59] enhances a rumor detection model with user credibility features.
+5. [28] adds a low-level grammatical role prediction task into a discourse coherence assessment model to help improve its performance.
+6. [74] enhances the hashtag segmentation task by introducing an auxiliary task which predicts whether a given hashtag is single-token or multi-token.
+7. In [107], text classification is boosted by learning the predominant sense of words.
+8. [133] assists the fake news detection task by stance classification.
+9. [14] jointly learns the answer identification task with an auxiliary question answering task.
+10. To improve slot filling performance for online shopping assistants, [56]0 adds NER and segment tagging tasks as auxiliary tasks.","1. How is auxiliary multi-task learning applied to various classification tasks?
+2. How is auxiliary multi-task learning applied to detection tasks?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s14),(p14.2),"Question: How does multi-task learning (MTL) enhance various text generation tasks?
+
+1. For text generation tasks, MTL is brought in to improve the quality of the generated text.
+2. It is observed in [27] that adding a target-side language modeling task on the decoder of a neural machine translation (NMT) model brings moderate but consistent performance gain.
+3. [73] learns a multi-lingual NMT model with constituency parsing and image caption generation as two auxiliary tasks.
+4. Similarly, [144] learns an NMT model together with the help of NER, syntactic parsing, and semantic parsing tasks.
+5. To make an NMT model aware of the vocabulary distribution of the retrieval corpus for query translation, [103] adds an unsupervised auxiliary task that learns continuous bag-of-words embeddings on the retrieval corpus in addition to the sentence-level parallel data.
+6. Recently, [128] builds a multi-lingual NMT system with source-side language modeling and target-side denoising autoencoder.
+7. For the sentence simplification task, [37] uses paraphrase generation and entailment generation as two auxiliary tasks.
+8. [38] builds an abstractive summarization model with the question and entailment generation tasks as auxiliary tasks.
+9. By improving a language modeling task through MTL, we can generate more natural and coherent text for question generation [154] or task-oriented dialogue generation [155].
+10. (NMT)0 implements a semantic parser that jointly learns question type classification, entity mention detection, as well as a weakly supervised objective via question paraphrasing.
+11. (NMT)1 enhances a text-to-SQL semantic parser by adding explicit condition value detection and value-column mapping as auxiliary tasks.",1. How does multi-task learning (MTL) enhance various text generation tasks?
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s15),(p15.0),"Question: How do joint multi-task learning models differ from and relate to auxiliary MTL in performance optimization?
+
+1. Different from auxiliary MTL, joint MTL models optimize its performance on several tasks simultaneously.
+2. Similar to auxiliary MTL, tasks in joint MTL are usually related to or complementary to each other.
+3. Table 2 gives an overview of task combinations used in joint MTL models.
+4. In certain scenarios, we can even convert models following the traditional pipeline architecture as in single-task learning to joint MTL models so that different tasks can adapt to each other.
+5. For example, [93] converts the parsing of Alexa meaning representation language into three independent tagging tasks for intents, types, and properties, respectively.
+6. [110] transforms the pipeline relation between POS tagging and morphological tagging into a parallel relation and further builds a joint MTL model.
+7. Joint MTL has been proven to be an effective way to improve the performance of standard NLP tasks.
+8. For instance, [43] trains six tasks of different levels jointly, including POS tagging, chunking, dependency parsing, relatedness classification, and entailment classification.
+9. [148] applies parallel feature fusion to learn multiple classification tasks, including sentiment classification on movie and product reviews.
+10. Different from traditional pipeline methods, [72] jointly learns identification and classification of entities, relations, and coreference clusters in scientific literatures.
+11. [102] optimizes four semantic tasks together, including NER, entity mention detection (EMD), coreference resolution (CR), and relation extraction (RE) tasks.
+12. [40,141,145] learn entity extraction alongside relation extraction.
+13. For sentiment analysis tasks, [110]0 jointly learns dialogue act and sentiment recognition using the tree-like parallel MTL architecture.
+14. [110]1 learns the aspect term extraction and aspect sentiment classification tasks jointly to facilitate aspect-based sentiment analysis.","1. How do joint multi-task learning models differ from auxiliary MTL?
+2. How do they relate to auxiliary MTL in performance optimization?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s15),(p15.2),"Question: What are applications and benefits of joint MTL in multi-domain and multi-formalism NLP tasks?
+
+1. Moreover, joint MTL is suitable for multi-domain or multi-formalism NLP tasks.
+2. Multi-domain tasks share the same problem definition and label space among tasks, but have different data distributions.
+3. Applications in multi-domain NLP tasks include sentiment classification [60,131], dialog state tracking [83], essay scoring [21], deceptive review detection [41], multi-genre emotion detection and classification [116], RST discourse parsing [6], historical spelling normalization [5], and document classification [118].
+4. Multi-formalism tasks have the same problem definition but may have different while structurally similar label spaces.
+5. [54,91] model three different formalisms of semantic dependency parsing (i.e., DELPH-IN MRS (DM) [83]0, Predicate-Argument Structures [83]1 [83]2, and Prague Semantic Dependencies [83]3 [83]4) jointly.
+6. In [83]5, a transition-based semantic parsing system is trained jointly on different parsing tasks, including Abstract Meaning Representation [83]6 [83]7, Semantic Dependency Parsing [83]8 [83]9, and Universal Dependencies [21]0 [21]1, and it shows that joint training improves performance on the testing UCCA dataset.
+7. [21]2 jointly models discourse relation classification on two distinct datasets: PDTB and RST-DT.
+8. [21]3 shows the dual annotation and joint learning of two distinct sets of relations for noun-noun compounds could improve the performance of both tasks.","1. What are the applications of joint MTL in multi-domain NLP tasks?
+2. What are the applications of joint MTL in multi-formalism NLP tasks?
+3. What are the benefits of joint MTL in multi-domain and multi-formalism NLP tasks?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s16),(p16.0),"Question: How do multi-lingual machine learning models benefit from multi-task learning and adversarial training?
+
+1. Multi-lingual machine learning has always been a hot topic in the NLP field with a representative example as NMT systems mentioned in previous sections.
+2. Since a single data source may be limited and biased, leveraging data from multiple languages through MTL can benefit multi-lingual machine learning models.
+3. In [79], a partially shared multi-task model is built for language intent learning through dialogue act classification, extended named entity classification, and question type classification in Japanese and English.
+4. This model is further enhanced in [78] by adversarial training so that language-specific and task-specific components learn task-invariant and language-invariant features, respectively.","1. How do multi-lingual machine learning models benefit from multi-task learning?
+2. How do multi-lingual machine learning models benefit from adversarial training?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s16),(p16.1),"Question: What are the goals and outcomes of employing multi-lingual MTL in language translation and evaluation?
+
+1. Another aim of multi-lingual MTL is to facilitate efficient knowledge transfer between languages.
+2. [119] proposes a multi-lingual dialogue evaluation metric in English and Chinese.
+3. Through generative adversarial training, the shared encoder could produce high quality language-invariant features for the subsequent estimation process.
+4. The multi-lingual metric achieves a high correlation with human annotations and performs even better than corresponding monolingual counterparts.
+5. Given an English corpus with formality tags and unlabeled English-French parallel data, [86] develops a formality-sensitive translation system from English to French by jointly optimizing the formality transfer in English.","1. What are the goals of employing multi-lingual MTL in language translation and evaluation?
+2. What are the outcomes of employing multi-lingual MTL in language translation and evaluation?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s16),(p16.2),"Question: How do multi-lingual representation models facilitate cross-lingual knowledge transfer and enhance performance?
+
+1. Cross-lingual knowledge transfer can also be achieved by learning high-quality cross-lingual language representations.
+2. [108] learns multi-lingual representations from two tasks.
+3. One task is the multi-lingual skip-gram task where a model predicts masked words according to both monolingual and cross-lingual contexts and another task is the cross-lingual sentence similarity estimation task using parallel training data and randomly selected negative samples.
+4. Unicoder [49] learns multi-lingual representations by sharing a single vocabulary and encoder between different languages and is pre-trained on five tasks, including masked language model (MLM), translation language model, cross-lingual MLM, cross-lingual word recovery, and cross-lingual paraphrase classification.
+5. Experiments show that removing any one of these tasks leads to a drop in performance, thus confirming the effectiveness of multi-task pre-training.
+6. In [65], a multi-lingual multi-task model is proposed to facilitate low-resource knowledge transfer by sharing model parameters at different levels.
+7. Besides training on the POS tagging and NER tasks, a domain adversarial method is used to align monolingual word embedding matrices in an unsupervised way.","1. How do multi-lingual representation models facilitate cross-lingual knowledge transfer?
+2. How do they enhance performance?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s17),(p17.0),"Question: What does multimodal learning involve in NLP research and its application in speech translation?
+
+1. As one step further from multi-lingual machine learning, multimodal learning has attracted an increasing interest in the NLP research community.
+2. Researchers have incorporated features from other modalities, including auditory, visual, and cognitive features, to perform text-related cross-modal tasks.
+3. MTL is a natural choice for implicitly injecting multimodal features into a single model.
+4. [16] builds an end-to-end speech translation model, where the audio recordings in the source language is transformed into corresponding text in the target language.","1. What does multimodal learning involve in NLP research?
+2. What is its application in speech translation?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s18),(p18.0),"Question: What factors influence the performance of multi-task learning in NLP?
+
+1. A key issue that affects the performance of MTL is how to properly choose a set of tasks for joint training.
+2. Generally, tasks that are similar and complementary to each other are suitable for multi-task learning, and there are some works that studies this issue for NLP tasks.
+3. For semantic sequence labeling tasks, [77] reports that MTL works best when the label distribution of auxiliary tasks has low kurtosis and high entropy.
+4. This finding also holds for rumor verification [53].
+5. Similarly, [71] reports that tasks with major differences, such as implicit and explicit discourse classification, may not benefit much from each other.
+6. To quantitatively estimate the likelihood of two tasks benefiting from joint training, [104] proposes a dataset similarity metric which considers both tokens and their labels.
+7. The proposed metric is based on the normalized mutual information of the confusion matrix between label clusters of two datasets.",1. What factors influence the performance of multi-task learning in NLP?
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s18),(p18.1),"Question: How does Multi-Task Learning (MTL) effectiveness relate to task relatedness and selection?
+
+1. As MTL assumes certain relatedness and complementarity between the chosen tasks, the performance gain brought by MTL can in turn reveal the strength of such relatedness.
+2. [10] studies the pairwise impact of joint training among 11 tasks under 3 different MTL schemes and shows that MTL on a set of properly selected tasks outperforms MTL on all tasks.
+3. The harmful tasks either are totally unrelated to other tasks or possess a small dataset that can be easily overfitted.
+4. For dependency parsing problems, [54,91] claim that MTL works best for formalisms that are more similar.
+5. [22] models the interplay of the metaphor and emotion via MTL and reports that metaphorical features are beneficial to sentiment analysis tasks.","1. How does Multi-Task Learning (MTL) effectiveness relate to task relatedness?
+2. How does Multi-Task Learning (MTL) effectiveness relate to task selection?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s21),(p21.1),"Question: How can multi-label datasets be created from existing data with examples?
+
+1. Multi-label datasets can be created by giving extra manual annotations to existing data.
+2. For example, [54,91] annotate dependency parse trees of three different formalisms for each text input.
+3. [121] labels Twitter posts with 4 demographic labels.","1. How can multi-label datasets be created from existing data?
+2. Can you provide examples of this process?"
+237571793,Multi-Task Learning in Natural Language Processing: An Overview,"Computer Science, Linguistics",(s21),(p21.2),"Question: How can self-supervised multi-label datasets be automatically created for various AI tasks?
+
+1. The extra annotations can be created automatically as well, resulting in a self-supervised multi-label dataset.
+2. Extra labels can be obtained using pre-defined rules [62,97].
+3. In [56], to synthesize unlabeled dataset for the auxiliary unsupervised implicit discourse classification task, explicit discourse connectives (e.g., because, but, etc.) are removed from a large corpus and such connectives are used as implicit relation labels.
+4. [86] combines an English corpus with formality labels and an unlabeled English-French parallel corpus by random selection and concatenation to facilitate the joint training of formality style transfer and formality-sensitive translation.
+5. [116] uses hashtags to represent genres of tweet posts.
+6. [130] generates sentence pairs by replacing chemical named entities with their paraphrases in the PubChemDic database.
+7. Unicoder [49] uses translated text from the source language to fine-tune on the target language.
+8. [125] creates disfluent sentences by randomly repeating or inserting -grams.
+9. Besides annotating in the aforementioned ways, some researchers create self-supervised labels with the help of external tools or previously trained models.
+10. [107] obtains dominant word sense labels from WordNet [31].
+11. [56]0 applies entity linking for QA data over databases through an entity linker.
+12. [56]1 assigns NER and segmentation labels for three tasks using an unsupervised dynamic programming method.
+13. [56]2 uses the output of a meta-network as labels for unsupervised training data.
+14. As a special case of multi-label dataset, mask orchestration [56]3 provides different parts of an instance to different tasks by applying different masks.","1. How can self-supervised multi-label datasets be automatically created?
+2. What are the various AI tasks for which these datasets can be used?"
+231603122,Persuasive Natural Language Generation -A Literature Review,"Computer Science, Business, Linguistics",(s2),(p2.1),"Question: What is the focus and methodology of this literature review on persuasion and NLG?
+
+1. The first step is the definition of the review scope of this literature review.
+2. It is summarized in Figure 1 (categories applicable to this review on Persuasion and NLG research are highlighted) which is based on the taxonomy adapted by vom Brocke et al. (2009).
+3. Brocke et al. 2009)
+4. This literature review focuses on outcomes of applied research in the domains of Persuasion and Natural Language Generation.
+5. The goal is to integrate findings with respect to five categories concluded from the business problem of persuading individuals through textual exchange (DeMers 2016).
+6. These categories were chosen as they address the psychological and technical aspects of persuasion and are a prerequisite to creating a persuasive NLG artificial intelligence.
+7. We selected this field because the artificial generation of persuasion through NLG has, as this literature review reveals, not been addressed in seminal articles following our structured research approach.
+8. Persuasion is already commonly studied in psychology (Quirk et al. 1985, Marwell & Schmitt 1967. Also, numerous studies in natural language processing focus on identifying and classifying persuasion in an automated way (Li et al. 2020, Rocklage et al. 2018, Iyer & Sycara 2019).
+9. This paper is organized along a conceptual structure.
+10. We did not take a particular perspective to provide a neutral representation of the results.
+11. As an audience of this review specialized scholars having an interest in the field of persuasion and the artificial generation of it were chosen.
+12. For coverage, our literature review can be categorized as representative as our research has been limited to certain journals, but does not consider the totality of the literature.","1. What is the focus of this literature review on persuasion and NLG?
+2. What is the methodology of this literature review on persuasion and NLG?"
+231603122,Persuasive Natural Language Generation -A Literature Review,"Computer Science, Business, Linguistics",(s5),(p5.1),"Question: What are the determinants of linguistic appropriacy in persuasive AI messaging?
+
+1. This category subsumes fourteen determinants that facilitate an individual's stylome and aim at matching this with linguistic appropriacy.
+2. Such a stylome can be quantified and identified linguistically (Zarouali et al. 2020).
+3. Aforementioned Language Expectation Theory identifies written or spoken language as a rule-based system through which persuadees develop expectations (Burgoon & Miller 1985).
+4. The reason for profiling the stylome of an individual is to match these expectations (Park et al. 2015).
+5. Once implemented, a persuasive NLG AI can achieve congruence between a persuasive message and the persuadee, and thus generate persuasiveness.
+6. Table 2 introduces fourteen determinants of linguistic appropriacy in alphabetical order, provides a synopsis (i.e., brief summary, column two), an example for each determinant (column three), and the corresponding academic citation (in column four).  Quirk et al. 1985, Brewer 1980 Evidence Words Tendency to approve or disapprove something.
+7. Words such as: according to.
+8. Quirk et al. 1985 Familiarity Degree of familiarity of a word or how easily a word can be recognized by an adult.",1. What are the determinants of linguistic appropriacy in persuasive AI messaging?
+231603122,Persuasive Natural Language Generation -A Literature Review,"Computer Science, Business, Linguistics",(s10),(p10.0),"Question: What are the tools and datasets used for persuasion analysis in NLP/NLG studies?
+
+1. In the analyzed academic studies, we found that the authors use different datasets and tools to computationally process data for technical analyses of persuasion in NLP or NLG (e.g., in Guerini et al 2008a/b, Li et al. 2020, Iyer/Sycara 2019. Logically, the implementation of a persuasive NLG AI also depends on a variety of relevant tools and datasets which we identified and consolidated in Table 6. This table classifies our findings in types which are either tool or datasets (column one).
+2. We identified six tools and seventeen persuasion or message datasets.
+3. A software tool that is used in the context of persuasion and NLP, and datasets were chosen if they were used in the context of persuasion, textual exchange/debate and NLP.","1. What are the tools used for persuasion analysis in NLP/NLG studies?
+2. What are the datasets used for persuasion analysis in NLP/NLG studies?"
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s1),(p1.0),"Question: What sets this survey apart in discussing multimodal learning and Transformers?
+
+1. We relate this paper to existing surveys of the two specific dimensions MML and Transformers.
+2. There exist a few MML surveys [1], [11], [12].
+3. In particular, [1] proposed a structured, acknowledged taxonomy by five challenges, which we also adopt as part of our structure.
+4. Unlike [1], [11], and [12], which review general machine learning models, we instead focus on Transformer architectures and their self-attention mechanisms.
+5. Several surveys dedicated to Transformers have been recently introduced, with a range of emphases including general Transformers [48], efficient designs [49], visualization [50], computer vision tasks [51], [52], [53], [54], medical imaging [55], video tasks [56], and vision language pretraining [57].
+6. While [51], [53], [54], [55] consider MML, their reviews are somewhat limited in the scope, taxonomy, and coverage.
+7. To our knowledge, only a few surveys on video-language pretraining (VLP) [57], [58], [59] are relevant to MML.
+8. However, VLP is only a subdomain of MML.",1. What sets this survey apart in discussing multimodal learning and Transformers?
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s4),(p4.2),"Question: What are the applications and advancements of Vision Transformer in computer vision and multimodal tasks?
+
+1. Vision Transformer (ViT) [5] is a seminal work that contributes an end-to-end solution by applying the encoder of Transformer to images.
+2. Both ViT and its variants have been widely applied to various computer vision tasks, including low-level tasks [92], recognition [93], detection [94], segmentation [95], etc, and also work well for both supervised [93] and self-supervised [96], [97], [98] visual learning.
+3. Moreover, some recently-released works provide further theoretical understanding for ViT, e.g., its internal representation robustness [5]0, the continuous behaviour of its latent representation propagation [5]1, [5]2.
+4. Motivated by the great success of Transformer, VideoBERT [5]3 is a breakthrough work that is the first work to extend Transformer to the multimodal tasks.
+5. VideoBERT demonstrates the great potential of Transformer in multimodal context.","1. What are the applications of Vision Transformer in computer vision?
+2. What advancements has Vision Transformer brought to multimodal tasks?"
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s10),(p10.0),"Question: How do position embeddings enhance Transformer models in processing different data structures?
+
+1. Transformers is an open problem.
+2. It can be understood as a kind of implicit coordinate basis of feature space, to provide temporal or spatial information to the Transformer.
+3. For cloud point [164] and sketch drawing stroke [163], their token element is already a coordinate, meaning that position embedding is optional, not necessary.
+4. Furthermore, position embedding can be regarded as a kind of general additional information.
+5. In other words, from a mathematical point of view, any additional information can be added, such as detail of the manner of position embedding, e.g., the pen state of sketch drawing stroke [163], cameras and viewpoints in surveillance [165].
+6. There is a comprehensive survey [166] discussing the position information in Transformers.
+7. For both sentence structures (sequential) and general graph structures (sparse, arbitrary, and irregular), position embeddings help Transformers to learn or encode the underlying structures.
+8. Considered from the mathematical perspective of self-attention, i.e., scaled dot-product attention, attentions are invariant to the positions of words (in text) or nodes (in graphs), if position embedding information is missing.","1. How do position embeddings enhance Transformer models?
+2. In what ways do they assist in processing different data structures?"
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s18),(p18.0),"Question: How do users prepare multimodal inputs for Transformers through tokenization and embedding?
+
+1. Given an input from an arbitrary modality, users only need to perform two main steps, (1) tokenize the input, and (2) select an embedding space to represent the tokens, before inputting the data into Transformers.
+2. In practice, both the tokenizing input and selecting embedding for the token are vital for Transformers but highly flexible, with many alternatives.
+3. For instance, given an image, the solution of tokenizing and embedding is not unique.
+4. Users can choose or design tokenization at multiple granularity levels -coarse-grained vs. fine-grained.
+5. e.g., use ROIs (obtained by an object detector) and CNN features as tokens and token embeddings [102], use patches and linear projection as tokens and token embeddings [5], or use graph node (obtained by object detector and graph generator) and GNN features as tokens and token embeddings [181].
+6. Given a tokenization plan, the subsequent embedding approaches can be diverse.
+7. For example, for video input, a common tokenization is to treat the non-overlapping windows (down-sampled) over the video as tokens, and their embeddings can then be extracted by various 3D CNNs, e.g., VideoBERT [7], CBT [107], and UniVL (2)0 use S3D (2)1, ActBERT uses ResNet-3D (2)2.","1. How do users prepare multimodal inputs for Transformers through tokenization?
+2. How do users prepare multimodal inputs for Transformers through embedding?"
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s21),(p21.12),"Question: How does VideoBERT fuse video and text modalities, and what are its limitations?
+
+1. Thus, all the multimodal token positions can be attended as a whole sequence, such that the positions of each modality can be encoded well by conditioning the context of other modalities.
+2. VideoBERT [7] is the one of the first multimodal Transformer works, where video and text are fused via early concatenation that can encode the global multimodal context well [188].
+3. However, the longer sequence after concatenation will increase computational complexity.","1. How does VideoBERT fuse video and text modalities?
+2. What are its limitations?"
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s29),(p29.0),"Question: What are common pretext tasks in Transformer based multimodal pretraining?
+
+1. In Transformer based multimodal pretraining, the pretraining tasks/objectives are also termed pretext tasks/objectives.
+2. To date, various pretext tasks have been studied, e.g., masked language modelling (MLM) [137], masked image region prediction/classification (also termed masked object classification (MOC)) [137], (also termed masked object classification (MOC)4, masked region regression (MRR) [115], visual-linguistic matching (VLM)
+3. (e.g., image-text matching (ITM) (also termed masked object classification (MOC)8, image text matching (ITM), phrase-region alignment (PRA) [204], word-region alignment (WRA) [106], video-subtitle matching (VSM) (also termed masked object classification (MOC)0), masked frame modelling (MFM) (also termed masked object classification (MOC)0, frame order modelling (FOM) (also termed masked object classification (MOC)0, next sentence prediction (also termed masked object classification (MOC)1 (also termed masked object classification (MOC)2, (also termed masked object classification (MOC)3, (also termed masked object classification (MOC)4, masked sentence generation (also termed masked object classification (MOC)5 (also termed masked object classification (MOC)6, masked group modelling (also termed masked object classification (MOC)7 (also termed masked object classification (MOC)8, prefix language modelling (also termed masked object classification (MOC)9 [137]0, video conditioned masked language model [137]2, text conditioned masked frame model [137]2, visual translation language modelling [137]3 [137]4, and image-conditioned masked language modelling [137]5 [137]6.
+4. These down-stream task -agnostic pretext pretraining is optional, and the down-stream task objectives can be trained directly, which will be discussed in Section 4.1.2.
+5. Table 3 provides the common and representative pretext tasks for Transformer based multimodal pretraining.",1. What are common pretext tasks in Transformer-based multimodal pretraining?
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s30),(p30.0),"Question: What are the current bottlenecks in multimodal pretraining Transformer methods?
+
+1. In spite of the recent advances, multimodal pretraining Transformer methods still have some obvious bottlenecks.
+2. For instance, as discussed by [208] in VLP field, while the BERT-style cross-modal pretraining models produce excellent results on various down-stream visionlanguage tasks, they fail to be applied to generative tasks directly.
+3. As discussed in [208], both VideoBERT [7] and CBT [107] have to train a separate video-to-text decoder for video captioning.
+4. This is a significant gap between the pretraining models designed for discriminative and generative tasks, as the main reason is discriminative task oriented pretraining models do not involve the decoders of Transformer.
+5. Therefore, how to design more unified pipelines that can work for both discriminative and generative down-stream tasks is also an open problem to be solved.",1. What are the current bottlenecks in multimodal pretraining Transformer methods?
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s31),(p31.0),"Question: Why is task-specific pretraining often chosen over universal in multimodal Transformers?
+
+1. In practices of multimodal Transformers, the aforementioned down-stream task -agnostic pretraining is optional, not necessary, and down-stream task specific pretraining is also widely studied [150], [190], [208], [211].
+2. The main reasons include: (1) Limited by the existing technique, it is extremely difficult to design a set of highly universal network architectures, pretext tasks, and corpora that work for all the various down-stream applications.
+3. (2) There are nonnegligible gaps among various down-stream applications, e.g., task logic, data form, making it difficult to transfer from pretraining to down-stream applications.",1. Why is task-specific pretraining often chosen over universal in multimodal Transformers?
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s35),(p35.0),"Question: How do MML Transformers integrate multimodal information, and what are the trends in their fusion methods?
+
+1. In general, MML Transformers fuse information across multiple modalities primarily at three levels: input (i.e., early fusion), intermediate representation (i.e., middle fusion), and prediction (i.e., late fusion).
+2. Common early fusion based MML Transformer models [7], [104], [108] are also known as one-stream architecture, allowing the adoption of the merits of BERT due to minimal architectural modification.
+3. The main difference between these one-stream models is the usage of problem-specific modalities with variant masking techniques.
+4. With attention operation, a noticeable fusion scheme is introduced based on a notion of bottleneck tokens [175].
+5. It applies for both early and middle fusion by simply choosing to-be-fused layers.
+6. We note that the simple prediction-based late fusion [247], [248] is less adopted in MML Transformers.
+7. This makes sense considering the motivations of learning stronger multimodal contextual representations and great advance of computing power.","1. How do MML Transformers integrate multimodal information?
+2. What are the trends in their fusion methods?"
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s36),(p36.1),"Question: What challenges and solutions exist for fine-grained alignment in multimodal learning models?
+
+1. A representative practice is to map two modalities into a common representation space with contrastive learning over paired samples.
+2. The models based on this idea are often enormous in size and expensive to optimize from millions or billions of training data.
+3. Consequently, successive works mostly exploit pretrained models for tackling various downstream tasks [120], [263], [264], [265], [266].
+4. These alignment models have the ability of zero-shot transfer particularly for image classification via prompt engineering [267].
+5. This novel perspective is mind-blowing, given that image classification is conventionally regarded as a unimodal learning problem and zero-shot classification remains an unsolved challenge despite extensive research [268].
+6. This has been studied for more challenging and fine-grained tasks (e.g., object detection
+7. [269], visual question answering [103], [106], [112], [263], and instance retrieval [222], [263]) by imposing region (semantic parts such as objects) level alignment.
+8. Finegrained alignment will however incur more computational costs from explicit region detection and how to eliminate this whilst keeping the region-level learning capability becomes a challenge.","1. What challenges exist for fine-grained alignment in multimodal learning models?
+2. What solutions exist for fine-grained alignment in multimodal learning models?"
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s37),(p37.4),"Question: What are the key challenges and solutions in transferring multimodal pretrained models to real-world applications?
+
+1. Cross-task gap is another major obstacle to transfer [208], [274], due to the different reasoning and input-output workflows, e.g., how to use multimodal datasets to finetune the language pretrained model is difficult [274].
+2. In real applications, multimodal pretrained Transformers sometimes need to handle the uni-modal data at inference stage due to the issue of missing modalities.
+3. One solution is using knowledge distillation, e.g., distilling from multimodal to uni-modal attention in Transformers [275], distilling from multiple uni-modal Transformer teachers to a shared Transformer encoder [276].
+4. There is a huge gap across discriminative and generative multimodal tasks.
+5. As discussed in [208], the BERT-like encoder-only multimodal Transformers (e.g., VideoBERT [7], CBT [107]) need separately to train decoders for generation tasks.
+6. This could create a pretrain-finetune discrepancy detrimental to the generality.","1. What are the key challenges in transferring multimodal pretrained models to real-world applications?
+2. What are the solutions in transferring multimodal pretrained models to real-world applications?"
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s41),(p41.0),"Question: How do Transformers excel in multimodal learning according to recent studies?
+
+1. Why and how Transformers perform so well in multimodal learning has been investigated [106], [299], [300], [301], [302], [303], [304], [305], [306].
+2. These attempts mainly use probing task and ablation study.
+3. Cao et al. [299] design a set of probing tasks on UNITER [106] and LXMERT [103], to evaluate what patterns are learned in pretraining.
+4. Hendricks et al. [301] probe the image-language Transformers by fine-grained image-sentence pairs, and find that verb understanding is harder than subject or object understanding.
+5. Chen et al. [106] examine the optimal combination of pretraining tasks via ablation study, to compare how different pretexts contribute to the Transformers.",1. How do Transformers excel in multimodal learning according to recent studies?
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s42),(p42.0),"Question: What are the challenges and potentials in designing universal MML models for diverse tasks?
+
+1. Designing the universal MML models to excel across all the unimodal and multimodal down-stream tasks with different characteristics simultaneously [115], [299] is a non-trivial challenge.
+2. For instance, two-stream architectures [9], [263] are typically preferred over one-stream ones for cross-modal retrieval-like tasks in efficiency, since the representation of each modality can be pre-computed beforehand and reused repeatedly.
+3. That being said, how to design task-agnostic MML architectures is still an open challenge, in addition to other design choices such as pretext and objective loss functions.
+4. Furthermore, a clear gap remains between the state-of-the-art and this ultimate goal.
+5. In general, existing multimodal Transformer models [9], [199], [263] are superior only for specific MML tasks, as they are designed specifically for only a subset of specific tasks [137], [142], [212], [299]9, [299]1, [299]2, [299]3, [299]4.
+6. Encouragingly, several recent studies towards universal modality learning in terms of modality-agnostic network design [299]5 and more task-generic architecture design [299]6, [299]7, [299]8 have been introduced, and it is hoped this will spark further investigation.","1. What are the challenges in designing universal MML models for diverse tasks?
+2. What are the potentials in designing universal MML models for diverse tasks?"
+249642175,Multimodal Learning with Transformers: A Survey,"Computer Science, Medicine",(s42),(p42.1),"Question: What strategies and challenges exist in achieving fine-grained MML through latent semantic alignments?
+
+1. For more fine-grained MML, it is widely acknowledged that discovering the latent semantic alignments across modalities is critical.
+2. An intuitive strategy is to leverage semantic parts (e.g., objects) pre-extracted by an off-the-shelf detector for MML [103], [104], [105], [106], [112], [204], [310].
+3. This, however, is not only complex and error-prone, but computationally costly [207].
+4. Several remedies introduced recently include random sampling [113], learning concept dictionary [103]0, jointly learning a region detector [103]1, and representation aligning before mask prediction [103]2.
+5. Given the scale of MML training data, exploring this direction needs exhaustive computational costs, and it is supposed that industrial research teams with rich resources are more likely to afford.","1. What strategies exist in achieving fine-grained MML through latent semantic alignments?
+2. What challenges exist in achieving fine-grained MML through latent semantic alignments?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s2),(p2.0),"Question: What are the core components and their functions in transformer-based PLMs like BERT and RoBERTa?
+
+1. In general, the core components of transformer-based PLMs like BERT and RoBERTa are embedding and transformer encoder layers (refer Figure 4).
+2. The embedding layer takes input tokens and returns a vector for each.
+3. The embedding layer has three or more sub-layers each of which provides a vector of specific embedding type for each of the input tokens.
+4. The final input vector for each token is obtained by summing all the vectors of each embedding type.
+5. The transformer encoder layer enhances each input token vector by encoding global contextual information using the self-attention mechanism.
+6. By applying a sequence of such transformer encoder layers, the model can encode complex language information in the input token vectors.
+7. Usually, the embedding layer consists of three sublayers with each sub-layer representing a particular embedding type.
+8. In some models, there are more than three also.
+9. For example, embedding layer of BERT-EHR [27] contains code, position, segment, age and gender embeddings.
+10. A detailed description of various embedding types is presented in Section 3.4.
+11. The first sublayer converts input tokens to a sequence of vectors while the other two sub-layers provide auxiliary information like position and segmentation.
+12. The first sublayer can be char, sub-word, or code embedding based.
+13. For example, BioCharBERT [28] uses CharCNN [29] on the top of character embeddings, BERT uses WordPiece [30] embeddings while BEHRT [27], MedBERT [31] and BERT-EHR [32] models use code embeddings.
+14. Unlike BioCharBERT and BERT models, the input for BEHRT, MedBERT, BERT-EHR models is patient visits where each patient visit is expressed as a sequence of codes.","1. What are the core components in transformer-based PLMs like BERT and RoBERTa?
+2. What are the functions of these core components?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s10),(p10.1),"Question: What are the characteristics and categories of self-supervised learning in AI?
+
+1. Robotics is the first AI field to use self-supervised learning methods [34].
+2. Over the last five years, selfsupervised learning has become popular in other AI fields like natural language processing [13], [14], [26], computer vision [35], [36], and speech processing [37], [38].
+3. SSL is a new learning paradigm that draws inspiration from both supervised and unsupervised learning methods.
+4. SSL is similar to unsupervised learning as it does not depend on human-labeled instances.
+5. It is also similar to supervised learning as it learns using supervision.
+6. However, in SSL the supervision is provided by the pseudo labels which are generated automatically from the pretraining data.
+7. SSL involves pretraining the model over a large unlabelled corpus using one or more pretraining tasks.
+8. The pseudo labels are generated depending on the definitions of pre-training tasks.
+9. SSL methods fall into three categories namely Generative, Contrastive, and Generate-Contrastive [34].
+10. In Generative SSL, encoder maps input vector x to vector y, and decoder recovers x from y (e.g., masked language modeling).
+11. In Contrastive SSL, the encoder maps input vector x to vector y to measure similarity [13]0.
+12. In Generate-Contrastive SSL, fake samples are generated using encoder-decoder while the discriminator identifies the fake samples [13]1.","1. What are the characteristics of self-supervised learning in AI?
+2. What are the categories of self-supervised learning in AI?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s13),(p13.1),"Question: What is Continual Pretraining in biomedical NLP research and how is it implemented?
+
+1. Continual Pretraining (CPT) : It is the standard approach followed by the biomedical NLP research community to develop transformer-based BPLMs.
+2. It is also referred to as further pretraining.
+3. In this approach, the model is initialized with general PLM weights and then the model is adapted to in-domain by further pretraining on large volumes of in-domain text (refer Figure  7).
+4. For example, BioBERT is initialized with general BERT weights and then further pretrained on PubMed abstracts and PMC full-text articles [16].","1. What is Continual Pretraining in biomedical NLP research?
+2. How is it implemented?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s14),(p14.0),"Question: What is the main drawback of continual pretraining in natural language processing models?
+
+1. The main drawback in continual pretraining is the general domain vocabulary.
+2. For example, the WordPiece vocabulary in BERT is learned over English Wikipedia and Books Corpus [2].
+3. As a result, the vocabulary does not represent the biomedical domain and hence many of the biomedical words are split into several subwords which hinders the model learning during pretraining and fine-tuning.
+4. Moreover, the length of the input sequence also increases as many of the in-domain words are split into several subwords.
+5. DSPT over in-domain text allows the model to have the in-domain vocabulary (refer Figure 10).
+6. For example, PubMedBERT is trained from scratch using PubMed abstracts and PMC full-text articles [20].
+7. PubMed achieved state-of-the-art results in the BLURB benchmark.
+8. Similarly, RoBERTa-base-PM-M3-Voc is trained from scratch over PubMed and PMC and MIMIC-III clinical notes [43]. is based on the hypothesis that pretraining over taskrelated unlabelled text allows the model to learn both domain and task-specific knowledge [44] (refer Figure  11).
+9. In TAPT, task-related unlabelled sentences are gathered, and then the model is further pretrained.",1. What is the main drawback of continual pretraining in natural language processing models?
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s16),(p16.0),"Question: What are pretraining tasks in language models and their classifications?
+
+1. During pretraining, the language models learn language representations based on the supervision provided by one or more pretraining tasks.
+2. A pretraining task is a pseudo-supervised task whose labels are generated automatically.
+3. A pretraining task can be main or auxiliary.
+4. The main pretraining tasks allow the model to learn language representations while auxiliary pretraining tasks allow the model to gain knowledge from human-curated sources like Ontology [34], [45]- [47].","1. What are pretraining tasks in language models?
+2. What are their classifications?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s19),(p19.0),"Question: How do auxiliary pretraining tasks utilize human-curated sources like UMLS to improve in-domain models?
+
+1. Auxiliary pretraining tasks help to inject knowledge from human-curated sources like UMLS [54] into indomain models to further enhance them.
+2. For example, the triple classification pretraining task involves identifying whether two concepts are connected by the relation or not [45].
+3. This auxiliary task is used by Hao et al. [45] to inject UMLS relation knowledge into in-domain models.","1. How do auxiliary pretraining tasks utilize human-curated sources like UMLS?
+2. How do they improve in-domain models?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s21),(p21.0),"Question: What are the methods and benefits of Incremental Fine-Tuning (IFT) on datasets?
+
+1. IFT on large, related datasets allows the model to learn more domain or task-specific knowledge which improves the performance on small target datasets.
+2. IFT can be done in following four ways Same Task Different Domain -Here, the source and target datasets are from the same task but different domains.
+3. Model can be fine-tuned on general domain datasets before fine-tuning on small in-domain datasets [55]- [58].","1. What are the methods of Incremental Fine-Tuning (IFT) on datasets?
+2. What are the benefits of Incremental Fine-Tuning (IFT) on datasets?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s22),(p22.0),"Question: What are the benefits and limitations of multi-task fine-tuning in model training?
+
+1. Multi-task fine-tuning allows the model to be fine-tuned on multiple tasks simultaneously [67]-
+2. [69]. Here the embedding and transformer encoder layers are common for all the tasks and each task has a separate task-specific layer.
+3. Here the embedding and transformer encoder layers are common for all the tasks and each task has a separate task-specific layer.
+4. Multi-task fine-tuning allows the model to gain domain as well as task-specific reasoning knowledge from multiple tasks.
+5. At the same time, due to the increase in training set size, the model is less prone to over-fitting.
+6. Multi-task fine-tuning is more useful in low resource scenarios which are common in the biomedical domain [69].
+7. Moreover, having a single model for multitasks eliminates the need of deploying separate models for each task which saves computational resources, time, and deployment costs [70].
+8. Multi-task fine-tuning may not provide the best results all the time [70].
+9. In such cases, multi-task fine tuning can be applied iteratively to identify the best possible subset of tasks [71].
+10. For example, Mahanjan et al. [71] applied multi-task finetuning iteratively to choose the best subset of related datasets.
+11. Finally, the authors fine-tuned the model on best subset of related datasets and achieved the best results on the Clinical STS [72] dataset.","1. What are the benefits of multi-task fine-tuning in model training?
+2. What are the limitations of multi-task fine-tuning in model training?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s24),(p24.1),"Question: What are character embeddings, their advantages, and limitations in model pretraining?
+
+1. Character Embeddings -In character embeddings, the vocabulary consists of letters, punctuation symbols, special characters and numbers only.
+2. Each character is represented using an embedding.
+3. These embeddings are initialized randomly and learned during model pretraining.
+4. ELMo embedding model uses CharCNN to generate word representations from character embeddings [74].
+5. Inspired by ELMo, BioCharBERT also uses CharCNN on the top of character embeddings to generate word representations [28]. AlphaBERT [75] also uses character embeddings.
+6. Unlike CharacterBERT, AlphaBERT directly combines character embeddings with position embeddings and then applies a stack of transformer encoders.
+7. The main advantage with character embeddings is the small size of vocabulary as it includes only characters.
+8. The disadvantage is longer pretraining times [28].","1. What are character embeddings?
+2. What are the advantages of character embeddings in model pretraining?
+3. What are the limitations of character embeddings in model pretraining?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s24),(p24.2),"Question: What are subword embeddings and how are their vocabularies generated?
+
+1. Subword Embeddings-In subword embeddings, the vocabulary consists of characters and the most frequent subwords and words.
+2. The main principle driving the subword embedding vocabulary construction is that frequent words should be represented as a single word and rare words should be represented in terms of meaningful subwords.
+3. Subword embedding vocabularies are always moderate in size as they use sub-words to represent rare and misspelled words.
+4. Some of the popular algorithms to generate vocabulary for sub-word embeddings are Byte-Pair Encoding (BPE)","1. What are subword embeddings?
+2. How are their vocabularies generated?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s24),(p24.5),"Question: How does SentencePiece address BPE and WordPiece's space assumption issue in different languages?
+
+1. SentencePiece [79] -A common problem in BPE and WordPiece is that they assume that words in the input sentences are separated by space.
+2. However, this assumption is not applicable in all languages.
+3. To overcome this, SentencePiece treats space as a character and includes it in the base vocabulary.
+4. The final vocabulary is generated iteratively using BPE or Unigram.","1. How does SentencePiece address BPE and WordPiece's space assumption issue?
+2. In what ways does it improve handling different languages?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s25),(p25.0),"Question: What is the purpose and types of auxiliary embeddings in model training?
+
+1. Main embeddings represent the given input sequence in low dimensional space.
+2. The purpose of auxiliary embeddings is to provide additional information to the model so that the model can learn better.
+3. For each input token, a representation vector is obtained by summing the main and two or more auxiliary embeddings.
+4. The various auxiliary embeddings are Position Embeddings -Position embeddings enhance the final input representation of a token by providing its position information in the input sequence.
+5. As there is no convolution or recurrence layers which can learn the order of input tokens automatically, we need to explicitly provide the location of each token in the input sequence through position embeddings.","1. What is the purpose of auxiliary embeddings in model training?
+2. What are the types of auxiliary embeddings in model training?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s29),(p29.0),"Question: What is the RadCore dataset and its contribution to radiology report analysis?
+
+1. Following the success of EHR-based T-BPLMs, recently researchers focused on developing PLMs specifically for radiology reports.
+2. RadCore [90] dataset consists of around 2 million radiology reports.
+3. These reports were gathered from three major healthcare organizations: Mayo Clinic, MD Anderson Cancer Center, and Medical College of Wisconsin in 2007.","1. What is the RadCore dataset?
+2. What is its contribution to radiology report analysis?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s30),(p30.0),"Question: How have social media platform health discussions influenced health-related research and technology?
+
+1. In the last decade, social media has become the first choice for internet users to express their thoughts.
+2. Apart from views about general topics, various social media platforms like Twitter, Reddit, AskAPatient, WebMD are used to share health-related experiences in the form of tweets, reviews, questions, and answers [107], [108].
+3. Recent works have shown that health-related social media data is useful in many applications to provide better health-related services [109], [110].
+4. The performance of general T-PLMs on Wikipedia and Books Corpus is limited on health-related social media datasets [92].
+5. This is because social media text is highly informal with a lot of nonstandard abbreviations, irregular grammar, and typos.
+6. Researchers working at the intersection of social media and health, trained social media text-based T-BPLMs to handle social media texts.
+7. CT-BERT [92] is initialized from BERT-large and further pretrained on a corpus of 22.5M covid related tweets and this model showed up to 30% improvement compared to BERT-large, on five different classification datasets.
+8. BioRedditBERT [94] is initialized from BioBERT and further pretrained on healthrelated Reddit posts.
+9. The authors showed that BioRed-ditBERT outperforms in-domains models like BioBERT, BlueBERT, PubMedBERT, ClinicalBERT by up to 1.8% in normalizing health-related entity mentions.
+10. RuDR-BERT [108]0 is initialized from Multilingual BERT and pretrained on the raw part of the RuDReC corpus (1.4M reviews).
+11. The authors showed that RuDR-BERT outperforms multilingual BERT and Russian BERT on Russian sentence classification and clinical entity extraction datasets by large margins.
+12. EnRuDR-BERT [108]0 and EnDR-BERT [108]0 are obtained by further pretraining multilingual BERT on Russian and English health reviews and English health reviews respectively.","1. How have social media platform health discussions influenced health-related research?
+2. How have social media platform health discussions influenced technology?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s31),(p31.0),"Question: Why has biomedical text mining become increasingly important in recent research?
+
+1. In the last few decades, the amount of biomedical literature is growing at a rapid scale.
+2. As knowledge discovery from biomedical literature is useful in many applications, biomedical text mining is gaining popularity in the research community [16].
+3. However, biomedical text significantly differs from the general text with a lot of domain-specific words.
+4. As a result, the performance of general T-PLMs is limited in many of the tasks.
+5. So, biomedical researchers focused on developing in-domain T-PLMs to handle biomedical text.
+6. PubMed and PMC are the two popular sources of biomedical text.
+7. PubMed con-  tains only biomedical literature citations and abstracts only while PMC contains full-text biomedical articles.
+8. As of March 2020, PubMed includes 30M citations and abstracts while PMC contains 7.5M full-text articles.",1. Why has biomedical text mining become increasingly important in recent research?
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s31),(p31.1),"Question: How are biomedical pre-trained language models developed from general BERT models?
+
+1. As DSPT is expensive, most of the works developed in-domain T-PLMs by initializing from general BERT models and then further pretraining on biomedical text.
+2. BioBERT [16] is the first biomedical pre-trained language model which is obtained by further pretraining general BERT on biomedical literature.
+3. BioBERTpt-bio [97] is obtained by further pretraining BERT Multilingual (base) on Brazilian biomedical corpus -scientific papers from PubMed (0.8M-only literature titles) + Scielo (health -12.4M + biological-3.2M: both titles and abstracts).
+4. BioMedBERT [100] is obtained by further pretraining BERT-large on BREATHE 1.0 corpus.",1. How are biomedical pre-trained language models developed from general BERT models?
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s32),(p32.0),"Question: What challenges exist in collecting in-domain text for pretraining transformer-based PLMs?
+
+1. It is difficult to obtain a large amount of in-domain text in some cases.
+2. For example, MIMIC [87], [88] is the largest publicly available dataset of medical records.
+3. The MIMIC dataset is small compared to the general Wikipedia corpus or biomedical scientific literature (from PubMed + PMC).
+4. However, to pretrain a transformer-based PLM from scratch, we require large volumes of text.
+5. To overcome this, some of the models are pretrained on general + in-domain text [41], [104] or, in-domain + related domain text [18], [28], [43], [97].",1. What challenges exist in collecting in-domain text for pretraining transformer-based PLMs?
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s34),(p34.0),"Question: How have researchers expanded T-BPLMs to non-English languages following BioBERT's success?
+
+1. Following the success of BioBERT, ClinicalBERT, Pub-MedBERT in English biomedical tasks, researchers focused on developing T-BPLMs for other languages also by pretraining from scratch [41], [91], [111] or pretraining from Multilingual BERT [95], [97] or pretraining from monolingual BERT [48], [91], [112] models.
+2. For example, CHMBERT [112] is the first Chinese medical BERT model which is initialized from the general Chinese BERT model and further pretrained on a huge (185GB) corpus of Chinese medical text gathered from more than 100 hospitals.
+3. MC-BERT [48] is also initialized from general Chinese BERT and further pre-trained on hybrid corpora which includes general, biomedical, and medical texts.","1. How have researchers expanded T-BPLMs to non-English languages?
+2. How does the success of BioBERT relate to these expansions?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s36),(p36.0),"Question: How do CPT and DSPT/SPT adapt T-PLMs to in-domain tasks, and what are their limitations?
+
+1. CPT allows the general T-PLMs to adapt to in-domain by further pretraining on large volumes of the in-domain corpus.
+2. As these models contain vocabulary, which is learned over general text, they cannot represent indomain words in a meaningful way as many of the indomain words are split into a number of subwords.
+3. This kind of representation increases the overall length of the input as well as hinders the model learning.
+4. DSPT or SPT allows the model to have an in-domain vocabulary that is learned over in-domain text.
+5. However, both these approaches involve learning the model parameters from scratch which is highly expensive.","1. How do CPT and DSPT/SPT adapt T-PLMs to in-domain tasks?
+2. What are their limitations?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s36),(p36.1),"Question: What are the features and benefits of GreenBioBERT and exBERT in biomedical research?
+
+1. Recently there is raising interest in the biomedical research community to adapt general T-PLMs models to in-domain in a low cost way and the models contain in-domain vocabulary also [122], [123].
+2. These models are referred to as Green Models as they are developed in a low cost environment-friendly approach.
+3. GreenBioBERT [122] -extends general BERT to the biomedical domain by refining the embedding layer with domain-specific word vectors.
+4. The authors generated indomain vocabulary using Word2Vec and then aligned them with general WordPiece vectors.
+5. With the addition of domain-specific word vectors, the model acquires domain-specific knowledge.
+6. The authors showed that GreenBioBERT achieves competitive performance compared to BioBERT in entity extraction.
+7. This approach is completely inexpensive as it requires only CPU.
+8. exBERT [123] -extends general BERT to the biomedical domain by refining the model with two additions a) in-domain WordPiece vocabulary in addition to existing general domain WordPiece vocabulary b) extension module.
+9. The in-domain WordPiece vectors and extension module parameters are learned during pretraining on biomedical text.
+10. During pretraining, as the parameters of general BERT are kept fixed, this approach is quite inexpensive.","1. What are the features and benefits of GreenBioBERT?
+2. What are the features and benefits of exBERT in biomedical research?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s40),(p40.0),"Question: What is Natural Language Inference and how is it applied in NLP and biomedical domains?
+
+1. Natural Language Inference (NLI) is an important NLP task that requires sentence-level semantics.
+2. It involves identifying the relationship between a pair of sentences i.e., whether the second sentence entails or contradicts or neural with the first sentence.
+3. Training the model on NLI datasets helps the models to learn sentence-level semantics, which is useful in many tasks like paraphrase mining, information retrieval [136] in the general domain and medical concept normalization [137], [138], semantic relatedness [139], question answering [66] in the biomedical domain.
+4. NLI is framed as a three-way sentence pair classification problem.
+5. Here models like BERT learn the representation of given two sentences jointly and the three-way task-specific softmax classifier predicts the relationship between the given sentence pair.
+6. MedNLI [61] is the in-domain NLI dataset with around 14k instances generated from MIMIC-III [88] clinical notes.
+7. As MedNLI contains sentence pairs taken from EHRs, Kanakarajan et al. [140] further pretrained BioBERT [16] on MIMIC-III and then fine-tuned the model on MedNLI to achieve an accuracy of 83.45%.
+8. Cengiz et al. [136]0 applied an ensemble of two BioBERT models and achieved an accuracy of 84.7%.","1. What is Natural Language Inference?
+2. How is Natural Language Inference applied in NLP?
+3. How is it applied in biomedical domains?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s41),(p41.1),"Question: How have advancements in BERT models impacted entity extraction techniques and performance?
+
+1. Most of the existing work approaches entity extraction as sequence labeling or machine reading comprehension.
+2. In case of sequence labelling approach, BERT based models generate contextual representations for each token and then softmax layer [62], [149], [150], BiLSTM+Softmax [150], BiLSTM+CRF [62], [149]0- [153] or CRF [149]2, [62], [149]0 is applied.
+3. Recent works showed adding BiLSTM on the top of the BERT model does not show much difference in performance [149]0, [149]1.
+4. This is because transformer encoder layers in BERT based models do the same job of encoding contextual in token representations like BiLSTM.
+5. Some of the works experimented with general BERT for extracting clinical and biomedical entities.
+6. For example, Portelli et al. [149]2 showed that SpanBERT+CRF outperformed in-domain BERT models also in extracting clinical entities in social media text.
+7. Boudjellal et al. [149]3 developed ABioNER by further pretraining AraBERT [149]4 on general Arabic corpus + biomedical Arabic text and showed that ABioNER outperformed both multilingual BERT [149]5 and AraBERT on Arabic biomedical entity extraction.
+8. This shows that further pretraining general AraBERT on small in-domain text corpus improves the performance of the model.
+9. As in-domain datasets are comparatively small, some of the recent works [62], [149]9, [149]8 initially fine-tuned the models on similar datasets before fine-tuning on small target datasets.
+10. This intermediate fine-tuning allows the model to learn more task-specific knowledge which improves the performance of the model on small target datasets.
+11. For example, Gao et al. [149]9 proposed a novel approach entity extraction approach based on intermediate fine-tuning and semi-supervised learning.
+12. Here intermediate fine-tuning allows the model to learn more task-specific knowledge while semi-supervised learning allows to leverage task-related unlabelled data by assigning pseudo labels.","1. How have advancements in BERT models impacted entity extraction techniques?
+2. How have advancements in BERT models impacted entity extraction performance?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s42),(p42.0),"Question: What distinguishes Semantic Textual Similarity from Natural Language Inference in evaluating sentence semantics?
+
+1. Semantic Textual Similarity quantifies the degree of semantic similarity between two phrases or sentences.
+2. Unlike NLI which classifies the given sentence pair into one of three classes, semantic textual similarity returns a value that indicates the degree of similarity.
+3. Both NLI and STS require sentence-level semantics.
+4. STS is useful in tasks like concept relatedness [139], medical concept normalization [137], [138] , duplicate text detection [155], question answering [65], [156] and text summarization [157].
+5. Moreover, Reimers et al. [136] showed that training transformer-based PLMs on STS datasets allow the model to learn sentence-level semantics and hence better represent variable-length texts like phrases or sentences.
+6. Models like BERT learn the joint representation of given sentence pair and a task-specific sigmoid layer gives the similarity value.","1. What distinguishes Semantic Textual Similarity from Natural Language Inference?
+2. How do these distinctions impact the evaluation of sentence semantics?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s42),(p42.1),"Question: How have recent advancements improved clinical STS task performance?
+
+1. Recent works exploited general models for clinical STS [56], [57], [65], [159].
+2. For example, Yang et al. [56] achieved the best results on the 2019 N2C2 STS dataset using Roberta-large model.
+3. As clinical STS datasets are small in size, recent works initially fine-tuned the models on general STS datasets and then fine-tuned them on clinical datasets [56], [57], [65], [71].
+4. Xiong et al. [160] enhanced in-domain BERT-based text similarity using CNN-based character level representations and TransE [161] based entity representations.
+5. Mutinda et al. [155] achieved a Pearson correlation score of 0.8320 by finetuning Clinical BERT on a combined training set having instances from both general and clinical STS datasets.
+6. Mahajan et al. [71] proposed a novel approach based on ClinicalBERT fine-tuned using iterative multi-task learning and achieved the best results on the Clinical STS dataset.
+7. Iterative multi-task learning a) helps the model to learn task-specific knowledge from related datasets and b) choose the best-related datasets for intermediate multi-task fine-tuning.
+8. The main drawback in the above existing works is giving '[CLS]' vector as sentence pair representation to the sigmoid layer.
+9. This is because the '[CLS]' vector contains only partial information.",1. How have recent advancements improved clinical STS task performance?
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s43),(p43.0),"Question: What is the role of relation extraction in transforming unstructured text and its advancements?
+
+1. Relation extraction is a crucial task in information extraction which identifies the semantic relations between entities in text.
+2. Entity extraction followed by relation extraction helps to convert unstructured text into structured data.
+3. Extracting relations between entities is useful in many tasks like knowledge graph construction, text summarization, and question answering.
+4. Some of relation extraction datasets are I2B2 2012 [162], AIMED [163], ChemProt [164], DDI [165], I2B2 2010 [141] and EU-ADR [166].
+5. Wei et al. [167] achieved the best results on two datasets using MIMIC-BERT [40] +Softmax.
+6. Thillaisundaram and Togia [168] applied SciBERT +Softmax to extract relations from biomedical abstracts as part of AGAC track of BioNLP-OST 2019 shared tasks [169].
+7. Liu et al. [163]0 proposed SciBERT+Softmax for relation extraction in biomedical text.
+8. They showed SciBERT+Softmax outperforms BERT+Softmax on three biomedical relation extraction datasets.
+9. The main drawback in the above existing works is that they utilize only the partial knowledge from the last layer in the form of '[163]3' vector.
+10. Su et al. [163]2 added attention on the top of BioBERT to fully utilize the information in the last layer and achieved the best results on three biomedical extraction datasets.
+11. The authors generated the final representation by concatenating '[163]3' vector and weighted sum vector of final hidden state vectors.","1. What is the role of relation extraction in transforming unstructured text?
+2. What advancements have been made in relation extraction?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s44),(p44.1),"Question: How do modifications enhance BERT models for clinical text classification tasks?
+
+1. Shen et al. [173] applied various in-domain BERT for Alzheimer disease clinical notes classification and achieved the best results using PubMedBERT and BioBERT.
+2. They generated labels for the training instances using a rule-based NLP algorithm.
+3. Chen et al. [174] further pretrained the general BERT model on 1.5 drugrelated tweets and showed that further pretraining improves the performance of the model on ADR tweets classification.
+4. Recent works [175], [176] showed that adding attention on the top of the BERT model improves the performance of the model in clinical text classification.",1. How do modifications enhance BERT models for clinical text classification tasks?
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s45),(p45.0),"Question: What are key challenges and advancements in biomedical question answering systems development?
+
+1. Question Answering (QA) aims to extract answers for the given queries.
+2. QA helps to quickly find information in clinical notes or biomedical literature and thus saves a lot of time.
+3. The main challenge in developing automated QA systems for the clinical or biomedical domain is the small size of datasets.
+4. Developing large QA datasets in the clinical or biomedical domain is quite expensive and requires a lot of time also.
+5. Some of the popular in-domain QA datasets are emrQA [177], CliCR [178], PubMedQA [179] COVID-QA [180], MASH-QA [181] and Health-QA [182].
+6. Chakraborty et al. [177]4 showed BioMedBERT obtained by further pretraining BERT-Large on BREATHE 1.0 corpus outperformed BioBERT on biomedical question answering.
+7. The main reason for this is the diversity of text in BREATHE 1.0 corpus.
+8. Pergola et al. [52] introduced Biomedical Entity Masking (BEM) which allows the model to learn entity-centric knowledge during further pretraining.
+9. They showed that BEM improved the performance of both general and indomain models on two in-domain QA datasets.
+10. Recent works used intermediate fine-tuning on general QA [177]5, [177]4 or NLI [177]2 datasets or multi-tasking [177]6 to improve the performance of in-domain QA models.
+11. For example, Soni et al. [177]4 achieved the best results on a) CliCR by intermediate fine-tuning on SQuaD using BioBERT and b) emrQA by intermediate fine-tuning on SQuaD and CliCR using Clinical BERT.
+12. Yoon et al. [177]5 showed that intermediate fine-tuning on general domain Squad datasets improves the performance on biomedical question answering datasets.
+13. Akdemir et al. [177]6 proposed a novel multi-task model based on BioBERT for biomedical question answering.","1. What are key challenges in biomedical question answering systems development?
+2. What are key advancements in biomedical question answering systems development?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s46),(p46.0),"Question: Why is automatic biomedical text summarization important for researchers?
+
+1. In general, sources of biomedical information like clinical notes, scientific papers, radiology reports are length in nature.
+2. Researchers and domain experts need to go through a number of biomedical documents.
+3. As biomedical documents are length in nature, there is a need for automatic biomedical text summarization which reduces the effort and time for researchers and domain experts [185], [186].
+4. Text summarization falls into two broad categories namely extractive summarization which identifies the most relevant sentences in the document while abstractive summarization generates new text which represents the summary of the document [187].
+5. There are no standard datasets for biomedical text summarization.",1. Why is automatic biomedical text summarization important for researchers?
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s46),(p46.2),"Question: How do BioBERT, BioBERTSum, and AlphaBERT contribute to biomedical text summarization?
+
+1. In the case of small models, BioBERT outperformed others.
+2. Moradi et al. [189] proposed a novel approach based on word embeddings and graph ranking to summarize the biomedical text.
+3. They generated a graph with sentences as nodes and edges as relations whose strength is measured by cosine similarity between sentence vectors generated by averaging BioBERT and Glove embeddings and finally, graph ranking algorithms identify the important sentences.
+4. Du et al. [190] introduced a novel approach called BioBERTSum to summarize the biomedical text.
+5. BioBERTSum uses BioBERT to encode sentences, transformer decoder + sigmoid to calculate the scores for each sentence.
+6. The sentences with the highest score are considered as the summary.","1. How do BioBERT, BioBERTSum, and AlphaBERT contribute to biomedical text summarization?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s53),(p53.0),"Question: How can ontology knowledge injection enhance BioBERT and PubMedBERT models for better results?
+
+1. Models like BioBERT, PubMedBERT have achieved good results in many of the tasks.
+2. However, these models lack knowledge from human-curated knowledge sources.
+3. These models can be further enhanced by ontology knowledge injection.","1. How can ontology knowledge injection enhance BioBERT models for better results?
+2. How can ontology knowledge injection enhance PubMedBERT models for better results?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s54),(p54.1),"Question: What is multi-task fine-tuning and why is it beneficial in the biomedical domain?
+
+1. Multi-Task Fine-Tuning -Multi-task fine-tuning allows the model to be fine-tuned on multiple tasks simultaneously [67]-
+2. [69]. Here the embedding and transformer encoder layers are common for all the tasks and each task has a separate task-specific layer.
+3. Here the embedding and transformer encoder layers are common for all the tasks and each task has a separate task-specific layer.
+4. Multi-task fine-tuning allows the model to gain domain as well as task-specific reasoning knowledge from multiple tasks.","1. What is multi-task fine-tuning?
+2. Why is it beneficial in the biomedical domain?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s54),(p54.2),"Question: What are the top techniques and examples of data augmentation in machine learning?
+
+1. Data Augmentation -Data augmentation helps us to create new training instances from existing instances.
+2. These newly creating training instances are close to original training data and helpful in low resource scenarios.
+3. Back translation and EDA [195] are the top popular techniques for data augmentation.
+4. For example, Wang et al. [159] used back translation to augment the training instances to train the clinical text similarity model.","1. What are the top techniques of data augmentation in machine learning?
+2. What are examples of data augmentation in machine learning?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s55),(p55.0),"Question: How do transformed-based PLMs perform on noisy instances, and what are proposed solutions?
+
+1. Transformed based PLMs have achieved the best results in many of the tasks.
+2. However, the performance of these models on noisy test instances is limited [197]- [200].
+3. This is because the model is mostly trained on less noisy instances.
+4. As these models mostly never encounter noisy instances during fine-tuning, the performance is significantly reduced on noisy instances.
+5. Apart from this, the noisy words in the instances are split into several subtokens which affect the model learning.
+6. The robustness of models is crucial particularly insensitive domains like biomedical [199], [200].
+7. Two possible solutions are a) CharBERT [28] -replaced the WordPiece based embedding layer with CharCNN based embedding layer.
+8. Here word representation is generated from character embeddings using CharCNN.
+9. b) Adversarial Training [200]
+10. -Here, the training set is augmented with the noisy instances.","1. How do transformed-based PLMs perform on noisy instances?
+2. What are proposed solutions?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s56),(p56.0),"Question: How can T-PLMs adapt to in-domain text while effectively representing in-domain words?
+
+1. Continual pretraining allows the general T-PLMs to adapt to in-domain by further pretraining on large volumes of in-domain text.
+2. Though the models are adapted to in-domain, they still contain general vocabulary.
+3. As the vocabulary is learned over general text, it mostly includes subwords and words which are specific to the general domain.
+4. As a result, many of the in-domain words are not represented in a meaningful way.","1. How can T-PLMs adapt to in-domain text?
+2. How do they effectively represent in-domain words?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s58),(p58.0),"Question: What method did Devlin et al. suggest for sequence representation in classification tasks?
+
+1. For text classification or sentence pair classification tasks like NLI and STS, Devlin et al. [2] suggested to use the final hidden vector of the special token added at the beginning of the input sequence as the final input sequence representation.
+2. According to Devlin et al. [2], the final hidden vector of the special token aggregates the entire sequence information.
+3. The final hidden vector is given to a linear layer which projects into ndimensional vector space whether n represents the size of label space.
+4. Finally, a softmax is applied to convert it into a vector of probabilities.",1. What method did Devlin et al. suggest for sequence representation in classification tasks?
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s60),(p60.0),"Question: What challenges do deep learning models face in ensuring fair decisions across diverse groups?
+
+1. With the success of deep learning models in various tasks, deep learning-based systems are used to automate the decisions like department recommendation [112], disease prediction [31], [32] etc. However, these models are shown to exhibit bias i.e., the decisions taken by the models may favor a particular group of people compared to others.
+2. The main reason for unfair decisions of the models is the bias in the datasets on which the models are trained [124]- [126].
+3. Real-world datasets have a bias in many forms.
+4. It can be based on various attributes like gender, age, ethnicity, and marital status.
+5. These attributes are considered as protected or sensitive [201].
+6. For example, in the MIMIC-III dataset [88] a) heart disease is more common in males compared to females-an example of gender bias b) there are fewer clinical studies involving black patients compared to other groups -an example of ethnicity bias.
+7. It is necessary to identify and reduce any form of bias that allows the model to take fair decisions without favoring any group.
+8. There are few works that identified and addressed bias in transformer-based biomedical language models.
+9. Zhang et al. [127] using a simple word competition task showed that SciBERT [105] exhibits ethnicity bias.
+10. Moreover, the authors showed SciBERT model when further-pretrained on clinical notes exhibits performance differences for different protected attributes.
+11. They further showed that adversarial pretraining debiasing has little impact in reducing bias.
+12. Minot et al. [202] proposed an approach based on data augmentation to identify and reduce gender bias in patient notes.",1. What challenges do deep learning models face in ensuring fair decisions across diverse groups?
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s61),(p61.0),"Question: What are the risks and solutions related to data leakage in biomedical language models?
+
+1. Every patient visit is recorded in the clinical records.
+2. Apart from patient visits, clinical records contain the past and the present medical history of the patient.
+3. Such sensitive data should not be disclosed as it may harm the patients physically or mentally [203].
+4. Usually, the clinical records are shared for research purposes only after de-identifying the sensitive information.
+5. However, it is possible to recover sensitive patient information from the de-identified medical records.
+6. Recent works showed that there is data leakage from pre-trained models in the general domain i.e., it is possible to recover personal information present in the pretraining corpora [204], [205].
+7. Due to data leakage, the models pre-trained on proprietary corpora, cannot be released publicly.
+8. Recently, Nakamura et al. [203] proposed KART framework which can conduct various attacks to assess the leakage of sensitive information from pre-trained biomedical language models.","1. What are the risks related to data leakage in biomedical language models?
+2. What are the solutions to prevent data leakage in biomedical language models?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s62),(p62.0),"Question: What are the challenges and solutions in adapting PLMs for the biomedical domain?
+
+1. In the beginning, the standard approach to develop BPLMs is to start with general PLMs and then further pretrain them on large volumes of biomedical text [16].
+2. The main drawback of this approach is the lack of indomain vocabulary.
+3. Without domain-specific vocabulary, many of the in-domain are split into a number of subwords which hinders model learning during pretraining or fine-tuning.
+4. Moreover, continual pretraining is quite expensive as it involves pretraining on large volumes of unlabeled text.
+5. To overcome these drawbacks, there are low-cost domain adaptation approaches that extend the general domain vocabulary with in-domain vocabulary [122], [123].
+6. The extra in-domain vocabulary is generated using Word2vec and then aligned [122] or generated directly using WordPiece [123] over biomedical text.
+7. The main drawback in these low-cost domain adaptation approaches is an increase in the size of the model with the addition of in-domain vocabulary.","1. What are the challenges in adapting Pre-trained Language Models (PLMs) for the biomedical domain?
+2. What are the solutions in adapting Pre-trained Language Models (PLMs) for the biomedical domain?"
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s64),(p64.0),"Question: Why are benchmarks necessary for evaluating pre-trained language models in NLP tasks?
+
+1. In general, a benchmark is a tool to evaluate the performance of models across different NLP tasks.
+2. A benchmark is required because we expect the pre-trained language models to be general and robust i.e., the models perform well across tasks rather than on one or two specific tasks.
+3. A benchmark with one or more datasets for multiple NLP tasks helps to assess the general ability and robustness of models.
+4. In general domain, we have a number of benchmarks like GLUE [207] and Super-GLUE [208] (general language understanding), XGLUE [209] (cross lingual language understanding) and LinCE [210] (code switching).
+5. In biomedical domain there are three benchmarks namely BLUE [208]0, BLURB [20] and ChineseBLUE [48].
+6. BLUE introduced by Peng et al. [208]0 contains ten datasets for five biomedical NLP tasks, while BLURB contains thirteen datasets for six tasks and ChineseBLUE contains eight tasks with nine datasets.
+7. BLUE and ChineseBLUE include both EHR and scientific literature-based datasets, while BLURB includes only biomedical scientific literature-based datasets.
+8. The semantics of EHR and medical social media texts are different from biomedical scientific literature.",1. Why are benchmarks necessary for evaluating pre-trained language models in NLP tasks?
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s65),(p65.0),"Question: What do intrinsic probes reveal about PLMs during pretraining in NLP research?
+
+1. During pretraining, PLMs learn syntactic, semantic knowledge along with factual and common-sense knowledge available in the pretraining corpus [14].
+2. Intrinsic probes through light on the knowledge learned by PLMs during pretraining.
+3. In general NLP, researchers proposed several intrinsic probes like LAMA, Negated and Misprimed LAMA [211], XLAMA [212], X-FACTR [213], MickeyProbe [214] to understand the knowledge encoded in pretrained models.
+4. For example, LAMA [211] probes the factual and common-sense knowledge of English pretrained models, while X-FACTR [213] probes the factual knowledge of multi-lingual pretrained models.
+5. However, there is no such intrinsic probes in Biomedical domain to through light on the knowledge learned by BPLMs during pretraining.",1. What do intrinsic probes reveal about PLMs during pretraining in NLP research?
+233481730,AMMU : A Survey of Transformer-based Biomedical Pretrained Language Models,"Computer Science, Linguistics, Medicine",(s66),(p66.0),"Question: How do ConvBERT and DeBERTa improve efficiency in NLP pretraining compared to traditional models?
+
+1. Pretraining provides BPLMs with necessary background knowledge which can be transferred to downstream tasks.
+2. However, pretraining is computationally very expensive and also requires large volumes of pretraining data.
+3. So, there is need of novel model architecture which reduces the pretraining time as well as the amount of pretraining corpus.
+4. In general NLP, recently efficient models like ConvBERT [215] and DeBERTa [216] are proposed which reduces the pretraining time and amount of pretraining corpus required respectively.
+5. DeBERTa with two novel improvements (Disentangled attention mechanism and enhanced masked decoder) achieves better compared to RoBERTa. DeBERTa is pretrained on just 78GB of data while RoBERTa is pretrained on 160GB of data.
+6. ConvBERT with mixed attention block outperforms ELECTRA while using just 1/4 th of its pretraining cost.",1. How do ConvBERT and DeBERTa improve efficiency in NLP pretraining compared to traditional models?
