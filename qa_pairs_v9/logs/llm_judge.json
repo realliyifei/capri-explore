@@ -1,0 +1,860 @@
+{
+    "211532403": {
+        "(s1)": {
+            "(p1.1)": "What do studies reveal about the characteristics of BERT's embeddings?"
+        },
+        "(s2)": {
+            "(p2.0)": "What methods reveal the types of knowledge encoded in BERT's weights?"
+        },
+        "(s3)": {
+            "(p3.2)": "How does BERT's MLM demonstrate syntactic competence and limitations according to recent studies?"
+        },
+        "(s4)": {
+            "(p4.0)": "What does research reveal about BERT's understanding of semantic roles and phenomena?"
+        },
+        "(s5)": {
+            "(p5.0)": "How does BERT adapt for knowledge induction and what are its limitations?"
+        },
+        "(s7)": {
+            "(p7.9)": "How do attention heads in BERT models impact coreference and semantic relation tasks?"
+        },
+        "(s8)": {
+            "(p8.0)": "What does the first layer of BERT process and how does its understanding evolve by layer 4?",
+            "(p8.2)": "How do middle BERT layers' syntactic processing capabilities compare across different NLP tasks?",
+            "(p8.3)": "How do the final layers of BERT impact its task specificity and model performance?"
+        },
+        "(s10)": {
+            "(p10.9)": "How do external knowledge and pre-training impact BERT model performance and robustness?"
+        },
+        "(s11)": {
+            "(p11.0)": "What are the key findings from systematic studies on BERT architecture optimization?"
+        },
+        "(s12)": {
+            "(p12.0)": "How does fine-tuning affect BERT's attention to linguistic patterns?",
+            "(p12.5)": "How does initialization affect NLP model training and reported performance improvements?"
+        },
+        "(s13)": {
+            "(p13.1)": "How do pruning Transformer heads and layers affect BERT model performance?"
+        },
+        "(s15)": {
+            "(p15.0)": "What is Multilingual BERT and how does it perform across different tasks and languages?",
+            "(p15.3)": "How does mBERT understand syntactic properties across different languages?"
+        },
+        "(s16)": {
+            "(p16.1)": "What are the limitations of BERT's verbal reasoning abilities according to recent studies?"
+        }
+    },
+    "237353268": {
+        "(s1)": {
+            "(p1.2)": "How does Stock (2010) define a concept in linguistic terms?"
+        },
+        "(s3)": {
+            "(p3.0)": "What are the limitations of visualizing neuron activations to understand their roles?"
+        },
+        "(s4)": {
+            "(p4.1)": "How do concept search methods identify concepts learned by neurons?"
+        },
+        "(s5)": {
+            "(p5.0)": "How do corpus-based methods discover neurons linked to specific concepts?"
+        },
+        "(s6)": {
+            "(p6.0)": "What are probing-based methods and how do they function in neural network interpretation?"
+        },
+        "(s7)": {
+            "(p7.0)": "How does regularization affect neuron importance in concept learning models?",
+            "(p7.1)": "What are the limitations and solutions in probing classifiers for concept reflection?"
+        },
+        "(s8)": {
+            "(p8.1)": "What is the principle and application of ablation in neural network analysis?",
+            "(p8.3)": "What are attribution-based methods in neural networks and their significance?"
+        },
+        "(s9)": {
+            "(p9.1)": "What is Corpus Generation and its significance in neuron analysis?",
+            "(p9.3)": "What is Matrix Factorization and its application in analyzing vision models?",
+            "(p9.5)": "How do clustering methods analyze neuron groups in unsupervised learning?"
+        },
+        "(s15)": {
+            "(p15.0)": "How does visualization aid in evaluating neurons' focus on linguistic properties?"
+        },
+        "(s18)": {
+            "(p18.1)": "What do studies reveal about neurons learning linguistic and conceptual patterns in AI models?"
+        },
+        "(s20)": {
+            "(p20.2)": "How do neurons exhibit monosemous and polysemous behavior in language processing?",
+            "(p20.3)": "How do neurons capture syntactic and complex semantic concepts in language processing?"
+        },
+        "(s23)": {
+            "(p23.0)": "How do human language hierarchies relate to neuron distribution in language models?"
+        },
+        "(s24)": {
+            "(p24.0)": "How does dropout influence information distribution in neural networks?"
+        },
+        "(s25)": {
+            "(p25.0)": "How do neuron distributions vary across different neural network architectures?"
+        },
+        "(s26)": {
+            "(p26.0)": "What do neurons in Deep NLP models learn about linguistic knowledge and hierarchy?"
+        },
+        "(s28)": {
+            "(p28.0)": "How can identified neurons control a model's behavior regarding learned concepts?"
+        },
+        "(s31)": {
+            "(p31.0)": "How do concept-associated neurons explain AI model outputs?"
+        }
+    },
+    "258331833": {
+        "(s3)": {
+            "(p3.0)": "What motivates the unsupervised learning of natural language using Masked Language Models?"
+        },
+        "(s4)": {
+            "(p4.0)": "How do autoregressive language models improve few-shot and zero-shot performance?",
+            "(p4.1)": "What are examples and advancements of autoregressive language models?"
+        },
+        "(s7)": {
+            "(p7.0)": "How does pre-training data influence large language models' performance?"
+        },
+        "(s8)": {
+            "(p8.0)": "What are the best model deployment strategies based on annotated data availability?"
+        },
+        "(s9)": {
+            "(p9.0)": "What challenges do LLMs face when applied to downstream tasks due to distributional differences?"
+        },
+        "(s13)": {
+            "(p13.2)": "What makes the Perspective API effective in detecting online toxicity?",
+            "(p13.4)": "Why are LLMs not widely used in information retrieval tasks?",
+            "(p13.8)": "What are the challenges and future prospects in adapting language models to NLP tasks?",
+            "(p13.10)": "What are examples of tasks showcasing LLMs' generalization ability in NLP?"
+        },
+        "(s15)": {
+            "(p15.4)": "How do LLMs compare to commercial tools in machine translation performance?",
+            "(p15.6)": "What are the capabilities of LLMs in open-ended generations and code-related tasks?"
+        },
+        "(s18)": {
+            "(p18.3)": "What are closed-book question-answering tasks and how do LLMs perform on them?",
+            "(p18.4)": "What is the role of context in machine reading comprehension tasks?"
+        },
+        "(s19)": {
+            "(p19.0)": "How does scaling affect the performance and abilities of large language models (LLMs)?"
+        },
+        "(s22)": {
+            "(p22.0)": "What are emergent abilities in large language models (LLMs)?",
+            "(p22.2)": "What emergent abilities do large language models like GPT-3 and PaLM exhibit?"
+        },
+        "(s23)": {
+            "(p23.3)": "What are the key phenomena and their explanations in scaling large language models?"
+        },
+        "(s26)": {
+            "(p26.1)": "Why do LLMs underperform in regression tasks compared to discrete label prediction tasks?"
+        },
+        "(s27)": {
+            "(p27.3)": "How do LLMs contribute to NLG task quality assessment, particularly in summarization and translation?"
+        },
+        "(s29)": {
+            "(p29.2)": "How do instruction and human alignment tuning enhance LLMs' performance and user preference?"
+        },
+        "(s32)": {
+            "(p32.2)": "What are the computational and financial costs of training large AI models like T5 11B?",
+            "(p32.4)": "What is Parameter-Efficient Tuning and its significance in model optimization?"
+        },
+        "(s33)": {
+            "(p33.2)": "How does fine-tuning affect model robustness and calibration in specific scenarios?",
+            "(p33.3)": "How do fairness and bias issues in LLMs impact societal discrimination and model performance?",
+            "(p33.4)": "What are the challenges of shortcut learning in natural language understanding tasks?"
+        },
+        "(s34)": {
+            "(p34.3)": "What are the risks and necessary safeguards associated with harmful content generated by LLMs?",
+            "(p34.4)": "What are the privacy concerns associated with Large Language Models (LLMs)?"
+        }
+    },
+    "254408864": {
+        "(s7)": {
+            "(p7.0)": "How does decomposition simplify multi-hop MRC challenges?"
+        },
+        "(s10)": {
+            "(p10.1)": "What are the structures and main disadvantage of the Relation Extractor in MRC models?"
+        },
+        "(s11)": {
+            "(p11.0)": "What are the characteristics and applications of sequence models in MRC tasks?"
+        },
+        "(s15)": {
+            "(p15.3)": "How does the PathNet model identify and score potential paths for answering questions?"
+        },
+        "(s16)": {
+            "(p16.1)": "What is the Sentence-level Multi-hop Reasoning approach in document analysis?",
+            "(p16.2)": "What are the phases and methods in ChainEx's multi-hop reasoning model?"
+        },
+        "(s17)": {
+            "(p17.0)": "Why have graph-based techniques gained attention in multihop machine reading comprehension (MRC)?"
+        },
+        "(s19)": {
+            "(p19.0)": "How does Song et al.'s model improve multi-hop reading comprehension over previous methods?",
+            "(p19.1)": "How do GCN and GRN contribute to evidence aggregation in graph-based models?"
+        },
+        "(s22)": {
+            "(p22.0)": "What is the structure and purpose of the Heterogeneous Document-Entity graph?",
+            "(p22.2)": "How does the SAE system enhance interpretability and efficiency in multi-hop reasoning models?"
+        },
+        "(s24)": {
+            "(p24.1)": "How does graph structure impact multi-hop question answering effectiveness?",
+            "(p24.2)": "What are the AMS and S2G models' approaches to multi-hop question answering?"
+        },
+        "(s29)": {
+            "(p29.0)": "How are model performances evaluated on HotpotQA in the study?"
+        }
+    },
+    "237571793": {
+        "(s1)": {
+            "(p1.2)": "How does the tree-like architecture's design limit model expressiveness and what are the proposed solutions?",
+            "(p1.5)": "How do models control information flow in multi-task learning to reduce inter-task interference?",
+            "(p1.8)": "How does task routing contribute to feature fusion in neural networks?"
+        },
+        "(s2)": {
+            "(p2.0)": "How do parallel architecture models handle tasks at different feature abstraction levels in NLP?",
+            "(p2.1)": "How can auxiliary tasks enhance MTL performance in various applications?"
+        },
+        "(s4)": {
+            "(p4.1)": "What is the principle of hierarchical feature pipeline in multi-task models?",
+            "(p4.2)": "How is hierarchical feature pipeline utilized in various natural language processing tasks?",
+            "(p4.4)": "How does hierarchical signal pipeline enhance task performance in machine learning?"
+        },
+        "(s6)": {
+            "(p6.1)": "What are common practices in designing modular architectures for multi-task learning?"
+        },
+        "(s7)": {
+            "(p7.0)": "How do Generative Adversarial Networks (GANs) enhance generative tasks in computer vision and NLP?",
+            "(p7.1)": "How do generative adversarial architectures utilize unlabeled data to enhance model performance?"
+        },
+        "(s9)": {
+            "(p9.10)": "How does GradVac optimize multi-lingual model performance using gradient similarities?"
+        },
+        "(s11)": {
+            "(p11.0)": "What is task scheduling in MTL model training and how is it implemented?",
+            "(p11.5)": "What is the significance of sequential task learning in multi-task models?",
+            "(p11.6)": "What is the pre-train then fine-tune methodology in auxiliary MTL?"
+        },
+        "(s14)": {
+            "(p14.0)": "How is auxiliary multi-task learning applied in various classification and detection tasks?",
+            "(p14.2)": "How does MTL improve text generation tasks in NMT models and other applications?"
+        },
+        "(s15)": {
+            "(p15.0)": "How do joint MTL models differ from auxiliary MTL in optimizing task performance?",
+            "(p15.2)": "What are the applications and benefits of joint MTL in multi-domain and multi-formalism NLP tasks?"
+        },
+        "(s16)": {
+            "(p16.0)": "How does multi-task learning benefit multi-lingual machine learning models?",
+            "(p16.1)": "What are the goals and outcomes of multi-lingual MTL in language processing?",
+            "(p16.2)": "How can cross-lingual knowledge transfer be achieved through language representation learning?"
+        },
+        "(s17)": {
+            "(p17.0)": "What is multimodal learning in NLP and how does it enhance machine translation tasks?"
+        },
+        "(s18)": {
+            "(p18.0)": "What factors influence task selection for effective multi-task learning in NLP?",
+            "(p18.1)": "How does multi-task learning (MTL) performance indicate task relatedness and complementarity?"
+        },
+        "(s21)": {
+            "(p21.1)": "How can multi-label datasets be created from existing data?"
+        }
+    },
+    "231603122": {
+        "(s2)": {
+            "(p2.1)": "What is the focus and methodology of the literature review on persuasion and NLG?"
+        },
+        "(s5)": {
+            "(p5.1)": "What are the determinants of linguistic appropriacy in stylometry?"
+        },
+        "(s10)": {
+            "(p10.0)": "What tools and datasets are used for persuasion analysis in NLP studies?"
+        }
+    },
+    "249642175": {
+        "(s1)": {
+            "(p1.0)": "How does this survey compare MML and Transformers to existing literature?"
+        },
+        "(s3)": {
+            "(p3.0)": "Why is multimodal machine learning (MML) considered crucial in human societies?"
+        },
+        "(s4)": {
+            "(p4.2)": "What are the applications and advancements of Vision Transformer in computer vision and multimodal tasks?"
+        },
+        "(s10)": {
+            "(p10.0)": "How do position embeddings enhance Transformers' understanding of data structures?"
+        },
+        "(s18)": {
+            "(p18.0)": "How do users prepare multimodal inputs for Transformers?"
+        },
+        "(s21)": {
+            "(p21.12)": "How does VideoBERT encode global multimodal context in its architecture?"
+        },
+        "(s29)": {
+            "(p29.0)": "What are common pretext tasks in Transformer based multimodal pretraining?"
+        },
+        "(s30)": {
+            "(p30.0)": "What are the limitations of multimodal pretraining Transformer methods in generative tasks?",
+            "(p30.2)": "What strategies improve multimodal pretraining Transformers' performance, and what challenges do they present?"
+        },
+        "(s35)": {
+            "(p35.0)": "How do MML Transformers fuse information across different modalities?"
+        },
+        "(s36)": {
+            "(p36.1)": "How do contrastive learning models facilitate zero-shot transfer in multimodal tasks?"
+        },
+        "(s37)": {
+            "(p37.4)": "What are the challenges and solutions in transferring knowledge across different multimodal tasks?"
+        },
+        "(s41)": {
+            "(p41.0)": "How do Transformers excel in multimodal learning according to recent studies?"
+        },
+        "(s42)": {
+            "(p42.0)": "What are the challenges in designing universal MML models for diverse tasks?",
+            "(p42.1)": "What is critical for achieving fine-grained MML and what challenges does it face?"
+        }
+    },
+    "233481730": {
+        "(s2)": {
+            "(p2.0)": "What are the core components and their functions in transformer-based PLMs like BERT?"
+        },
+        "(s10)": {
+            "(p10.1)": "What is self-supervised learning and how is it applied across AI fields?"
+        },
+        "(s13)": {
+            "(p13.1)": "What is Continual Pretraining in biomedical NLP research?"
+        },
+        "(s14)": {
+            "(p14.0)": "What is the main drawback of continual pretraining in domain-specific language models?"
+        },
+        "(s16)": {
+            "(p16.0)": "What do language models learn from during pretraining and how are pretraining tasks classified?"
+        },
+        "(s19)": {
+            "(p19.0)": "How do auxiliary pretraining tasks enhance in-domain models with human-curated knowledge sources like UMLS?"
+        },
+        "(s21)": {
+            "(p21.0)": "How does IFT improve model performance on small datasets?"
+        },
+        "(s22)": {
+            "(p22.0)": "What are the benefits and limitations of multi-task fine-tuning in machine learning models?"
+        },
+        "(s24)": {
+            "(p24.1)": "What are the advantages and disadvantages of character embeddings in NLP models?",
+            "(p24.2)": "What are the principles and popular algorithms of subword embeddings?",
+            "(p24.5)": "How does SentencePiece address space assumption issues in BPE and WordPiece models?",
+            "(p24.7)": "What are code embeddings and how do they vary among models like BERT-EHR, MedBERT, and BEHRT?"
+        },
+        "(s25)": {
+            "(p25.0)": "What is the purpose of auxiliary embeddings in input sequence representation?"
+        },
+        "(s29)": {
+            "(p29.0)": "What led to the development of PLMs for radiology reports?"
+        },
+        "(s30)": {
+            "(p30.0)": "How has social media influenced health-related research and data analysis?"
+        },
+        "(s31)": {
+            "(p31.0)": "Why is biomedical text mining becoming more popular in research?",
+            "(p31.1)": "How are biomedical pre-trained language models like BioBERT and BioMedBERT developed?"
+        },
+        "(s32)": {
+            "(p32.0)": "What challenges exist in pretraining transformer-based PLMs with in-domain text?"
+        },
+        "(s34)": {
+            "(p34.0)": "What are the methods and examples of developing non-English biomedical BERT models?"
+        },
+        "(s36)": {
+            "(p36.0)": "How does CPT adapt general T-PLMs for in-domain use and its limitations?",
+            "(p36.1)": "What are Green Models and how do they adapt T-PLMs for the biomedical domain?"
+        },
+        "(s37)": {
+            "(p37.0)": "What causes T-PLMs to make biased decisions, and how can this be mitigated?"
+        },
+        "(s40)": {
+            "(p40.0)": "What is Natural Language Inference and its significance in NLP tasks?"
+        },
+        "(s41)": {
+            "(p41.1)": "What are the approaches and advancements in entity extraction techniques?"
+        },
+        "(s42)": {
+            "(p42.0)": "What is Semantic Textual Similarity and its applications in natural language processing?",
+            "(p42.1)": "How have recent studies improved clinical STS model performance?"
+        },
+        "(s43)": {
+            "(p43.0)": "What is relation extraction and its significance in information extraction?"
+        },
+        "(s44)": {
+            "(p44.1)": "How do modifications to BERT models enhance clinical text classification performance?"
+        },
+        "(s45)": {
+            "(p45.0)": "What are the challenges and advancements in biomedical question answering systems?"
+        },
+        "(s46)": {
+            "(p46.0)": "Why is automatic biomedical text summarization necessary?",
+            "(p46.2)": "What novel approaches have been proposed for biomedical text summarization?"
+        },
+        "(s52)": {
+            "(p52.2)": "What are low-cost domain adaptation methods for BERT models in the biomedical domain?"
+        },
+        "(s53)": {
+            "(p53.0)": "How can ontology knowledge injection improve BioBERT and PubMedBERT models?"
+        },
+        "(s54)": {
+            "(p54.1)": "What is multi-task fine-tuning and its benefits in machine learning?",
+            "(p54.2)": "What are popular techniques for data augmentation in low resource scenarios?"
+        },
+        "(s55)": {
+            "(p55.0)": "How do transformed based PLMs perform on noisy instances and what are the solutions?"
+        },
+        "(s56)": {
+            "(p56.0)": "How can T-PLMs adapt to in-domain text while addressing vocabulary limitations?"
+        },
+        "(s58)": {
+            "(p58.0)": "How do Devlin et al. recommend representing sequences in NLI and STS tasks?"
+        },
+        "(s60)": {
+            "(p60.0)": "How do biases in datasets affect deep learning model decisions in healthcare?"
+        },
+        "(s61)": {
+            "(p61.0)": "What are the concerns and solutions regarding data leakage in biomedical language models?"
+        },
+        "(s62)": {
+            "(p62.0)": "What are the challenges and solutions in developing biomedical pre-trained language models?"
+        },
+        "(s64)": {
+            "(p64.0)": "What is the purpose of benchmarks in evaluating NLP model performance?"
+        },
+        "(s65)": {
+            "(p65.0)": "What do intrinsic probes reveal about PLMs' knowledge during pretraining?"
+        },
+        "(s66)": {
+            "(p66.0)": "What are the benefits and challenges of pretraining in NLP, and how do ConvBERT and DeBERTa address them?"
+        }
+    },
+    "211532403": {
+        "(s1)": {
+            "(p1.1)": "What do studies reveal about the characteristics of BERT's embeddings?"
+        },
+        "(s3)": {
+            "(p3.2)": "How does BERT's MLM demonstrate syntactic competence and limitations according to recent studies?"
+        },
+        "(s4)": {
+            "(p4.0)": "What does research reveal about BERT's understanding of semantic roles?"
+        },
+        "(s5)": {
+            "(p5.0)": "How does BERT adapt for knowledge induction and what are its limitations?"
+        },
+        "(s7)": {
+            "(p7.9)": "How do attention heads in BERT models impact coreference and semantic relation tasks?"
+        },
+        "(s8)": {
+            "(p8.2)": "How do BERT's middle layers impact syntactic information processing according to recent studies?",
+            "(p8.3)": "How do the final layers of BERT specifically impact its task performance and knowledge representation?"
+        },
+        "(s10)": {
+            "(p10.9)": "How do E-BERT and ERNIE integrate external knowledge into BERT, and what are the benefits of pre-training?"
+        },
+        "(s11)": {
+            "(p11.0)": "What are the key findings from systematic studies on optimizing BERT architecture?"
+        },
+        "(s12)": {
+            "(p12.0)": "How does fine-tuning affect BERT's self-attention patterns?",
+            "(p12.5)": "How does initialization affect NLP model training and reported performance improvements?"
+        },
+        "(s13)": {
+            "(p13.1)": "How do pruning Transformer heads affect model performance and efficiency?"
+        },
+        "(s15)": {
+            "(p15.0)": "What is Multilingual BERT and how does it perform across different tasks and languages?",
+            "(p15.3)": "How does mBERT's MLM understand syntactic properties across languages?"
+        },
+        "(s16)": {
+            "(p16.1)": "What are the limitations of BERT's verbal reasoning abilities according to recent studies?"
+        }
+    },
+    "237353268": {
+        "(s1)": {
+            "(p1.2)": "What is a concept in linguistic terms?"
+        },
+        "(s3)": {
+            "(p3.0)": "What are the limitations of visualizing neuron activations to understand their roles?"
+        },
+        "(s4)": {
+            "(p4.1)": "What is concept search in the context of neural network analysis?"
+        },
+        "(s5)": {
+            "(p5.0)": "How do corpus-based methods discover neurons linked to specific concepts?"
+        },
+        "(s6)": {
+            "(p6.0)": "What are probing-based methods and how do they function in neural network interpretation?"
+        },
+        "(s7)": {
+            "(p7.0)": "How does regularization affect neuron importance in concept learning models?",
+            "(p7.1)": "What are the limitations and proposed solutions in probing classifiers for concept reflection?"
+        },
+        "(s8)": {
+            "(p8.1)": "What is ablation and how does it identify salient neurons in neural networks?",
+            "(p8.3)": "What are attribution-based methods and their significance in identifying causal neurons?"
+        },
+        "(s9)": {
+            "(p9.1)": "What is Corpus Generation and its significance in neuron analysis?",
+            "(p9.3)": "What is Matrix Factorization and its application in analyzing vision models?",
+            "(p9.5)": "How do clustering methods analyze neuron groups in unsupervised learning?"
+        },
+        "(s15)": {
+            "(p15.0)": "How is visualization used to evaluate neurons in linguistic studies?"
+        },
+        "(s18)": {
+            "(p18.1)": "What do studies reveal about neurons learning linguistic and conceptual patterns?"
+        },
+        "(s20)": {
+            "(p20.2)": "How do neurons exhibit monosemous and polysemous behavior in language processing?",
+            "(p20.3)": "How do neurons capture syntactic and complex semantic concepts in language processing?"
+        },
+        "(s23)": {
+            "(p23.0)": "How do human language hierarchies relate to neuron distribution in language models?"
+        },
+        "(s24)": {
+            "(p24.0)": "How does dropout influence information distribution in neural networks?"
+        },
+        "(s25)": {
+            "(p25.0)": "How do neuron distributions vary across different neural network architectures?"
+        },
+        "(s26)": {
+            "(p26.0)": "What do neurons in Deep NLP models learn about linguistic knowledge and hierarchy?"
+        },
+        "(s28)": {
+            "(p28.0)": "How can identified neurons control a model's behavior regarding learned concepts?"
+        },
+        "(s31)": {
+            "(p31.0)": "How do neurons associated with concepts explain AI model predictions?"
+        }
+    },
+    "258331833": {
+        "(s3)": {
+            "(p3.0)": "What motivates the use of Masked Language Models in natural language processing?"
+        },
+        "(s4)": {
+            "(p4.0)": "How do autoregressive language models improve few-shot and zero-shot performance?",
+            "(p4.1)": "What are examples and advancements of autoregressive language models?"
+        },
+        "(s7)": {
+            "(p7.0)": "How does pre-training data affect large language model performance?"
+        },
+        "(s8)": {
+            "(p8.0)": "What are the best model deployment strategies based on annotated data availability?"
+        },
+        "(s9)": {
+            "(p9.0)": "What challenges do LLMs face when applied to downstream tasks due to distributional differences?"
+        },
+        "(s13)": {
+            "(p13.2)": "Why is the Perspective API considered effective in detecting online toxicity?",
+            "(p13.4)": "Why are LLMs not widely used in information retrieval tasks?",
+            "(p13.8)": "What are the challenges and future prospects in adapting language models for NLP tasks?",
+            "(p13.10)": "What are examples of tasks showcasing LLMs' generalization ability in NLP?"
+        },
+        "(s15)": {
+            "(p15.4)": "How do LLMs compare to commercial tools in machine translation performance?",
+            "(p15.6)": "What are the capabilities of LLMs in open-ended generations and code-related tasks?"
+        },
+        "(s18)": {
+            "(p18.3)": "What are closed-book question-answering tasks and how do LLMs perform on them?",
+            "(p18.4)": "What is the role of context in machine reading comprehension tasks?"
+        },
+        "(s19)": {
+            "(p19.0)": "How does scaling affect the performance and abilities of large language models (LLMs)?"
+        },
+        "(s22)": {
+            "(p22.0)": "What are emergent abilities in large language models (LLMs)?",
+            "(p22.2)": "What emergent abilities do large language models like GPT-3 and PaLM exhibit?"
+        },
+        "(s23)": {
+            "(p23.3)": "What are the key phenomena and their explanations in scaling large language models?"
+        },
+        "(s26)": {
+            "(p26.1)": "Why do LLMs underperform in regression tasks compared to discrete label predictions?"
+        },
+        "(s27)": {
+            "(p27.3)": "How do LLMs perform in NLG task quality assessment compared to traditional metrics?"
+        },
+        "(s29)": {
+            "(p29.2)": "How do instruction and human alignment tuning enhance LLMs' performance and user preference?"
+        },
+        "(s32)": {
+            "(p32.2)": "What are the computational and financial costs of training large AI models like T5 11B?",
+            "(p32.4)": "What is Parameter-Efficient Tuning and its significance in model optimization?"
+        },
+        "(s33)": {
+            "(p33.2)": "How does fine-tuning affect model robustness and calibration in specific scenarios?",
+            "(p33.3)": "How do LLMs exhibit and potentially perpetuate societal biases and discrimination?",
+            "(p33.4)": "What are the challenges of shortcut learning in natural language understanding tasks?"
+        },
+        "(s34)": {
+            "(p34.3)": "What are the risks and necessary safeguards associated with harmful content generated by LLMs?",
+            "(p34.4)": "What are the privacy concerns associated with Large Language Models (LLMs)?"
+        }
+    },
+    "254408864": {
+        "(s7)": {
+            "(p7.0)": "How does decomposition simplify multi-hop MRC challenges?"
+        },
+        "(s10)": {
+            "(p10.1)": "What are the structures and main disadvantage of the Relation Extractor in MRC models?"
+        },
+        "(s11)": {
+            "(p11.0)": "What are the characteristics and applications of sequence models in MRC tasks?"
+        },
+        "(s15)": {
+            "(p15.3)": "How does the PathNet model identify and score potential paths for answering questions?"
+        },
+        "(s16)": {
+            "(p16.1)": "What is the Sentence-level Multi-hop Reasoning approach in document analysis?",
+            "(p16.2)": "What are the phases and methodology of ChainEx's sentence-based model for multi-hop reasoning?"
+        },
+        "(s17)": {
+            "(p17.0)": "Why have graph-based techniques gained attention in multihop MRC?"
+        },
+        "(s19)": {
+            "(p19.0)": "How does Song et al.'s model improve global context inference in multi-hop reading comprehension?",
+            "(p19.1)": "How do GCN and GRN contribute to evidence aggregation in graph-based models?"
+        },
+        "(s22)": {
+            "(p22.0)": "What is the structure and purpose of the Heterogeneous Document-Entity graph?",
+            "(p22.2)": "What is the Select, Answer, and Explain (SAE) system and how does it work?"
+        },
+        "(s23)": {
+            "(p23.1)": "What is the IP-LQR method and its impact on multi-hop MRC systems?"
+        },
+        "(s24)": {
+            "(p24.1)": "How does graph structure impact multi-hop question answering effectiveness?",
+            "(p24.2)": "What are the AMS and S2G models' approaches to multi-hop question answering?"
+        },
+        "(s29)": {
+            "(p29.0)": "How are model performances evaluated on HotpotQA according to the study?"
+        }
+    },
+    "237571793": {
+        "(s1)": {
+            "(p1.2)": "How can the expressive power of a tree-like architecture model be enhanced for specific tasks?",
+            "(p1.5)": "How do models control information flow in multi-task learning to reduce inter-task interference?",
+            "(p1.8)": "How does task routing contribute to feature fusion in models like MCapsNet?"
+        },
+        "(s2)": {
+            "(p2.0)": "How do parallel architecture models handle tasks at different abstraction levels in NLP?",
+            "(p2.1)": "How can auxiliary tasks at different levels enhance MTL performance in various applications?"
+        },
+        "(s4)": {
+            "(p4.1)": "What is the principle of hierarchical feature pipeline in multi-task models?",
+            "(p4.2)": "How is hierarchical feature pipeline utilized in various natural language processing tasks?"
+        },
+        "(s6)": {
+            "(p6.1)": "What are common practices in designing modular architectures for multi-task learning?"
+        },
+        "(s7)": {
+            "(p7.0)": "How do Generative Adversarial Networks (GANs) enhance generative tasks and multitask learning in NLP?",
+            "(p7.1)": "How do generative adversarial architectures utilize unlabeled data to enhance model performance?"
+        },
+        "(s9)": {
+            "(p9.10)": "How does GradVac improve multi-lingual model performance through gradient manipulation?"
+        },
+        "(s11)": {
+            "(p11.0)": "What is task scheduling in MTL model training and how is it implemented?",
+            "(p11.5)": "What is the significance of sequential task learning in multi-task models?",
+            "(p11.6)": "What is the pre-train then fine-tune methodology in auxiliary MTL?"
+        },
+        "(s14)": {
+            "(p14.0)": "How is auxiliary multi-task learning applied in various classification and detection tasks?",
+            "(p14.2)": "How does Multi-Task Learning (MTL) enhance text generation quality in NMT models?"
+        },
+        "(s15)": {
+            "(p15.0)": "How do joint MTL models differ from auxiliary MTL in optimizing task performance?",
+            "(p15.2)": "What is joint MTL and its applications in multi-domain and multi-formalism NLP tasks?"
+        },
+        "(s16)": {
+            "(p16.0)": "How does multi-task learning benefit multi-lingual machine learning models?",
+            "(p16.1)": "How does multi-lingual MTL facilitate knowledge transfer and improve language processing tasks?",
+            "(p16.2)": "How can cross-lingual knowledge transfer be achieved through language representations?"
+        },
+        "(s17)": {
+            "(p17.0)": "What is multimodal learning in NLP and its significance?"
+        },
+        "(s18)": {
+            "(p18.0)": "What factors influence task selection for effective multi-task learning in NLP?",
+            "(p18.1)": "How does multi-task learning (MTL) performance reveal task relatedness and complementarity?"
+        },
+        "(s21)": {
+            "(p21.1)": "How can multi-label datasets be created from existing data?",
+            "(p21.2)": "How can extra annotations be automatically generated for self-supervised multi-label datasets?"
+        }
+    },
+    "231603122": {
+        "(s2)": {
+            "(p2.1)": "What is the focus and methodology of the literature review on persuasion and NLG?"
+        },
+        "(s5)": {
+            "(p5.1)": "What are the determinants of linguistic appropriacy in persuasive NLG AI?"
+        },
+        "(s10)": {
+            "(p10.0)": "What tools and datasets are used for persuasion analysis in NLP studies?"
+        }
+    },
+    "249642175": {
+        "(s1)": {
+            "(p1.0)": "What distinguishes this survey on multimodal learning and Transformers from others?"
+        },
+        "(s3)": {
+            "(p3.0)": "Why is multimodal machine learning (MML) considered crucial in understanding human societies?"
+        },
+        "(s4)": {
+            "(p4.2)": "What are the applications and advancements of Vision Transformer in computer vision and multimodal tasks?"
+        },
+        "(s10)": {
+            "(p10.0)": "How do position embeddings enhance Transformers' understanding of data structures?"
+        },
+        "(s18)": {
+            "(p18.0)": "How do users prepare multimodal inputs for Transformers?",
+            "(p18.1)": "How are different modalities viewed as graphs in geometric topology?"
+        },
+        "(s21)": {
+            "(p21.12)": "How does VideoBERT encode global multimodal context in its architecture?"
+        },
+        "(s29)": {
+            "(p29.0)": "What are common pretext tasks in Transformer based multimodal pretraining?"
+        },
+        "(s30)": {
+            "(p30.0)": "What are the limitations of multimodal pretraining Transformer methods in generative tasks?",
+            "(p30.2)": "What strategies improve multimodal pretraining Transformers' performance, and what challenges do they present?"
+        },
+        "(s35)": {
+            "(p35.0)": "How do MML Transformers fuse information across different modalities?"
+        },
+        "(s36)": {
+            "(p36.1)": "How do contrastive learning models facilitate zero-shot transfer in multimodal learning tasks?"
+        },
+        "(s37)": {
+            "(p37.4)": "What are the challenges and solutions in transferring knowledge across different multimodal tasks?"
+        },
+        "(s41)": {
+            "(p41.0)": "How do Transformers excel in multimodal learning according to recent studies?"
+        },
+        "(s42)": {
+            "(p42.0)": "What are the challenges in designing universal MML models for diverse tasks?",
+            "(p42.1)": "What is critical for achieving fine-grained MML and what challenges does it face?"
+        }
+    },
+    "233481730": {
+        "(s2)": {
+            "(p2.0)": "What are the core components and their functions in transformer-based PLMs like BERT?"
+        },
+        "(s10)": {
+            "(p10.1)": "What is self-supervised learning and how is it applied across AI fields?"
+        },
+        "(s13)": {
+            "(p13.1)": "What is Continual Pretraining in biomedical NLP research?"
+        },
+        "(s14)": {
+            "(p14.0)": "What is the main drawback of continual pretraining in domain-specific language models?"
+        },
+        "(s16)": {
+            "(p16.0)": "What do language models learn during pretraining and how are pretraining tasks classified?"
+        },
+        "(s19)": {
+            "(p19.0)": "How do auxiliary pretraining tasks enhance in-domain models with human-curated knowledge sources like UMLS?"
+        },
+        "(s21)": {
+            "(p21.0)": "How does IFT improve model performance on small target datasets?"
+        },
+        "(s22)": {
+            "(p22.0)": "What are the benefits and limitations of multi-task fine-tuning in machine learning models?"
+        },
+        "(s24)": {
+            "(p24.1)": "What are the advantages and disadvantages of using character embeddings in models?",
+            "(p24.2)": "What are the principles and popular algorithms of subword embeddings?",
+            "(p24.5)": "How does SentencePiece address space assumption issues in BPE and WordPiece for language models?",
+            "(p24.7)": "What are code embeddings and how do they vary among models like BERT-EHR, MedBERT, and BEHRT?"
+        },
+        "(s25)": {
+            "(p25.0)": "What is the purpose of auxiliary embeddings in enhancing model learning?"
+        },
+        "(s29)": {
+            "(p29.0)": "What led to the development of radiology-specific PLMs?"
+        },
+        "(s30)": {
+            "(p30.0)": "How has social media influenced health-related research and services in the last decade?"
+        },
+        "(s31)": {
+            "(p31.0)": "Why is biomedical text mining becoming more popular in research?",
+            "(p31.1)": "How are biomedical pre-trained language models like BioBERT developed from general BERT?"
+        },
+        "(s32)": {
+            "(p32.0)": "What challenges exist in pretraining transformer-based PLMs with in-domain text?"
+        },
+        "(s34)": {
+            "(p34.0)": "How are language-specific T-BPLMs developed following the success of English biomedical BERT models?"
+        },
+        "(s36)": {
+            "(p36.0)": "How do CPT and DSPT/SPT adapt T-PLMs to in-domain tasks and their limitations?",
+            "(p36.1)": "What are Green Models and how do they adapt T-PLMs for the biomedical domain?"
+        },
+        "(s37)": {
+            "(p37.0)": "How do T-PLMs exhibit and mitigate bias in decision-making?"
+        },
+        "(s40)": {
+            "(p40.0)": "What is Natural Language Inference and its significance in NLP?"
+        },
+        "(s41)": {
+            "(p41.1)": "What are the approaches and advancements in entity extraction techniques?"
+        },
+        "(s42)": {
+            "(p42.0)": "What is Semantic Textual Similarity and its applications in natural language processing?",
+            "(p42.1)": "How have recent studies improved clinical STS model performance?"
+        },
+        "(s43)": {
+            "(p43.0)": "What is relation extraction and its significance in information extraction?"
+        },
+        "(s44)": {
+            "(p44.1)": "How does incorporating attention in BERT models enhance clinical text classification performance?"
+        },
+        "(s45)": {
+            "(p45.0)": "What are the challenges and advancements in biomedical question answering systems?"
+        },
+        "(s46)": {
+            "(p46.0)": "Why is automatic biomedical text summarization important for researchers?",
+            "(p46.2)": "What novel approaches have been proposed for summarizing biomedical texts?"
+        },
+        "(s52)": {
+            "(p52.2)": "What are low-cost domain adaptation methods for BERT models in the biomedical field?"
+        },
+        "(s53)": {
+            "(p53.0)": "How can ontology knowledge injection improve BioBERT and PubMedBERT models?"
+        },
+        "(s54)": {
+            "(p54.1)": "What is multi-task fine-tuning and its benefits in machine learning?",
+            "(p54.2)": "What are popular techniques for data augmentation in low resource scenarios?"
+        },
+        "(s55)": {
+            "(p55.0)": "How do transformed-based PLMs perform on noisy instances and what are the solutions?"
+        },
+        "(s56)": {
+            "(p56.0)": "How can T-PLMs adapt to in-domain text while addressing vocabulary limitations?"
+        },
+        "(s58)": {
+            "(p58.0)": "How is the final input sequence representation determined in text classification according to Devlin et al.?"
+        },
+        "(s60)": {
+            "(p60.0)": "What causes unfair decisions in deep learning-based systems and how can bias be addressed?"
+        },
+        "(s61)": {
+            "(p61.0)": "What are the concerns and solutions regarding data leakage in biomedical language models?"
+        },
+        "(s62)": {
+            "(p62.0)": "What are the challenges and solutions in developing biomedical pre-trained language models (BPLMs)?"
+        },
+        "(s64)": {
+            "(p64.0)": "What is the purpose of benchmarks in evaluating NLP model performance across tasks?"
+        },
+        "(s65)": {
+            "(p65.0)": "What do intrinsic probes reveal about PLMs' knowledge during pretraining?"
+        },
+        "(s66)": {
+            "(p66.0)": "What advancements are needed in biomedical NLP model pretraining?"
+        }
+    }
+}

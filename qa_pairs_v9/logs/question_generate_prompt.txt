@@ -1,0 +1,7 @@
+You are building a scientific question-answering dataset. Now you are given an answer below.
+Construct its question that would be answered by the information that summarizes as much of the contents as possible. 
+The question should focus on only one specific topic.
+Make the question no longer than 15 words. Only return the question itself.
+
+Answer: [CONTENTS]
+Question: 
