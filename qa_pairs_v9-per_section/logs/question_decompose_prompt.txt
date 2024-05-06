@@ -1,0 +1,24 @@
+Decompose the below question into subquestions by numbered lists in new lines. 
+If it cannot be decomposed further, reply with the original question by numbered lists in a new line.
+
+What advancements did Transformers bring to NLP since 2017, and how does BERT, a Transformer-based model, contribute to understanding and improving natural language processing tasks?
+1. What advancements did Transformers bring to NLP? 
+2. How does BERT, a Transformer-based model, contribute to understanding and improving natural language processing tasks?
+
+What does research indicate about BERT's abilities in understanding syntactic and semantic phenomena, and what challenges does it face with numerical representations?
+1. What does research indicate about BERT's abilities in understanding syntactic and semantic phenomena?
+2. What challenges does BERT face with numerical representations?
+
+How does BERT extract world knowledge, and what are its limitations in reasoning and knowledge inference according to various studies?
+1. How does BERT extract world knowledge?
+2. What are BERT's limitations in reasoning and knowledge inference according to various studies?
+
+What is the seed lexicon?
+1. What is the seed lexicon?
+
+What are the types and purposes of auxiliary embeddings in enhancing input representation for models, particularly in understanding token positions, patient age, and gender?
+1. What are the types of auxiliary embeddings in enhancing input representation for models?
+2. What are the purposes of auxiliary embeddings in enhancing input representation for models?
+3. How do they related to understanding token positions, patient age, and gender?
+
+[CONTENTS]
