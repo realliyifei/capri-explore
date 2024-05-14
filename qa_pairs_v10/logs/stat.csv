@@ -1,0 +1,7 @@
+criteria,num_answer,percentage
+num_answer_at_beginning,778,1.0
+num_answer_after_section_title_criteria,706,0.9074550128534704
+num_answer_after_paragraph_length_criteria,323,0.41516709511568123
+num_answer_after_paragraph_completeness_criteria,239,0.30719794344473006
+num_answer_after_reference_number_criteria,213,0.2737789203084833
+num_answer_after_reference_validness_criteria,183,0.2352185089974293
