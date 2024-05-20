@@ -1,0 +1,13 @@
+Below are the contents extracted from a scientific paper and would be used as the answer of a scientific question answering dataset. 
+The contents should follow the below criterias:
+1. Not look like that were interleaved with some non-textual contents in the original paper.
+2. Not merely a list of references or subjects without any deeper context.
+3. Not contain too many mathematical equations, chemical formulas, or other non-textual contents.
+4. Not include an excessive amount of unclear symbols, probably due to errors in PDF extraction.
+5. Self-contained and can be understood without the need to read the entire paper; Not have abbreviations that are not explained in the contents.
+6. If there are multiple paragraphs, they should be coherent and related to each other.
+Do you think the paragraphs are good enough to be used as the answer of a question answering dataset? Reply a single word answer as YES, NO, or MAYBE. 
+If it is not good enough, please list the index of above criteria that it violates with a brief explanation, then list other issues that not listed in the above criteria, if any.
+
+Content: [CONTENTS]
+Judge:

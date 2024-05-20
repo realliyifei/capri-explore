@@ -1,0 +1,30 @@
+Below is a content in a list of itemized sentences. Please rate how synthesis the content is.
+Please evaluate how well it combines ideas into a comprehensive way or if it just lists different arguments.
+bad - Low Synthesis; it merely list different arguments or even no argument, and don't put any effort to compare and discuss them or deepen the discussion
+mediocre - Moderate Synthesis; it combines ideas in a way that is not very comprehensive or deep, but it is not just a list of arguments
+good - High Synthesis; it combines ideas in a comprehensive way, deepening the discussion or comparing different arguments
+Only return the rating, without anything else.
+
+Content: 1. Regarding syntactic competence of BERT's MLM, Goldberg (2019) showed that BERT takes subject-predicate agreement into account when performing the cloze task.
+2. This was the case even for sentences with distractor clauses between the subject and the verb, and meaningless sentences.
+3. A study of negative polarity items (NPIs) by Warstadt et al. (2019) showed that BERT is better able to detect the presence of NPIs (e.g. ""ever"") and the words that allow their use (e.g. ""whether"") than scope violations.
+4. The above evidence of syntactic knowledge is belied by the fact that BERT does not ""understand"" negation and is insensitive to malformed input.
+5. In particular, its predictions were not altered even with shuffled word order, truncated sentences, removed subjects and objects (Ettinger, 2019).
+6. This is in line with the recent findings on adversarial attacks, with models disturbed by nonsensical inputs (Wallace et al., 2019a), and suggests that BERT's encoding of syntactic structure does not indicate that it actually relies on that knowledge."
+Rating: good
+
+Content: 1. Clark et al. (2019) identify a BERT head that can be directly used as a classifier to perform coreference resolution on par with a rule-based system,.
+2. Kovaleva et al. (2019) showed that even when attention heads specialize in tracking semantic relations, they do not necessarily contribute to BERT's performance on relevant tasks.
+3. Kovaleva et al. (2019) identified two heads of base BERT, in which self-attention maps were closely aligned with annotations of core frame semantic relations (Baker et al., 1998).
+4. Although such relations should have been instrumental to tasks such as inference, a head ablation study showed that these heads were not essential for BERT's success on GLUE tasks.
+Rating: mediocre
+
+Content: 1. Neurons capture syntactic concepts and complex semantic concepts.
+2. Lakretz et al. (2019) discovered neurons that capture subject-verb agreement within LSTM gates.
+3. Karpathy et al. (2015) also found neurons that activate within quotes and brackets capturing long-range dependency.
+4. Na et al. (2019) aligned neurons with syntactic parses to show that neurons learn syntactic phrases.
+5. Seyffarth et al. (2021) analyzed complex semantic properties underlying a given sentence.
+Rating: bad
+
+Content: [CONTENTS]
+Rating: 
