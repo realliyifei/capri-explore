@@ -1,0 +1,28 @@
+Below is a content in a list of itemized sentences. Please rate the deep of the content.
+The content is considered deep if it is discussed in detail, with a lot of information and explanation. The content is considered shallow if it is discussed briefly, with little information and explanation.
+bad - Superficiail; the discussion didn't deepen any opinion or fact in the content
+good - Deep; the discussion deepened the opinion or fact in the content
+Only return the rating, without anything else. You should only rate as good if you are confident that the content is deep. If you are unsure, rate as bad.
+
+Content: 1. Pre-training data plays a pivotal role in the development of large language models.
+2. As the foundation of remarkable capabilities [5,47] of LLMs, the quality, quantitative, and diversity of pre-training data influence the performance of LLMs significantly [124].
+3. The commonly used pretraining data consists of a myriad of text sources, including books, articles, and websites.
+4. The data is carefully curated to ensure a comprehensive representation of human knowledge, linguistic nuances, and cultural perspectives.
+5. The importance of pretraining data lies in its capacity to inform the language model with a rich understanding of word knowledge, grammar, syntax, and semantics, as well as the ability to recognize context and generate coherent responses.
+6. The diversity of pretraining data also plays a crucial role in shaping the model's performance, and the selection of LLMs highly depends on the components of the pretraining data.
+7. For example, PaLM [22] and BLOOM [92] excel in multilingual tasks and machine translation with an abundance of multilingual pretraining data.
+8. Moreover, PaLM's performance in Question Answering tasks is enhanced by incorporating a considerable amount of social media conversations and Books corpus [22].
+9. Likewise, code execution and code completion capabilities of GPT-3.5 (code-davinci-002) are amplified by the integration of code data in its pretraining dataset.
+10. In brief, when selecting LLMs for downstream tasks, it is advisable to choose the model pre-trained on a similar field of data.
+Rating: good
+
+Content: 1. Scaling of LLMs (e.g. parameters, training computation, etc.) can greatly empower pretrained language models.
+2. With the model scaling up, a model generally becomes more capable in a range of tasks.
+3. Reflected in some metrics, the performance shows a power-law relationship with the model scale.
+4. For example, the cross-entropy loss which is used to measure the performance for language modeling decreases linearly with the exponential increase in the model scale, which is also called 'scaling-law' [41,47].
+5. For some crucial abilities, such as reasoning, scaling the model has gradually transformed these abilities from a very low state to a usable state, and even approaching human capabilities.
+6. In this section, we provide an overview of the usage of LLMs in terms of the abilities and behaviors of LLMs along with scaling.
+Rating: bad
+
+Content: [CONTENTS]
+Rating: 

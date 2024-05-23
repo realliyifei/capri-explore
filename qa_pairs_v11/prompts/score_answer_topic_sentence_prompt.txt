@@ -1,0 +1,8 @@
+Below is a beginning sentence of a paragraph. Please score that whether it is a topic sentence of a paragraph.
+bad - Not a topic sentence
+mediocre - May works as topic sentence but not good enough
+good - A good topic sentence
+Only return the rating. Do not return the sentence.
+
+Sentence: [CONTENTS]
+Rating: 

@@ -1,0 +1,29 @@
+Below is a content in a list of itemized sentences. Please rate the legibility of the content.
+This metric measures how legible the content is, that is, how free it is from the parsing error.
+Some common parsong errors are: distracting footnote, distracting caption of table and figure, meaningless symbols, interrupting texts seem from a table. 
+Other parsing errors include: incomplete or truncated sentence, missing citations.
+It is not saying that all non-textual elements are bad. The math equations, chemical symbols, etc., are legible as long as they are relevant to the content and are in a right place.
+Also, inline citations are expected and should not be seen as a lack of legibility.
+bad - Low Legible; too many parsing errors to make it hard to understand
+mediocre - Moderate Legible; some parsing errors, but the content is still understandable
+good - High Legible; none parsing error at all
+Only return the rating, without anything else.
+
+Content: 1. To date, more studies were devoted to BERT's knowledge of syntactic rather than semantic phenomena.
+2. However, we do have evidence from an MLM probing study that BERT has some knowledge for semantic roles (Ettinger, 2019).
+3. BERT is even able to prefer the incorrect fillers for semantic roles that are semantically related to the correct ones, to those that are unrelated (e.g. ""to tip a chef"" should be better than ""to tip a robin"", but worse than ""to tip a waiter"").
+4. Tenney et al. (2019b) showed that BERT encodes information about entity types, relations, semantic roles, and proto-roles, since this information can be detected with probing classifiers.
+Rating: good
+
+Content: 1. As introduced in the last section, only a few surveys on video-language pretraining (VLP) [57], [58], [59] are relevant to MML.
+2. However, VLP is only a subdomain of MML § Note that the term "multimodal" is used in a broader sense in this survey, referring to the fusion of any two or more modalities.
+3. In this survey, we focus solely on the intersection of multimodal learning and Transformers.
+Rating: mediocre
+
+Content: 1. For BERT, Clark et al. (2019) observe that most heads in the same layer show similar self-attention patterns (perhaps related to the fact that the output of all self-attention heads in Distillation Compression Performance Speedup Model Evaluation DistilBERT (Sanh et al., 2019)
+2. ×2.5 90% ×1.6 BERT 6 All GLUE tasks BERT 6 -PKD (Sun et al., 2019a) ×1.6 97% ×1.9 BERT 6 No WNLI, CoLA and STS-B BERT 3 -PKD (Sun et al., 2019a) ×2  a layer is passed through the same MLP), which explains why Michel et al. (2019) were able to reduce most layers to a single head.
+3. Depending on the task, some BERT heads/layers are not only useless, but also harmful to the downstream task performance.
+Rating: bad
+
+Content: [CONTENTS]
+Rating: 
