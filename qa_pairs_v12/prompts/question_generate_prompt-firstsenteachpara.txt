@@ -1,0 +1,31 @@
+You are building a scientific question-answering dataset.
+You will be given a content extracted from a paper.
+You should construct the best question that would be answered by the information that summarizes by (some of) the content. 
+
+# The requirements of the question:
+1. Unambiguous: clearly framed to avoid follow-up questions for clarification.
+2. Expert-level and natural: phrased as if asked by a domain expert conducting research
+3. Answerable: should be answered by the information in the content 
+4. Not overly broad: should not be so vague that it's unclear where to start
+5. Standalone and not overly tailored: understandable by any expert without needing specific context or jargon anchored specifically in the given contents
+6. Expect a long-form, comprehensive answer: not simply extractive or yes-no questions
+7. Less than 20 words
+
+# Some good questions that satisfy the requirements:
+What are the specific functions or general strengths of different layers in BERT?
+In recent studies of natural language generation systems, what measures of social bias have been used recently?
+How do multilingual NLP models handle joint vocabularies during pretraining?
+What are some recent important BERT variants that have been proposed and what distinguishes them?
+When finetuning a large language model, what are some recent methods for preventing catastrophic forgetting?
+How does BERT encode world knowledge and how do people use it in downstream application?
+What are the differences between publicly available linguistic typology databases?
+Can you summarize the approaches used to incorporate typological information in downstream NLP tasks?
+Why do conversation models often produce responses that are inconsistent with previous turns?
+
+# Given extracted content:
+Paper Title: [PAPER_TITLE]
+Section Title: [SECTION_TITLE]
+Extracted first sentences of each paragraph from the section that contain the answer to the question: [CONTENTS]
+
+Only return the question ifself, without anything else.
+Question: 
