@@ -1,4 +1,4 @@
 criteria,num_answer,percentage
-num_answer_at_beginning,92,1.0
-num_answer_after_section_title_criteria,69,0.75
-num_answer_after_reference_number_criteria,33,0.358695652173913
+num_answer_at_beginning,86,1.0
+num_answer_after_section_title_criteria,61,0.7093023255813954
+num_answer_after_reference_number_criteria,23,0.26744186046511625

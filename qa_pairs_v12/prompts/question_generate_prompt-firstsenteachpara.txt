@@ -1,6 +1,7 @@
 You are building a scientific question-answering dataset.
 You will be given a content extracted from a paper.
 You should construct the best question that would be answered by the information that summarizes by (some of) the content. 
+Only return the question itself, without anything else.
 
 # The requirements of the question:
 1. Unambiguous: clearly framed to avoid follow-up questions for clarification.
@@ -11,21 +12,104 @@ You should construct the best question that would be answered by the information
 6. Expect a long-form, comprehensive answer: not simply extractive or yes-no questions
 7. Less than 20 words
 
-# Some good questions that satisfy the requirements:
-What are the specific functions or general strengths of different layers in BERT?
-In recent studies of natural language generation systems, what measures of social bias have been used recently?
-How do multilingual NLP models handle joint vocabularies during pretraining?
-What are some recent important BERT variants that have been proposed and what distinguishes them?
-When finetuning a large language model, what are some recent methods for preventing catastrophic forgetting?
-How does BERT encode world knowledge and how do people use it in downstream application?
-What are the differences between publicly available linguistic typology databases?
-Can you summarize the approaches used to incorporate typological information in downstream NLP tasks?
-Why do conversation models often produce responses that are inconsistent with previous turns?
+# Given extracted content:
+Paper Title: Societal Biases in Language Generation: Progress and Challenges
+Section Title: Bias Definitions and Metrics
+Extracted first sentences of each paragraph from the section that contain the answer to the question: 
+In the context of AI fairness, the term “bias” commonly refers to skews that result in undesirable impacts (Crawford, 2017) and is quantifiable with some metric.
+Because of the difficulty in defining metrics, existing works define bias loosely as demographic inequality and use intermediate proxy metrics to comparatively measure bias.
+• Regard Ratio: negative-neutral-positive regard score ratios of text generated from bias-inducing prompts (Sheng et al., 2019)
+• Sentiment Ratio: negative-neutral-positive sentiment score ratios of text generated from African American English (AAE) versus White-Aligned English (WAE) prompts (Groenwold et al., 2020)
+• Individual and Group Fairness through Sentiment: comparisons of the sentiment distributions of generated text across demographics and prompts (Huang et al., 2020)
+• Gendered Word Co-occurrence Score: mean and standard deviations of the absolute log ratio of probabilities: P(word|female terms) to P(word|male terms) across all words in generated text (Bordia and Bowman, 2019)
+There are also metrics for other bias evaluation setups in continuation generation tasks involving sentiment (Shwartz et al., 2020), the ratio of gendered words (Solaiman et al., 2019; Vig et al., 2020; Dinan et al., 2020a), and other novel metrics (Peng et al., 2020; Yeo and Chen, 2020).
+Bias metrics can also be categorized by how they define associations between demographic group attributes and text.
+Question: In recent studies of natural language generation systems, what measures of social bias have been used recently?
+
+# Given extracted content:
+Paper Title: A Survey on Contextual Embeddings
+Section Title: Cross-lingual Polyglot Pre-training for Contextual Embeddings
+Extracted first sentences of each paragraph from the section that contain the answer to the question: 
+Cross-lingual polyglot pre-training aims to learn joint multi-lingual representations, enabling knowledge transfer from data-rich languages like English to data-scarce languages like Romanian.
+Joint training & shared vocabulary. Artetxe and Schwenk (2019) use a BiLSTM encoder-decoder framework with a shared BPE vocabulary for 93 languages.
+Rosita (Mulcaire et al., 2019) pre-trains a language model using text from different languages, showing the benefits of polyglot learning on low-resource languages.
+Recently, the authors of BERT developed a multi-lingual BERT which is pre-trained using the Wikipedia dump with more than 100 languages.
+XLM (Lample and Conneau, 2019) uses three pre-training methods for learning cross-lingual language models: (1) Causal language modelling, where the model is trained to predict p(ti|t1, t2, ..., ti−1), (2) Masked language modelling, and (3) Translation language modelling (TLM).
+Joint training & separate vocabularies. Wu et al. (2019) study the emergence of cross-lingual structures in pre-trained multi-lingual language models.
+Separate training & separate vocabularies. Artetxe et al. (2019) use a four-step method for obtaining multi-lingual embeddings.
+Question: How do multilingual NLP models handle joint vocabularies during pretraining?
+
+# Given extracted content:
+Paper Title: A Survey on Contextual Embeddings
+Section Title: Countering Catastrophic Forgetting
+Extracted first sentences of each paragraph from the section that contain the answer to the question: 
+Learning on downstream tasks is prone to overwrite the information from pre-trained models, which is widely known as the catastrophic forgetting (McCloskey and Cohen, 1989; d’Autume et al., 2019).
+Freezing layers. Motivated by layer-wise training of neural networks (Hinton et al., 2006), training certain layers while freezing others can potentially reduce forgetting during fine-tuning.
+Adaptive learning rates. Another method to mitigate catastrophic forgetting is by using adaptive learning rates.
+Regularization. Regularization limits the fine-tuned parameters to be close to the pre-trained parameters.
+Question: When finetuning a large language model, what are some recent methods for preventing catastrophic forgetting?
+
+# Given extracted content:
+Paper Title: Modeling Language Variation and Universals: A Survey on Typological Linguistics for Natural Language Processing
+Section Title: Hand-Crafted Documentation in Typological Databases
+Extracted first sentences of each paragraph from the section that contain the answer to the question: 
+Typological databases are created manually by linguists.
+Some databases store information pertaining to multiple levels of linguistic description.
+Other databases only cover features related to a specific level of linguistic description.
+For phonology, the Phonetics Information Base and Lexicon (PHOIBLE) (Moran, McCloy, and Wright 2014) collates information on segments (binary phonetic features).
+Other databases document various aspects of semantics. The World Loanword Database (WOLD) (Haspelmath and Tadmor 2009) documents loanwords by identifying the donor languages and the source words.
+Although typological databases store abundant information on many languages, they suffer from shortcomings that limit their usefulness.
+Further challenges are posed by restricted feature applicability and feature hierarchies.
+Question: What are the differences between publicly available linguistic typology databases?
+
+# Given extracted content:
+Paper Title: Modeling Language Variation and Universals: A Survey on Typological Linguistics for Natural Language Processing
+Section Title: Uses of Typological Information in NLP Models
+Extracted first sentences of each paragraph from the section that contain the answer to the question: 
+The typological features developed as discussed in § 4 are of significant importance for NLP algorithms.
+An interesting example of a rule-based system in our context is the Grammar Matrix kit, presented by Bender (2016), where rule-based grammars can be generated from typological features.
+The Grammar Matrix consists of a universal core grammar and language-specific libraries for phenomena where typological variation is attested.
+The most common usage of typological features in NLP is in feature engineering and constraint design for machine learning algorithms.
+Selective sharing. This framework was introduced by Naseem, Barzilay, and Globerson (2012) and was subsequently adopted by Täckström, McDonald, and Nivre (2013) and Zhang and Barzilay (2015).
+Selective sharing was originally implemented in a generative framework, factorizing the recursive generation of dependency tree fragments into two steps (Naseem, Barzilay, and Globerson 2012).
+P(n|h,θ1) * Σmi∈M P(mi|h,θ2) * ∏mi∈M σ(w * g(m, h, l, fl)) * 1/||MR||||ML||
+In Equation (1), the first step is expressed as two factors: the estimation of the number n of modifiers, parametrized by θ1, and the actual selection of modifiers, parametrized by θ2, with the softmax function σ converting the n values into probabilities.
+Täckström, McDonald, and Nivre (2013) proposed a discriminative implementation.
+Zhang and Barzilay (2015) extended selective sharing to a tensor-based implementation, where typological features are used to adaptively tie parameters across languages.
+Joint multilingual learning is another approach where typological information is used to bias models to reflect the properties of specific languages.
+Tsvetkov et al. (2016) proposed a polyglot language model that incorporates phonological typological features to improve the identification of lexical borrowings and speech synthesis.
+Typological features can also guide data selection and synthesis. Deri and Knight (2016) used typology-based selection to improve grapheme-to-phoneme conversion.
+Agić (2017) proposed a part-of-speech (PoS) divergence metric that uses typological features to select training data for syntactic parsing.
+Søgaard and Wulff (2012) introduced a typology-based weighing scheme for syntactic parsing, where typological features are used to weigh training instances based on their similarity to the target language.
+Wang and Eisner (2017) proposed a method for synthesizing training data for word order prediction.
+Ponti et al. (2018a) used typological features to preprocess training data for machine translation and sentence similarity tasks.
+In summary, typological features play a crucial role in enhancing the performance of NLP models.
+Question: Can you summarize the approaches used to incorporate typological information in downstream NLP tasks?
+
+# Given extracted content:
+Paper Title: Efficient Methods for Natural Language Processing: A Survey
+Section Title: Sparse Modeling
+Extracted first sentences of each paragraph from the section that contain the answer to the question: 
+To leverage sparsity for efficiency, many models follow the mixture-of-experts (MoE) concept (Jacobs et al., 1991; Shazeer et al., 2017; Fedus et al., 2022a), which routes computation through small subnetworks instead of passing the input through the entire model.
+Another promising direction for exploiting sparse modeling is Sparsefinder (Treviso et al., 2022), which extends the Adaptively Sparse Transformer (Correia et al., 2019) to allow a more efficient attention mechanism by identifying beforehand the sparsity pattern returned by entmax attention—a sparse alternative to (dense) softmax attention (Peters et al., 2019).
+Question: How can we utilize sparsity to enhance efficiency in designing NLP models?
+
+# Given extracted content:
+Paper Title: Neural Approaches to Conversational AI
+Section Title: Speaker Consistency
+Extracted first sentences of each paragraph from the section that contain the answer to the question: 
+It has been shown that the popular seq2seq approach often produces conversations that are incoherent (Li et al., 2016b), where the system may for instance contradict what it had just said in the previous turn (or sometimes even in the same turn).
+This sets apart the response generation task from more traditional NLP tasks: While models for other tasks such as machine translation are trained on data that is mostly one-to-one semantically, conversational data is often one-to-many or many-to-many as the above example implies.
+To do this, Li et al. (2016b) proposed a persona-based response generation system, which is an extension of the LSTM model of Sec. 5.1.1 that uses speaker embeddings in addition to word embeddings.
+Like word embeddings, speaker embedding parameters are learned jointly with all other parameters of the model from their one-hot representations.
+Other approaches also utilized personalized information.
+More recently, Luan et al. (2017) presented an extension of the speaker embedding model of Li et al. (2016b), which combines a seq2seq model trained on conversational datasets with an autoencoder trained on non-conversational data, where the seq2seq and autoencoder are combined in a multi-task learning setup (Caruana, 1998).
+While (Serban et al., 2017) is not a persona-based response generation model per se, their work shares some similarities with speaker embedding models such as (Li et al., 2016b).
+Question: Why do conversation models often produce responses that are inconsistent with previous turns?
 
 # Given extracted content:
 Paper Title: [PAPER_TITLE]
 Section Title: [SECTION_TITLE]
-Extracted first sentences of each paragraph from the section that contain the answer to the question: [CONTENTS]
-
-Only return the question ifself, without anything else.
+Extracted first sentences of each paragraph from the section that contain the answer to the question: 
+[CONTENTS]
 Question: 
