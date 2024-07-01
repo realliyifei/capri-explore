@@ -1,0 +1,30 @@
+Read the given contents and extract the topics mentioned.
+If a topic is discussed in depth (that is, can be segmented into at least three second-level bullet-point), summarize the general viewpoints.
+If a topic has no deep discussion (has less than three second-level bullet-point), skip it.
+If a topic has no deep discussion (has less than three second-level bullet-point), skip it.
+If a topic has no deep discussion (has less than three second-level bullet-point), skip it.
+If you don’t fine any deep topic, only reply a single word “None”.
+
+Your output should follow a two-hierarchy bullet point format.
+The main bullet-point should be a detailed and meaningful expert-level question.
+The second-level bullet-points are different sub-viewpoints that can help to answer the main bullet-point.
+
+An example is:
+
+# How to use data activations to discover the role of neurons (corpus-based methods) and why?
+  - They establish a connection between a neuron and a concept using co-occurrence between a neuron's activation values and existence of the concept in the underlying input instances
+  - Corpus-based methods are global interpretation methods that interpret the role of a neuron over a set of inputs
+  - They can be used in combination with the visualization method to reduce the search space for finding the most relevant portions of data that activate a neuron
+# What are the different types of the corpus-based methods?
+  - Concept Search: methods that take a neuron as input and identify the concept that the neuron has learned
+  - Neuron Search: methods that take a concept as input and identify the neurons learning the concept
+# How to apply concept search methods to discover the concepts in neurons?
+  - Kádár et al. (2017): identified linguistic concepts learned by neurons by extracting top-20, 5-gram contexts for each neuron
+  - Na et al. (2019): used lexical concepts of various granularities and extracted top-k activating sentences for each neuron, creating synthetic sentences to highlight a concept
+  - Synthetic sentences may lead to identifying neurons exhibiting arbitrary behavior instead of concept-specific behavior
+
+
+Given Contents: 
+Paper Title: [PAPER_TITLE]
+Section Title: [SECTION_TITLE]
+Section Content: [CONTENTS]

@@ -1,0 +1,40 @@
+Below is a content in a list of itemized sentences. This content is extracted from a paper. Please rate how standalone the content is.
+A standalone content should not need to refer to other components in the paper, for example, figure reference ("by Figure 3"), table reference ("mentioned in Table 4"), section reference ("in this section"), appendix reference ("explained in Appendix")
+A standalone content should not contain the first-person reference, for example, "we show", "we found", "we expect", "this work", "this survey"
+A stadalone content should not contain the abbreviation or acronym that is not defined in the content itself, for example, "PLM" without explaining it first. 
+However, if it is backed by a reference ("PLM [2]") or explained in the content itself ("Pretrained Language Model (PLM)"), it is considered standalone.
+A very common abbreviation or acronym, such as "NLP", "ML" or "LLM", is an exception and should be considered standalone.
+Note that inline citations are expected and should not be seen as a lack of standaloneness.
+bad - Not Standalone; the content has so many arcitle references and first-perference references that hard to rephrase
+mediocre - Partially standalone; the content has a few arcitle references and first-perference references that need to be rephrased, but the main part of the content is standalone and doesn't require any modification
+good - Fully standalone; the content is written in a standalone manner and doesn't require any modification regarding arcitle reference and first-perference reference
+Only return the rating, without anything else.
+
+Content: 1. Knowledge Attribution Method Attributionbased methods highlight the importance of input features and neurons with respect to a prediction (Dhamdhere et al., 2018;Lundberg and Lee, 2017;Tran et al., 2018).
+2. Dai et al. (2021) used an attribution-based method to identify salient neurons with respect to a relational fact.
+3. They hypothesized that factual knowledge is stored in the neurons of the feed-forward neural networks of the Transformer model and used integrated gradient (Sundararajan et al., 2017) to identify top neu-rons that express a relational fact.
+4. The work of Dai et al. (2021) shows the applicability of attribution methods in discovering causal neurons with respect to a concept of interest and is a promising research direction.
+Rating: good
+
+Content: 1. It is difficult to obtain a large amount of in-domain text in some cases.
+2. For example, MIMIC [87], [88] is the largest publicly available dataset of medical records.
+3. The MIMIC dataset is small compared to the general Wikipedia corpus or biomedical scientific literature (from PubMed + PMC).
+4. However, to pretrain a transformer-based PLM from scratch, we require large volumes of text.
+5. To overcome this, some of the models are pretrained on general + in-domain text [41], [104] or, in-domain + related domain text [18], [28], [43], [97].
+6. For example, BERT (jpCR+jpW) [ Table 6 contains hybrid corpora-based T-BPLMs.
+Rating: mediocre
+
+Content: 1. Then they proposed Answer Multi-hop questions by Single-hop QA (AMS) models and used a single-hop QA models based on the attention mechanism with the HGN's document filter.
+2. As you can see in Figure 41 after the Document denoise layer, they used an Attention-based single-hop layer.
+3. AMS could achieve a comparable result with stat-of-the-art graph-bade models but still couldn't improve them.
+4. Figure 41: Overall architecture of AMS [52] S2G: Wu, Zhang, and Zhao [14] investigated whether graph modeling is necessary for multi-hop.
+5. In this regard, they first proved that the retrieval stage is the most important module, while the existing studies focus on the reader module by graph modeling.
+6. This study presents a graph-free alternative named select-to-guide (S2G) to retrieve evidence paragraphs in a coarse-tofine manner, incorporated with two attention mechanisms, which shows conforming to the nature of multi-hop reasoning.
+7. For the paragraph retrieval module, this study introduced a cascaded paragraph retrieval module that retrieves the evidence paragraphs in an explicit coarse-to-fine manner, and in multi-task module there are one shared encoder module alongside with two interdependent modules with an attention mechanism ( Figure 42).
+8. However Concrete error analysis on S2G shows that there is still room for improvement on the multi-hop retriever module design.
+9. Figure 42: The multi-task module of S2G [14]
+10. As the last part of this section, Figure 43 has been prepared to summarize the techniques and models.
+Rating: bad
+
+Content: [CONTENTS]
+Rating: 

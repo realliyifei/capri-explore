@@ -1,0 +1,7 @@
+You are provided with a list of paragraphs and a question.
+A subset of the paragraphs (may be all of them) should be selected to answer the question.
+You are going to select the paragraph one-by-one below, separated by space, e.g. "p1.0 p1.1 p1.3”, or output “None” if none of them can be selected.
+
+Question: [QUESTION]
+Paragraphs: [CONTENTS]
+Selected Index:
