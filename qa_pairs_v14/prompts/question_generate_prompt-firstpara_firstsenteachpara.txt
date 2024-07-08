@@ -1,0 +1,114 @@
+You are building a scientific question-answering dataset.
+You will be given a content extracted from a paper.
+You should construct the best question that would be answered by the information that summarizes by (some of) the content. 
+Only return the question itself, without anything else.
+
+# The requirements of the question:
+1. Unambiguous: clearly framed to avoid follow-up questions for clarification.
+2. Expert-level and natural: phrased as if asked by a domain expert conducting research
+3. Answerable: should be answered by the information in the content 
+4. Not overly broad: should not be so vague that it's unclear where to start
+5. Standalone and not overly tailored: understandable by any expert without needing specific context or jargon anchored specifically in the given contents
+6. Expect a long-form, comprehensive answer: not simply extractive or yes-no questions
+7. Less than 20 words
+
+# Given extracted content:
+Paper Title: Societal Biases in Language Generation: Progress and Challenges
+Section Title: Bias Definitions and Metrics
+Extracted first paragraph of the section that contain the answer to the question: 
+In the context of AI fairness, the term “bias” commonly refers to skews that result in undesirable impacts (Crawford, 2017) and is quantifiable with some metric. There are relatively more existing studies on biases in NLU tasks, where it is arguably simpler to define bias metrics, since we can intuitively compare the accuracy of the task (e.g., coreference resolution, hate speech detection) for different demographics. Language generation tasks often involve stochastic generation of open-ended and lengthy texts, traits that are not directly compatible with traditional algorithmic bias definitions (e.g., equalized odds, equal opportunity, demographic parity (Dwork et al., 2012; Hardt et al., 2016)).
+Extracted first sentences of each other paragraph from the section that contain the answer to the question: 
+Because of the difficulty in defining metrics, existing works define bias loosely as demographic inequality and use intermediate proxy metrics to comparatively measure bias.
+• Regard Ratio: negative-neutral-positive regard score ratios of text generated from bias-inducing prompts (Sheng et al., 2019)
+• Sentiment Ratio: negative-neutral-positive sentiment score ratios of text generated from African American English (AAE) versus White-Aligned English (WAE) prompts (Groenwold et al., 2020)
+• Individual and Group Fairness through Sentiment: comparisons of the sentiment distributions of generated text across demographics and prompts (Huang et al., 2020)
+• Gendered Word Co-occurrence Score: mean and standard deviations of the absolute log ratio of probabilities: P(word|female terms) to P(word|male terms) across all words in generated text (Bordia and Bowman, 2019)
+There are also metrics for other bias evaluation setups in continuation generation tasks involving sentiment (Shwartz et al., 2020), the ratio of gendered words (Solaiman et al., 2019; Vig et al., 2020; Dinan et al., 2020a), and other novel metrics (Peng et al., 2020; Yeo and Chen, 2020).
+Bias metrics can also be categorized by how they define associations between demographic group attributes and text.
+Question: In recent studies of natural language generation systems, what measures of social bias have been used recently?
+
+# Given extracted content:
+Paper Title: A Survey on Contextual Embeddings
+Section Title: Cross-lingual Polyglot Pre-training for Contextual Embeddings
+Extracted first paragraph of the section that contain the answer to the question: 
+Cross-lingual polyglot pre-training aims to learn joint multi-lingual representations, enabling knowledge transfer from data-rich languages like English to data-scarce languages like Romanian. Based on whether joint training and a shared vocabulary are used, we divide previous work into three categories.
+Extracted first sentences of each other paragraph from the section that contain the answer to the question: 
+Joint training & shared vocabulary. Artetxe and Schwenk (2019) use a BiLSTM encoder-decoder framework with a shared BPE vocabulary for 93 languages.
+Rosita (Mulcaire et al., 2019) pre-trains a language model using text from different languages, showing the benefits of polyglot learning on low-resource languages.
+Recently, the authors of BERT developed a multi-lingual BERT which is pre-trained using the Wikipedia dump with more than 100 languages.
+XLM (Lample and Conneau, 2019) uses three pre-training methods for learning cross-lingual language models: (1) Causal language modelling, where the model is trained to predict p(ti|t1, t2, ..., ti−1), (2) Masked language modelling, and (3) Translation language modelling (TLM).
+Joint training & separate vocabularies. Wu et al. (2019) study the emergence of cross-lingual structures in pre-trained multi-lingual language models.
+Separate training & separate vocabularies. Artetxe et al. (2019) use a four-step method for obtaining multi-lingual embeddings.
+Question: How do multilingual NLP models handle joint vocabularies during pretraining?
+
+# Given extracted content:
+Paper Title: A Primer on Contrastive Pretraining in Language Processing: Methods, Lessons Learned and Perspectives
+Section Title: Noise Contrastive Estimation (NCE)
+Extracted first paragraph of the section that contain the answer to the question: 
+Noise contrastive estimation is the objective used by most contrastive learning approaches within NLP. Thus, we briefly outline its main variants and the core ideas behind them, while pointing to [Ma and Collins, 2018]1 for detailed, yet readily understandable explanations of the two main NCE variants. Both variants can intuitively be understood as a sub-sampled softmax with K negative samples a−i and one positive sample a+i . The first variant expresses NCE as a binary objective (loss) in the form of maximum log likelihood, where only K negatives are considered.
+Extracted first sentences of each other paragraph from the section that contain the answer to the question: 
+LB(θ, γ) = log σ(s(xi, a+i,0; θ), γ) + K∑k=1 log(1− σ(s(xi, a−i,k; θ), γ)
+Here, s(xi, ai,◦; θ) is a scoring or similarity function that measures the compatibility between a single text input xi and another sample ai,◦.
+The other NCE objective learns to rank a single positive pair (xi, a+i,0) over K negative pairs (xi, a−i,k):
+LR(θ) = log es̄(xi, a+i,0; θ) es̄(xi, a+i,0; θ) + ∑Kk=1 es̄(xi, a−i,k; θ)
+Here, to improve LR or LB performance, [Ma and Collins, 2018] propose a regularized scoring function s̄(xi, ai,◦) = s(xi, ai,◦) − log pN (ai,◦) that subtracts the probability of the current sample ai,◦ under a chosen noise distribution pN (ai,◦).
+Generalization to an arbitrary number of positives: As [Khosla et al., 2020] mention, original contrastive formulations use only one positive pair per text instance (see e.g. [Mikolov et al., 2013b; Logeswaran and Lee, 2018]), while more recent methods mine multiple positives or use multiple gold class annotation representations for contrastive learning [Rethmeier and Augenstein, 2020; Qu et al., 2021].
+Importance of negative sampling semantics and lessons learned: How positive and negative samples are generated or sampled is a key component of effective contrastive learning. 
+Question: In contrastive learning objectives, what are recent perspectives on negative sampling?
+
+# Given extracted content:
+Paper Title: Modeling Language Variation and Universals: A Survey on Typological Linguistics for Natural Language Processing
+Section Title: Hand-Crafted Documentation in Typological Databases
+Extracted first paragraph of the section that contain the answer to the question: 
+Typological databases are created manually by linguists. They contain taxonomies of typological features, their possible values, as well as the documentation of feature values for the world’s languages. Major typological databases, listed in Table 1, typically organize linguistic information in terms of universal features and language-specific values. For example, Figure 3 presents language-specific values for the feature number of grammatical genders for nouns on a world map. Note that each language is color-coded according to its value. Further examples for each database can be found in the rightmost column of Table 1.
+Extracted first sentences of each other paragraph from the section that contain the answer to the question: 
+Some databases store information pertaining to multiple levels of linguistic description.
+Other databases only cover features related to a specific level of linguistic description.
+For phonology, the Phonetics Information Base and Lexicon (PHOIBLE) (Moran, McCloy, and Wright 2014) collates information on segments (binary phonetic features).
+Other databases document various aspects of semantics. The World Loanword Database (WOLD) (Haspelmath and Tadmor 2009) documents loanwords by identifying the donor languages and the source words.
+Although typological databases store abundant information on many languages, they suffer from shortcomings that limit their usefulness.
+Further challenges are posed by restricted feature applicability and feature hierarchies.
+Question: What are the differences between publicly available linguistic typology databases?
+
+# Given extracted content:
+Paper Title: Analysis Methods in Neural Language Processing: A Survey
+Section Title: Linguistic phenomena
+Extracted first paragraph of the section that contain the answer to the question: 
+Different kinds of linguistic information have been analyzed, ranging from basic properties like sentence length, word position, word presence, or simple word order, to morphological, syntactic, and semantic information. Phonetic/phonemic information, speaker information, and style and accent information have been studied in neural network models for speech, or in joint audio-visual models. See Table SM1 for references.
+Extracted first sentences of each other paragraph from the section that contain the answer to the question: 
+While it is difficult to synthesize a holistic picture from this diverse body of work, it appears that neural networks are able to learn a substantial amount of information on various linguistic phenomena.
+Another theme that emerges in several studies is the hierarchical nature of the learned representations. We have already mentioned such findings regarding NMT (Shi et al., 2016b) and a visually grounded speech model (Alishahi et al., 2017).
+Finally, a couple of papers discovered that models trained with latent trees perform better on natural language inference (NLI) (Williams et al., 2018; Maillard and Clark, 2018) than ones trained with linguistically-annotated trees.
+Question: What linguistic phenomena can be caught by NLP models?
+
+# Given extracted content:
+Paper Title: Efficient Methods for Natural Language Processing: A Survey
+Section Title: Sparse Modeling
+Extracted first paragraph of the section that contain the answer to the question: 
+To leverage sparsity for efficiency, many models follow the mixture-of-experts (MoE) concept (Jacobs et al., 1991; Shazeer et al., 2017; Fedus et al., 2022a), which routes computation through small subnetworks instead of passing the input through the entire model. Relevant works on this line include GShard (Lepikhin et al., 2021), Switch Transformer (Fedus et al., 2022b), and ST-MoE (Zoph et al., 2022), which replace the feed forward layers in transformers with MoE layers. More recently, Rajbhandari et al. (2022) scaled transformers up by compressing and optimizing the usage of MoE. Overall, MoE models have been shown to achieve strong performance across several NLP tasks while reducing the overall resource consumption (Sec. 8). For instance, GLaM (Du et al., 2022) used only ∼1 3 of GPT-3’s energy consumption (with additional hardware-based optimization), while Rajbhandari et al. (2022) reached a 5x reduction in terms of training cost. However, MoE models have also exhibited training instabilities in practice, and may require architecture-specific implementation (Zoph et al., 2022; Mustafa et al., 2022).
+Extracted first sentences of each other paragraph from the section that contain the answer to the question: 
+Another promising direction for exploiting sparse modeling is Sparsefinder (Treviso et al., 2022), which extends the Adaptively Sparse Transformer (Correia et al., 2019) to allow a more efficient attention mechanism by identifying beforehand the sparsity pattern returned by entmax attention—a sparse alternative to (dense) softmax attention (Peters et al., 2019).
+Question: How can we utilize sparsity to enhance efficiency in designing NLP models?
+
+# Given extracted content:
+Paper Title: Neural Approaches to Conversational AI
+Section Title: Speaker Consistency
+Extracted first paragraph of the section that contain the answer to the question: 
+It has been shown that the popular seq2seq approach often produces conversations that are incoherent (Li et al., 2016b), where the system may for instance contradict what it had just said in the previous turn (or sometimes even in the same turn). While some of this effect can be attributed to the limitation of the learning algorithms, Li et al. (2016b) suggested that the main cause of this inconsistency is probably due to the training data itself. Indeed, conversational datasets (see Sec. 5.5) feature multiple speakers, which often have different or conflicting personas and backgrounds. For example, to the question “how old are you?”, a seq2seq model may give valid responses such as “23”, “27”, or “40”, all of which are represented in the training data.
+Extracted first sentences of each other paragraph from the section that contain the answer to the question: 
+This sets apart the response generation task from more traditional NLP tasks: While models for other tasks such as machine translation are trained on data that is mostly one-to-one semantically, conversational data is often one-to-many or many-to-many as the above example implies.
+To do this, Li et al. (2016b) proposed a persona-based response generation system, which is an extension of the LSTM model of Sec. 5.1.1 that uses speaker embeddings in addition to word embeddings.
+Like word embeddings, speaker embedding parameters are learned jointly with all other parameters of the model from their one-hot representations.
+Other approaches also utilized personalized information.
+More recently, Luan et al. (2017) presented an extension of the speaker embedding model of Li et al. (2016b), which combines a seq2seq model trained on conversational datasets with an autoencoder trained on non-conversational data, where the seq2seq and autoencoder are combined in a multi-task learning setup (Caruana, 1998).
+While (Serban et al., 2017) is not a persona-based response generation model per se, their work shares some similarities with speaker embedding models such as (Li et al., 2016b).
+Question: Why do conversation models often produce responses that are inconsistent with previous turns?
+
+# Given extracted content:
+Paper Title: [PAPER_TITLE]
+Section Title: [SECTION_TITLE]
+Extracted first paragraph of the section that contain the answer to the question: 
+[FIRST_PARA]
+Extracted first sentences of each other paragraph from the section that contain the answer to the question: 
+[FIRST_SENT_EACH_PARA]
+Question: 

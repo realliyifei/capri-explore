@@ -1,0 +1,36 @@
+You are building a scientific question-answering dataset.
+You will be given a question and a sentence extracted from a scientific paper.
+You should determine that whether the sentence contains relevant information to be part of the answer to the question.
+Return 'YES' if it is relevant, 'NO' otherwise. Nothing else.
+
+Question: Can you summarize the recent measures used to assess social bias in natural language generation systems?
+Sentence: Bias metrics can also be categorized by how they define associations between demographic group attributes and text.
+Relevant: YES 
+
+Question: How do multilingual NLP models handle joint vocabularies during pretraining?
+Sentence: Rosita (Mulcaire et al., 2019) pre-trains a language model using text from different languages, showing the benefits of polyglot learning on low-resource languages.
+Relevant: YES
+
+Question: In contrastive learning objectives, what are recent perspectives on negative sampling?
+Sentence: LB(θ, γ) = log σ(s(xi, a+i,0; θ), γ) + K∑k=1 log(1− σ(s(xi, a−i,k; θ), γ)Here, s(xi, ai,◦; θ) is a scoring or similarity function that measures the compatibility between a single text input xi and another sample ai,◦.
+Relevant: NO
+
+Question: What are the differences between publicly available linguistic typology databases?
+Sentence: They contain taxonomies of typological features, their possible values, as well as the documentation of feature values for the world’s languages.
+Relevant: NO
+
+Question: What linguistic phenomena can be caught by NLP models?
+Sentence: Finally, a couple of papers discovered that models trained with latent trees perform better on natural language inference (NLI) (Williams et al., 2018; Maillard and Clark, 2018) than ones trained with linguistically-annotated trees.
+Relevant: NO
+
+Question: How can we utilize sparsity to enhance efficiency in designing NLP models?
+Sentence: Finally, sparsity can also be induced via modularity, e.g., by encapsulating task-specific parameters (Ponti et al., 2022).
+Relevant: YES
+
+Question: Why do conversation models often produce responses that are inconsistent with previous turns?
+Sentence: For example, Al-Rfou et al. (2016) presented a persona-based response generation model, but geared for retrieval using an extremely large dataset consisting of 2.1 billion responses.
+Relevant: NO
+
+Question: [QUESTION]
+Sentence: [SENTENCE]
+Relevant: 

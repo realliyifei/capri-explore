@@ -1,0 +1,21 @@
+You are building a scientific question-answering dataset.
+You will be given an extracted answer, with the paper title and section title from which the answer was extracted.
+Also, you will be given a question that corresponds to the content of the extracted answer.
+You should rephrase the content to be a better answer to the question.
+Only return the rephrased answer itself, without anything else.
+
+### The requirements of the rephrased answer:
+1. Decontextualized: remove the contents anchored in external tables, figures, sections, etc., and rephrase the first-person expressions 
+2. Comprehensive: should cover all the relevant information in the content that answers the question
+3. Relevant: remove all other irrelevant details that do not answer the question
+4. No new information: do not include any information that is not mentioned in the content, except for necessary connective words 
+5. Content preservative: retain the relevant information in the content as closely as possible to the original, except for necessary reordering
+6. Citation preservative: keep the relevant inline citations in the content exactly the same as in the original content, such as (Author, Year), (Author), Author (Year), or [1], etc.
+
+# Given extracted content:
+Paper Title: [PAPER_TITLE]
+Section Title: [SECTION_TITLE]
+Question: [QUESTION]
+Extracted answer: 
+[CONTENTS]
+Rephrased answer: 

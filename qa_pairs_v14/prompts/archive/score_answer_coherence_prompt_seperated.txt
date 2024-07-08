@@ -1,0 +1,35 @@
+Below is a paragraph extracted from paper. It is seperated as topic sentence plus the remaining content in a list of sentences. 
+Please rate how coherent the content is by assessing if all the sentences in the content are related to the topic sentence.
+good - High Coherence; All the sentences in content are related to the topic sentence.
+mediocre - Moderate Coherence; Most of the sentences in content are related to the topic sentence. There are very few sentences that are not related to the topic sentence.
+bad - Low Coherence;  More than a few sentences in content are not related to the topic sentence.
+Only return the rating, without anything else.
+
+Topic Sentence: In the current studies of BERT's representation space, the term 'embedding' refers to the output vector of a given (typically final) Transformer layer.
+Content: 
+Wiedemann et al. (2019) find that BERT's contextualized embeddings form distinct and clear clusters corresponding to word senses, which confirms that the basic distributional hypothesis holds for these representations.
+However, Mickus et al. (2019) note that representations of the same word varies depending on position of the sentence in which it occurs, likely due to NSP objective.
+Ethayarajh (2019) measure how similar the embeddings for identical words are in every layer and find that later BERT layers produce more contextspecific representations.
+They also find that BERT embeddings occupy a narrow cone in the vector space, and this effect increases from lower to higher layers.
+That is, two random words will on average have a much higher cosine similarity than expected if embeddings were directionally uniform (isotropic).
+Rating: good
+
+Topic Sentence: The massive multitask language understanding (MMLU) [40] is also highly knowledge-intensive.
+Content: 
+Some tasks only require the model to capture the self-contained knowledge in the contexts.
+The knowledge in the contexts from the input is enough for the model to make predictions.
+For these tasks, small fine-tuned models can work pretty well.
+One such task is machine reading comprehension (MRC).
+Rating: mediocre
+
+Topic Sentence: CivilComments [13] even the best one is only better than random guessing [59].
+Content: On the other hand, most popular fine-tuned models can obtain much better performance [33].
+and the Perspective API 3 is still one of the best for detecting toxicity.
+This API is powered by a multilingual BERT-based model, which is tuned on publicly available toxicity data and several smaller single-language CNNs distilled from this model.
+This might be due to the fact that toxicity is defined by subtle nuances in linguistic expressions, and large language models are unable to accurately comprehend this task solely based on the provided input.
+Rating: bad
+
+Topic Sentence: [TOPIC_SENTENCE]
+Content: 
+[CONTENTS]
+Rating: 
