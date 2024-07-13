@@ -1,9 +1,67 @@
-title,section,section_title,paragraph,num_reference,answer,answer_rephrase_filtered_sentences,QA_pair_rephrased,QA_pair_rephrased-v2
+title,section,section_title,paragraph,num_reference,answer,answer_rephrase_filtered_sentences-v2.1.0,answer_rephrase_filtered_sentences-v2.1.1,answer_rephrase_filtered_sentences-v2.1.2,answer_rephrase_filtered_sentences-v2.1.3,answer_rephrase_filtered_sentences-v3.0.0,answer_rephrase_filtered_sentences-v3.0.1,answer_rephrase_filtered_sentences-v3.0.2,answer_rephrase_filtered_sentences-v3.1.2,answer_rephrase_filtered_sentences-v3.1.3,QA_pair_rephrased-v2.1.1
 A Primer in BERTology: What we know about how BERT works,s1,BERT embeddings,"['p1.0', 'p1.1']",4,"Unlike the conventional static embeddings (Mikolov et al., 2013a;Pennington et al., 2014), BERT's representations are contextualized, i.e., every input token is represented by a vector dependent on the particular context of occurrence.
 
 In the current studies of BERT's representation space, the term 'embedding' refers to the output vector of a given (typically final) Transformer layer. Wiedemann et al. (2019) find that BERT's contextualized embeddings form distinct and clear clusters corresponding to word senses, which confirms that the basic distributional hypothesis holds for these representations. However, Mickus et al. (2019) note that representations of the same word varies depending on position of the sentence in which it occurs, likely due to NSP objective. Ethayarajh (2019) measure how similar the embeddings for identical words are in every layer and find that later BERT layers produce more contextspecific representations. They also find that BERT embeddings occupy a narrow cone in the vector space, and this effect increases from lower to higher layers. That is, two random words will on average have a much higher cosine similarity than expected if embeddings were directionally uniform (isotropic).","Unlike the conventional static embeddings (Mikolov et al., 2013a;Pennington et al., 2014), BERT's representations are contextualized, i.e., every input token is represented by a vector dependent on the particular context of occurrence.
 
+In the current studies of BERT's representation space, the term 'embedding' refers to the output vector of a given (typically final) Transformer layer.
+
 Wiedemann et al. (2019) find that BERT's contextualized embeddings form distinct and clear clusters corresponding to word senses, which confirms that the basic distributional hypothesis holds for these representations.
+
+However, Mickus et al. (2019) note that representations of the same word varies depending on position of the sentence in which it occurs, likely due to NSP objective.
+
+Ethayarajh (2019) measure how similar the embeddings for identical words are in every layer and find that later BERT layers produce more contextspecific representations.
+
+They also find that BERT embeddings occupy a narrow cone in the vector space, and this effect increases from lower to higher layers.","Unlike the conventional static embeddings (Mikolov et al., 2013a;Pennington et al., 2014), BERT's representations are contextualized, i.e., every input token is represented by a vector dependent on the particular context of occurrence.
+
+Wiedemann et al. (2019) find that BERT's contextualized embeddings form distinct and clear clusters corresponding to word senses, which confirms that the basic distributional hypothesis holds for these representations.
+
+Ethayarajh (2019) measure how similar the embeddings for identical words are in every layer and find that later BERT layers produce more contextspecific representations.
+
+They also find that BERT embeddings occupy a narrow cone in the vector space, and this effect increases from lower to higher layers.","Unlike the conventional static embeddings (Mikolov et al., 2013a;Pennington et al., 2014), BERT's representations are contextualized, i.e., every input token is represented by a vector dependent on the particular context of occurrence.
+
+Wiedemann et al. (2019) find that BERT's contextualized embeddings form distinct and clear clusters corresponding to word senses, which confirms that the basic distributional hypothesis holds for these representations.
+
+Ethayarajh (2019) measure how similar the embeddings for identical words are in every layer and find that later BERT layers produce more contextspecific representations.
+
+They also find that BERT embeddings occupy a narrow cone in the vector space, and this effect increases from lower to higher layers.","Unlike the conventional static embeddings (Mikolov et al., 2013a;Pennington et al., 2014), BERT's representations are contextualized, i.e., every input token is represented by a vector dependent on the particular context of occurrence.
+
+Wiedemann et al. (2019) find that BERT's contextualized embeddings form distinct and clear clusters corresponding to word senses, which confirms that the basic distributional hypothesis holds for these representations.
+
+Ethayarajh (2019) measure how similar the embeddings for identical words are in every layer and find that later BERT layers produce more contextspecific representations.
+
+They also find that BERT embeddings occupy a narrow cone in the vector space, and this effect increases from lower to higher layers.","Unlike the conventional static embeddings (Mikolov et al., 2013a;Pennington et al., 2014), BERT's representations are contextualized, i.e., every input token is represented by a vector dependent on the particular context of occurrence.
+
+Wiedemann et al. (2019) find that BERT's contextualized embeddings form distinct and clear clusters corresponding to word senses, which confirms that the basic distributional hypothesis holds for these representations.
+
+Ethayarajh (2019) measure how similar the embeddings for identical words are in every layer and find that later BERT layers produce more contextspecific representations.","Unlike the conventional static embeddings (Mikolov et al., 2013a;Pennington et al., 2014), BERT's representations are contextualized, i.e., every input token is represented by a vector dependent on the particular context of occurrence.
+
+Wiedemann et al. (2019) find that BERT's contextualized embeddings form distinct and clear clusters corresponding to word senses, which confirms that the basic distributional hypothesis holds for these representations.
+
+However, Mickus et al. (2019) note that representations of the same word varies depending on position of the sentence in which it occurs, likely due to NSP objective.
+
+Ethayarajh (2019) measure how similar the embeddings for identical words are in every layer and find that later BERT layers produce more contextspecific representations.","Unlike the conventional static embeddings (Mikolov et al., 2013a;Pennington et al., 2014), BERT's representations are contextualized, i.e., every input token is represented by a vector dependent on the particular context of occurrence.
+
+Wiedemann et al. (2019) find that BERT's contextualized embeddings form distinct and clear clusters corresponding to word senses, which confirms that the basic distributional hypothesis holds for these representations.
+
+However, Mickus et al. (2019) note that representations of the same word varies depending on position of the sentence in which it occurs, likely due to NSP objective.
+
+Ethayarajh (2019) measure how similar the embeddings for identical words are in every layer and find that later BERT layers produce more contextspecific representations.","Unlike the conventional static embeddings (Mikolov et al., 2013a;Pennington et al., 2014), BERT's representations are contextualized, i.e., every input token is represented by a vector dependent on the particular context of occurrence.
+
+In the current studies of BERT's representation space, the term 'embedding' refers to the output vector of a given (typically final) Transformer layer.
+
+Wiedemann et al. (2019) find that BERT's contextualized embeddings form distinct and clear clusters corresponding to word senses, which confirms that the basic distributional hypothesis holds for these representations.
+
+However, Mickus et al. (2019) note that representations of the same word varies depending on position of the sentence in which it occurs, likely due to NSP objective.
+
+Ethayarajh (2019) measure how similar the embeddings for identical words are in every layer and find that later BERT layers produce more contextspecific representations.
+
+They also find that BERT embeddings occupy a narrow cone in the vector space, and this effect increases from lower to higher layers.","Unlike the conventional static embeddings (Mikolov et al., 2013a;Pennington et al., 2014), BERT's representations are contextualized, i.e., every input token is represented by a vector dependent on the particular context of occurrence.
+
+In the current studies of BERT's representation space, the term 'embedding' refers to the output vector of a given (typically final) Transformer layer.
+
+Wiedemann et al. (2019) find that BERT's contextualized embeddings form distinct and clear clusters corresponding to word senses, which confirms that the basic distributional hypothesis holds for these representations.
+
+However, Mickus et al. (2019) note that representations of the same word varies depending on position of the sentence in which it occurs, likely due to NSP objective.
 
 Ethayarajh (2019) measure how similar the embeddings for identical words are in every layer and find that later BERT layers produce more contextspecific representations.
 
@@ -13,19 +71,10 @@ How do BERT's embeddings differ from conventional static embeddings?
 
 Answer:
 
-BERT's representations differ from conventional static embeddings in that they are contextualized, meaning every input token is represented by a vector that depends on the specific context of occurrence.
-Wiedemann et al. (2019) found that BERT's contextualized embeddings form distinct clusters corresponding to word senses, confirming the basic distributional hypothesis applies to these representations.
-Ethayarajh (2019) found that later BERT layers produce more context-specific representations for identical words, indicating an increase in the uniqueness of embeddings with each layer.
-They also find that BERT embeddings are concentrated within a narrow region of the vector space, and this concentration intensifies from the lower to the higher layers.","Questions:
-
-How do BERT's embeddings differ from conventional static embeddings?
-
-Answer:
-
-BERT's representations differ from conventional static embeddings (Mikolov et al., 2013a; Pennington et al., 2014) by being contextualized, meaning every input token is represented by a vector that depends on the specific context of occurrence.
-Wiedemann et al. (2019) discovered that BERT's contextualized embeddings create distinct and clear clusters that correspond to different word senses, confirming that these representations adhere to the basic distributional hypothesis.
+BERT's representations differ from conventional static embeddings (Mikolov et al., 2013a; Pennington et al., 2014) by being contextualized, meaning that every input token is represented by a vector that depends on the specific context of occurrence.
+Wiedemann et al. (2019) discovered that BERT's contextualized embeddings create distinct and clear clusters that correspond to different word senses, demonstrating that the basic distributional hypothesis applies to these representations.
 Ethayarajh (2019) found that the similarity of embeddings for identical words varies across different layers, with later layers of BERT producing more context-specific representations.
-It was also found that BERT embeddings are concentrated within a narrow region of the vector space, and this concentration intensifies from the lower to the higher layers."
+They also discovered that BERT embeddings are concentrated within a narrow region of the vector space, and this concentration intensifies from the lower to the higher layers."
 A Survey on Recent Approaches for Natural Language Processing in Low-Resource Scenarios,s7,Distant & Weak Supervision,"['p7.0', 'p7.1', 'p7.2', 'p7.3', 'p7.4']",16,"In contrast to data augmentation, distant or weak supervision uses unlabeled text and keeps it unmodified. The corresponding labels are obtained through a (semi-)automatic process from an external source of information. For named entity recognition (NER), a list of location names might be obtained from a dictionary and matches of tokens in the text with entities in the list are automatically labeled as locations. Distant supervision was introduced by Mintz et al. (2009) for relation extraction (RE) with extensions on multi-instance (Riedel et al., 2010) and multi-label learning (Surdeanu et al., 2012). It is still a popular approach for information extraction tasks like NER and RE where the external information can be obtained from knowledge bases, gazetteers, dictionaries and other forms of structured knowledge sources (Luo et al., 2017;Hedderich and Klakow, 2018;Deng and Sun, 2019;Alt et al., 2019;Ye et al., 2019;Lange et al., 2019a;Nooralahzadeh et al., 2019;Le and Titov, 2019;Cao et al., 2019;Lison et al., 2020;Hedderich et al., 2021a). The automatic annotation ranges from simple string matching  to complex pipelines including classifiers and manual steps (Norman et al., 2019). This distant supervision using information from external knowledge sources can be seen as a subset of the more general approach of labeling rules. These encompass also other ideas like reg-ex rules or simple programming functions (Ratner et al., 2017;Zheng et al., 2019;Adelani et al., 2020;Hedderich et al., 2020;Lison et al., 2020;Ren et al., 2020;Karamanolakis et al., 2021).
 
 While distant supervision is popular for information extraction tasks like NER and RE, it is less prevalent in other areas of NLP. Nevertheless, distant supervision has also been successfully em-  (2020) build a discourse-structure dataset using guidance from sentiment annotations. For topic classification, heuristics can be used in combination with inputs from other classifiers like NER (Bach et al., 2019) or from entity lists (Hedderich et al., 2020). For some classification tasks, the labels can be rephrased with simple rules into sentences. A pretrained language model then judges the label sentence that most likely follows the unlabeled input (Opitz, 2019;). An unlabeled review, for instance, might be continued with ""It was great/bad"" for obtaining binary sentiment labels.
@@ -34,7 +83,7 @@ Open Issues: The popularity of distant supervision for NER and RE might be due t
 
 Distant supervision methods heavily rely on auxiliary data. In a low-resource setting, it might be difficult to obtain not only labeled data but also such auxiliary data. Kann et al. (2020) find a large gap between the performance on high-resource and low-resource languages for POS tagging pointing to the lack of high-coverage and error-free dictionaries for the weak supervision in low-resource languages. This emphasizes the need for evaluating such methods in a realistic setting and avoiding to just simulate restricted access to labeled data in a high-resource language.
 
-While distant supervision allows obtaining labeled data more quickly than manually annotating every instance of a dataset, it still requires human interaction to create automatic annotation techniques or to provide labeling rules. This time and effort could also be spent on annotating more gold label data, either naively or through an active learning scheme. Unfortunately, distant supervision papers rarely provide information on how long the creation took, making it difficult to compare these approaches. Taking the human expert into the focus connects this research direction with humancomputer-interaction and human-in-the-loop setups (Klie et al., 2018;Qian et al., 2020).","In contrast to data augmentation, distant or weak supervision uses unlabeled text and keeps it unmodified.
+While distant supervision allows obtaining labeled data more quickly than manually annotating every instance of a dataset, it still requires human interaction to create automatic annotation techniques or to provide labeling rules. This time and effort could also be spent on annotating more gold label data, either naively or through an active learning scheme. Unfortunately, distant supervision papers rarely provide information on how long the creation took, making it difficult to compare these approaches. Taking the human expert into the focus connects this research direction with humancomputer-interaction and human-in-the-loop setups (Klie et al., 2018;Qian et al., 2020).","While distant supervision allows obtaining labeled data more quickly than manually annotating every instance of a dataset, it still requires human interaction to create automatic annotation techniques or to provide labeling rules.","In contrast to data augmentation, distant or weak supervision uses unlabeled text and keeps it unmodified.
 
 The corresponding labels are obtained through a (semi-)automatic process from an external source of information.
 
@@ -46,46 +95,53 @@ This distant supervision using information from external knowledge sources can b
 
 While distant supervision is popular for information extraction tasks like NER and RE, it is less prevalent in other areas of NLP.
 
-Open Issues: The popularity of distant supervision for NER and RE might be due to these tasks being particularly suited.
-
 Distant supervision methods heavily rely on auxiliary data.
 
 In a low-resource setting, it might be difficult to obtain not only labeled data but also such auxiliary data.
 
 This emphasizes the need for evaluating such methods in a realistic setting and avoiding to just simulate restricted access to labeled data in a high-resource language.
 
-While distant supervision allows obtaining labeled data more quickly than manually annotating every instance of a dataset, it still requires human interaction to create automatic annotation techniques or to provide labeling rules.","Questions:
+While distant supervision allows obtaining labeled data more quickly than manually annotating every instance of a dataset, it still requires human interaction to create automatic annotation techniques or to provide labeling rules.","Distant supervision was introduced by Mintz et al. (2009) for relation extraction (RE) with extensions on multi-instance (Riedel et al., 2010) and multi-label learning (Surdeanu et al., 2012).
+
+It is still a popular approach for information extraction tasks like NER and RE where the external information can be obtained from knowledge bases, gazetteers, dictionaries and other forms of structured knowledge sources (Luo et al., 2017;Hedderich and Klakow, 2018;Deng and Sun, 2019;Alt et al., 2019;Ye et al., 2019;Lange et al., 2019a;Nooralahzadeh et al., 2019;Le and Titov, 2019;Cao et al., 2019;Lison et al., 2020;Hedderich et al., 2021a).
+
+While distant supervision is popular for information extraction tasks like NER and RE, it is less prevalent in other areas of NLP.
+
+Distant supervision methods heavily rely on auxiliary data.
+
+In a low-resource setting, it might be difficult to obtain not only labeled data but also such auxiliary data.
+
+Kann et al. (2020) find a large gap between the performance on high-resource and low-resource languages for POS tagging pointing to the lack of high-coverage and error-free dictionaries for the weak supervision in low-resource languages.
+
+While distant supervision allows obtaining labeled data more quickly than manually annotating every instance of a dataset, it still requires human interaction to create automatic annotation techniques or to provide labeling rules.","Distant supervision was introduced by Mintz et al. (2009) for relation extraction (RE) with extensions on multi-instance (Riedel et al., 2010) and multi-label learning (Surdeanu et al., 2012).
+
+It is still a popular approach for information extraction tasks like NER and RE where the external information can be obtained from knowledge bases, gazetteers, dictionaries and other forms of structured knowledge sources (Luo et al., 2017;Hedderich and Klakow, 2018;Deng and Sun, 2019;Alt et al., 2019;Ye et al., 2019;Lange et al., 2019a;Nooralahzadeh et al., 2019;Le and Titov, 2019;Cao et al., 2019;Lison et al., 2020;Hedderich et al., 2021a).
+
+Distant supervision methods heavily rely on auxiliary data.
+
+In a low-resource setting, it might be difficult to obtain not only labeled data but also such auxiliary data.
+
+Kann et al. (2020) find a large gap between the performance on high-resource and low-resource languages for POS tagging pointing to the lack of high-coverage and error-free dictionaries for the weak supervision in low-resource languages.
+
+This emphasizes the need for evaluating such methods in a realistic setting and avoiding to just simulate restricted access to labeled data in a high-resource language.
+
+While distant supervision allows obtaining labeled data more quickly than manually annotating every instance of a dataset, it still requires human interaction to create automatic annotation techniques or to provide labeling rules.","While distant supervision allows obtaining labeled data more quickly than manually annotating every instance of a dataset, it still requires human interaction to create automatic annotation techniques or to provide labeling rules.",,,"While distant supervision allows obtaining labeled data more quickly than manually annotating every instance of a dataset, it still requires human interaction to create automatic annotation techniques or to provide labeling rules.
+
+Taking the human expert into the focus connects this research direction with humancomputer-interaction and human-in-the-loop setups (Klie et al., 2018;Qian et al., 2020).","While distant supervision allows obtaining labeled data more quickly than manually annotating every instance of a dataset, it still requires human interaction to create automatic annotation techniques or to provide labeling rules.","Questions:
 
 What are the limitations and requirements of distant supervision in NLP tasks?
 
 Answer:
 
-Distant or weak supervision in NLP tasks involves using unlabeled text without modifying it.
-The corresponding labels are obtained through a (semi-)automatic process from an external source of information.
-Distant supervision was introduced by Mintz et al. (2009) for relation extraction, with extensions on multi-instance (Riedel et al., 2010) and multi-label learning (Surdeanu et al., 2012).
-It remains a favored method for tasks like named entity recognition (NER) and relation extraction (RE), where external information is sourced from knowledge bases, gazetteers, dictionaries, and other structured knowledge sources.
-This approach, utilizing information from external knowledge sources, can be considered a subset of the broader strategy of applying labeling rules.
-While distant supervision is widely used for information extraction tasks such as named entity recognition (NER) and relation extraction (RE), its application is less common in other areas of NLP.
-The popularity of distant supervision for tasks like named entity recognition (NER) and relation extraction (RE) might stem from these tasks being particularly well-suited to this approach.
-Distant supervision methods heavily depend on auxiliary data.
-In a low-resource setting, obtaining not only labeled data but also auxiliary data can be challenging.
-This highlights the importance of evaluating these methods in realistic settings rather than simulating restricted access to labeled data in high-resource languages.
-While distant supervision enables quicker acquisition of labeled data compared to manual annotation of every dataset instance, it necessitates human involvement to develop automatic annotation techniques or to establish labeling rules.","Questions:
-
-What are the limitations and requirements of distant supervision in NLP tasks?
-
-Answer:
-
-Distant or weak supervision in NLP tasks involves using unlabeled text without modifying it.
+Distant or weak supervision in NLP tasks uses unlabeled text without modifying it.
 The corresponding labels are obtained through a semi-automatic process from an external source of information.
-Distant supervision was introduced by Mintz et al. (2009) for relation extraction, with further developments in multi-instance learning (Riedel et al., 2010) and multi-label learning (Surdeanu et al., 2012).
-This approach remains popular for tasks like Named Entity Recognition (NER) and Relation Extraction (RE), where external information can be sourced from knowledge bases, gazetteers, dictionaries, and other structured knowledge sources (Luo et al., 2017; Hedderich and Klakow, 2018; Deng and Sun, 2019; Alt et al., 2019; Ye et al., 2019; Lange et al., 2019a; Nooralahzadeh et al., 2019; Le and Titov, 2019; Cao et al., 2019; Lison et al., 2020; Hedderich et al., 2021a).
-This approach, which utilizes information from external knowledge sources, can be considered a specific instance of the broader strategy of employing labeling rules.
-While distant supervision is widely used for information extraction tasks such as Named Entity Recognition and Relation Extraction, its application is less common in other areas of NLP.
-The popularity of distant supervision for Named Entity Recognition and Relation Extraction may stem from these tasks being especially well-suited to this approach.
+Distant supervision was introduced by Mintz et al. (2009) for relation extraction, with extensions on multi-instance learning (Riedel et al., 2010) and multi-label learning (Surdeanu et al., 2012).
+This approach remains popular for tasks like Named Entity Recognition (NER) and Relation Extraction (RE), where external information is sourced from knowledge bases, gazetteers, dictionaries, and other structured knowledge sources (Luo et al., 2017; Hedderich and Klakow, 2018; Deng and Sun, 2019; Alt et al., 2019; Ye et al., 2019; Lange et al., 2019a; Nooralahzadeh et al., 2019; Le and Titov, 2019; Cao et al., 2019; Lison et al., 2020; Hedderich et al., 2021a).
+Using information from external knowledge sources for distant supervision is considered a subset of the broader strategy of applying labeling rules.
+While distant supervision is widely used for information extraction tasks such as Named Entity Recognition (NER) and Relation Extraction (RE), its application is less common in other areas of NLP.
 Distant supervision methods heavily depend on auxiliary data.
-In a low-resource setting, obtaining not only labeled data but also auxiliary data can be challenging.
-This highlights the importance of evaluating these methods in realistic settings, rather than merely simulating restricted access to labeled data in languages with abundant resources.
+In a low-resource setting, obtaining both labeled data and auxiliary data can be challenging.
+This highlights the importance of testing these methods in practical scenarios and not merely simulating limited access to labeled data in languages with abundant resources.
 While distant supervision enables faster acquisition of labeled data compared to manual annotation of each dataset instance, it necessitates human involvement to develop automatic annotation techniques or to establish labeling rules."
 A Survey on Stance Detection for Mis-and Disinformation Identification,s2,Source(s) Target,"['p2.0', 'p2.1', 'p2.2', 'p2.3']",5,"Context Evidence #Instances Task English Datasets Rumour Has It (Qazvinian et al., 2011) Topic Tweet 10K Rumours PHEME (Zubiaga et al., 2016b) Claim Tweet 4.5K Rumours Emergent (Ferreira and Vlachos, 2016) ǌ Headline Article * 2.6K Rumours FNC-1 (Pomerleau and Rao, 2017) ǌ Headline Article 75K Fake news RumourEval '17 (Derczynski et al., 2017) Implicit 1 Tweet 7.1K Rumours FEVER  ɀ  Table 1: Key characteristics of stance detection datasets for mis-and disinformation detection. #Instances denotes dataset size as a whole; the numbers are in thousands (K) and are rounded to the hundreds. * the article's body is summarised. Sources: Twitter, ǌ News, ɀikipedia, Reddit. Evidence: Single, Multiple, Thread.
 
@@ -93,19 +149,21 @@ A Survey on Stance Detection for Mis-and Disinformation Identification,s2,Source
 
 In order to understand the task of stance detection, we first provide definitions of stance and the stance-taking process. Biber and Finegan (1988) define stance as the expression of a speaker's standpoint and judgement towards a given proposition. Further, Du Bois (2007)) define stance as ""a public act by a social actor, achieved dialogically through overt communicative means, of simultaneously evaluating objects, positioning subjects (self and others), and aligning with other subjects, with respect to any salient dimension of the sociocultural field"", showing that the stance-taking process is affected not only by personal opinions, but also by other external factors such as cultural norms, roles in the institution of the family, etc. Here, we adopt the general definition of stance detection by Küçük and Can (2020): ""for an input in the form of a piece of text and a target pair, stance detection is a classification problem where the stance of the author of the text is sought in the form of a category label from this set: Favor, Against, Neither. Occasionally, the category label of Neutral is also added to the set of stance categories (Mohammad et al., 2016), and the target may or may not be explicitly mentioned in the text"" (Augenstein et al., 2016;Mohammad et al., 2016). Note that the stance detection definitions and the label inventories vary somewhat, depending on the target application (see Section 3).
 
-Finally, stance detection can be distinguished from several other closely related NLP tasks: (i) biased language detection, where the existence of an inclination or tendency towards a particular perspective within a text is explored, (ii) emotion recognition, where the goal is to recognise emotions such as love, anger, etc. in the text, (iii) perspective identification, which aims to find the pointof-view of the author (e.g., Democrat vs. Republican) and the target is always explicit, (iv) sarcasm detection, where the interest is in satirical or ironic pieces of text, often written with the intent of ridicule or mockery, and (v) sentiment analysis, which checks the polarity of a piece of text.","Stance detection can be distinguished from several other closely related NLP tasks: (i) biased language detection, where the existence of an inclination or tendency towards a particular perspective within a text is explored, (ii) emotion recognition, where the goal is to recognise emotions such as love, anger, etc. in the text, (iii) perspective identification, which aims to find the pointof-view of the author (e.g., Democrat vs. Republican) and the target is always explicit, (iv) sarcasm detection, where the interest is in satirical or ironic pieces of text, often written with the intent of ridicule or mockery, and (v) sentiment analysis, which checks the polarity of a piece of text.","Questions:
+Finally, stance detection can be distinguished from several other closely related NLP tasks: (i) biased language detection, where the existence of an inclination or tendency towards a particular perspective within a text is explored, (ii) emotion recognition, where the goal is to recognise emotions such as love, anger, etc. in the text, (iii) perspective identification, which aims to find the pointof-view of the author (e.g., Democrat vs. Republican) and the target is always explicit, (iv) sarcasm detection, where the interest is in satirical or ironic pieces of text, often written with the intent of ridicule or mockery, and (v) sentiment analysis, which checks the polarity of a piece of text.","Here, we adopt the general definition of stance detection by Küçük and Can (2020): ""for an input in the form of a piece of text and a target pair, stance detection is a classification problem where the stance of the author of the text is sought in the form of a category label from this set: Favor, Against, Neither.
+
+Occasionally, the category label of Neutral is also added to the set of stance categories (Mohammad et al., 2016), and the target may or may not be explicitly mentioned in the text"" (Augenstein et al., 2016;Mohammad et al., 2016).
+
+Finally, stance detection can be distinguished from several other closely related NLP tasks: (i) biased language detection, where the existence of an inclination or tendency towards a particular perspective within a text is explored, (ii) emotion recognition, where the goal is to recognise emotions such as love, anger, etc. in the text, (iii) perspective identification, which aims to find the pointof-view of the author (e.g., Democrat vs. Republican) and the target is always explicit, (iv) sarcasm detection, where the interest is in satirical or ironic pieces of text, often written with the intent of ridicule or mockery, and (v) sentiment analysis, which checks the polarity of a piece of text.","Finally, stance detection can be distinguished from several other closely related NLP tasks: (i) biased language detection, where the existence of an inclination or tendency towards a particular perspective within a text is explored, (ii) emotion recognition, where the goal is to recognise emotions such as love, anger, etc. in the text, (iii) perspective identification, which aims to find the pointof-view of the author (e.g., Democrat vs. Republican) and the target is always explicit, (iv) sarcasm detection, where the interest is in satirical or ironic pieces of text, often written with the intent of ridicule or mockery, and (v) sentiment analysis, which checks the polarity of a piece of text.","Finally, stance detection can be distinguished from several other closely related NLP tasks: (i) biased language detection, where the existence of an inclination or tendency towards a particular perspective within a text is explored, (ii) emotion recognition, where the goal is to recognise emotions such as love, anger, etc. in the text, (iii) perspective identification, which aims to find the pointof-view of the author (e.g., Democrat vs. Republican) and the target is always explicit, (iv) sarcasm detection, where the interest is in satirical or ironic pieces of text, often written with the intent of ridicule or mockery, and (v) sentiment analysis, which checks the polarity of a piece of text.","Finally, stance detection can be distinguished from several other closely related NLP tasks: (i) biased language detection, where the existence of an inclination or tendency towards a particular perspective within a text is explored, (ii) emotion recognition, where the goal is to recognise emotions such as love, anger, etc. in the text, (iii) perspective identification, which aims to find the pointof-view of the author (e.g., Democrat vs. Republican) and the target is always explicit, (iv) sarcasm detection, where the interest is in satirical or ironic pieces of text, often written with the intent of ridicule or mockery, and (v) sentiment analysis, which checks the polarity of a piece of text.","Finally, stance detection can be distinguished from several other closely related NLP tasks: (i) biased language detection, where the existence of an inclination or tendency towards a particular perspective within a text is explored, (ii) emotion recognition, where the goal is to recognise emotions such as love, anger, etc. in the text, (iii) perspective identification, which aims to find the pointof-view of the author (e.g., Democrat vs. Republican) and the target is always explicit, (iv) sarcasm detection, where the interest is in satirical or ironic pieces of text, often written with the intent of ridicule or mockery, and (v) sentiment analysis, which checks the polarity of a piece of text.","Finally, stance detection can be distinguished from several other closely related NLP tasks: (i) biased language detection, where the existence of an inclination or tendency towards a particular perspective within a text is explored, (ii) emotion recognition, where the goal is to recognise emotions such as love, anger, etc. in the text, (iii) perspective identification, which aims to find the pointof-view of the author (e.g., Democrat vs. Republican) and the target is always explicit, (iv) sarcasm detection, where the interest is in satirical or ironic pieces of text, often written with the intent of ridicule or mockery, and (v) sentiment analysis, which checks the polarity of a piece of text.","Finally, stance detection can be distinguished from several other closely related NLP tasks: (i) biased language detection, where the existence of an inclination or tendency towards a particular perspective within a text is explored, (ii) emotion recognition, where the goal is to recognise emotions such as love, anger, etc. in the text, (iii) perspective identification, which aims to find the pointof-view of the author (e.g., Democrat vs. Republican) and the target is always explicit, (iv) sarcasm detection, where the interest is in satirical or ironic pieces of text, often written with the intent of ridicule or mockery, and (v) sentiment analysis, which checks the polarity of a piece of text.","Finally, stance detection can be distinguished from several other closely related NLP tasks: (i) biased language detection, where the existence of an inclination or tendency towards a particular perspective within a text is explored, (ii) emotion recognition, where the goal is to recognise emotions such as love, anger, etc. in the text, (iii) perspective identification, which aims to find the pointof-view of the author (e.g., Democrat vs. Republican) and the target is always explicit, (iv) sarcasm detection, where the interest is in satirical or ironic pieces of text, often written with the intent of ridicule or mockery, and (v) sentiment analysis, which checks the polarity of a piece of text.","Here, we adopt the general definition of stance detection by Küçük and Can (2020): ""for an input in the form of a piece of text and a target pair, stance detection is a classification problem where the stance of the author of the text is sought in the form of a category label from this set: Favor, Against, Neither.
+
+Occasionally, the category label of Neutral is also added to the set of stance categories (Mohammad et al., 2016), and the target may or may not be explicitly mentioned in the text"" (Augenstein et al., 2016;Mohammad et al., 2016).
+
+Finally, stance detection can be distinguished from several other closely related NLP tasks: (i) biased language detection, where the existence of an inclination or tendency towards a particular perspective within a text is explored, (ii) emotion recognition, where the goal is to recognise emotions such as love, anger, etc. in the text, (iii) perspective identification, which aims to find the pointof-view of the author (e.g., Democrat vs. Republican) and the target is always explicit, (iv) sarcasm detection, where the interest is in satirical or ironic pieces of text, often written with the intent of ridicule or mockery, and (v) sentiment analysis, which checks the polarity of a piece of text.","Questions:
 
 How does stance detection differ from related NLP tasks like sentiment analysis or sarcasm detection?
 
 Answer:
 
-Stance detection differs from several other closely related NLP tasks by focusing on identifying the author's position towards a specific topic, unlike tasks such as biased language detection, emotion recognition, perspective identification, sarcasm detection, and sentiment analysis, which explore different aspects of text analysis.","Questions:
-
-How does stance detection differ from related NLP tasks like sentiment analysis or sarcasm detection?
-
-Answer:
-
-Stance detection differs from several closely related NLP tasks by focusing on identifying the author's position towards a specific target, unlike tasks such as biased language detection, emotion recognition, perspective identification, sarcasm detection, and sentiment analysis, which explore various other aspects of text."
+Stance detection differs from several closely related NLP tasks such as biased language detection, emotion recognition, perspective identification, sarcasm detection, and sentiment analysis by focusing on identifying the author's position towards a specific target, which is always explicit, unlike the objectives of these other tasks."
 A Survey of Data Augmentation Approaches for NLP,s1,Background,"['p1.0', 'p1.1', 'p1.2', 'p1.3', 'p1.4', 'p1.5']",6,"What is data augmentation? Data augmentation (DA) encompasses methods of increasing training data diversity without directly collecting more data. Most strategies either add slightly modified copies of existing data or create synthetic data, aiming for the augmented data to act as a regularizer and reduce overfitting when training ML models (Shorten and Khoshgoftaar, 2019;Hernández-García and König, 2020). DA has been commonly used in CV, where techniques like cropping, flipping, and color jittering are a standard component of model training. In NLP, where the input space is discrete, how to generate effective augmented examples that capture the desired invariances is less obvious.
 
 What are the goals and trade-offs? Despite challenges associated with text, many DA techniques for NLP have been proposed, ranging from rule-based manipulations (Zhang et al., 2015) to more complicated generative approaches (Liu et al., 2020b). As DA aims to provide an alternative to collecting more data, an ideal DA technique should be both easy-to-implement and improve model performance. Most offer trade-offs between these two.
@@ -116,7 +174,15 @@ Further, the distribution of augmented data should neither be too similar nor to
 
 Kashefi and Hwa (2020) devise a KL-Divergence-based unsupervised procedure to preemptively choose among DA heuristics, rather than a typical ""run-all-heuristics"" comparison, which can be very time and cost intensive.
 
-Interpretation of DA Dao et al. (2019) note that ""data augmentation is typically performed in an adhoc manner with little understanding of the underlying theoretical principles"", and claim the typical explanation of DA as regularization to be insufficient. Overall, there indeed appears to be a lack of research on why exactly DA works. Existing work on this topic is mainly surface-level, and rarely investigates the theoretical underpinnings and principles. We discuss this challenge more in §6, and highlight some of the existing work below. Bishop (1995) show training with noised examples is reducible to Tikhonov regularization (subsumes L2). Rajput et al. (2019) show that DA can increase the positive margin for classifiers, but only when augmenting exponentially many examples for common DA methods. Dao et al. (2019) think of DA transformations as kernels, and find two ways DA helps: averaging of features and variance regularization. Chen et al. (2020d) show that DA leads to variance reduction by averaging over orbits of the group that keep the data distribution approximately invariant.","What is data augmentation? Data augmentation (DA) encompasses methods of increasing training data diversity without directly collecting more data.
+Interpretation of DA Dao et al. (2019) note that ""data augmentation is typically performed in an adhoc manner with little understanding of the underlying theoretical principles"", and claim the typical explanation of DA as regularization to be insufficient. Overall, there indeed appears to be a lack of research on why exactly DA works. Existing work on this topic is mainly surface-level, and rarely investigates the theoretical underpinnings and principles. We discuss this challenge more in §6, and highlight some of the existing work below. Bishop (1995) show training with noised examples is reducible to Tikhonov regularization (subsumes L2). Rajput et al. (2019) show that DA can increase the positive margin for classifiers, but only when augmenting exponentially many examples for common DA methods. Dao et al. (2019) think of DA transformations as kernels, and find two ways DA helps: averaging of features and variance regularization. Chen et al. (2020d) show that DA leads to variance reduction by averaging over orbits of the group that keep the data distribution approximately invariant.","Most strategies either add slightly modified copies of existing data or create synthetic data, aiming for the augmented data to act as a regularizer and reduce overfitting when training ML models (Shorten and Khoshgoftaar, 2019;Hernández-García and König, 2020).
+
+In NLP, where the input space is discrete, how to generate effective augmented examples that capture the desired invariances is less obvious.
+
+Despite challenges associated with text, many DA techniques for NLP have been proposed, ranging from rule-based manipulations (Zhang et al., 2015) to more complicated generative approaches (Liu et al., 2020b).
+
+Existing work on this topic is mainly surface-level, and rarely investigates the theoretical underpinnings and principles.
+
+Dao et al. (2019) think of DA transformations as kernels, and find two ways DA helps: averaging of features and variance regularization.","What is data augmentation? Data augmentation (DA) encompasses methods of increasing training data diversity without directly collecting more data.
 
 Most strategies either add slightly modified copies of existing data or create synthetic data, aiming for the augmented data to act as a regularizer and reduce overfitting when training ML models (Shorten and Khoshgoftaar, 2019;Hernández-García and König, 2020).
 
@@ -124,7 +190,13 @@ In NLP, where the input space is discrete, how to generate effective augmented e
 
 Despite challenges associated with text, many DA techniques for NLP have been proposed, ranging from rule-based manipulations (Zhang et al., 2015) to more complicated generative approaches (Liu et al., 2020b).
 
-As DA aims to provide an alternative to collecting more data, an ideal DA technique should be both easy-to-implement and improve model performance.
+Further, the distribution of augmented data should neither be too similar nor too different from the original.
+
+This may lead to greater overfitting or poor performance through training on examples not representative of the given domain, respectively.
+
+Interpretation of DA Dao et al. (2019) note that ""data augmentation is typically performed in an adhoc manner with little understanding of the underlying theoretical principles"", and claim the typical explanation of DA as regularization to be insufficient.","In NLP, where the input space is discrete, how to generate effective augmented examples that capture the desired invariances is less obvious.
+
+Despite challenges associated with text, many DA techniques for NLP have been proposed, ranging from rule-based manipulations (Zhang et al., 2015) to more complicated generative approaches (Liu et al., 2020b).
 
 Most offer trade-offs between these two.Rule-based techniques are easy-to-implement but usually offer incremental performance improvements (Li et al., 2017;Wei and Zou, 2019;Wei et al., 2021b).
 
@@ -136,55 +208,47 @@ This may lead to greater overfitting or poor performance through training on exa
 
 Kashefi and Hwa (2020) devise a KL-Divergence-based unsupervised procedure to preemptively choose among DA heuristics, rather than a typical ""run-all-heuristics"" comparison, which can be very time and cost intensive.
 
-Interpretation of DA Dao et al. (2019) note that ""data augmentation is typically performed in an adhoc manner with little understanding of the underlying theoretical principles"", and claim the typical explanation of DA as regularization to be insufficient.
+Interpretation of DA Dao et al. (2019) note that ""data augmentation is typically performed in an adhoc manner with little understanding of the underlying theoretical principles"", and claim the typical explanation of DA as regularization to be insufficient.","In NLP, where the input space is discrete, how to generate effective augmented examples that capture the desired invariances is less obvious.
 
-Bishop (1995) show training with noised examples is reducible to Tikhonov regularization (subsumes L2).
+Despite challenges associated with text, many DA techniques for NLP have been proposed, ranging from rule-based manipulations (Zhang et al., 2015) to more complicated generative approaches (Liu et al., 2020b).
 
-Rajput et al. (2019) show that DA can increase the positive margin for classifiers, but only when augmenting exponentially many examples for common DA methods.
+Most offer trade-offs between these two.Rule-based techniques are easy-to-implement but usually offer incremental performance improvements (Li et al., 2017;Wei and Zou, 2019;Wei et al., 2021b).
 
-Dao et al. (2019) think of DA transformations as kernels, and find two ways DA helps: averaging of features and variance regularization.
+Techniques leveraging trained models may be more costly to implement but introduce more data variation, leading to better performance boosts.
 
-Chen et al. (2020d) show that DA leads to variance reduction by averaging over orbits of the group that keep the data distribution approximately invariant.","Questions:
+Further, the distribution of augmented data should neither be too similar nor too different from the original.
 
-What are the primary challenges and considerations in applying data augmentation techniques in NLP?
+This may lead to greater overfitting or poor performance through training on examples not representative of the given domain, respectively.
 
-Answer:
+Interpretation of DA Dao et al. (2019) note that ""data augmentation is typically performed in an adhoc manner with little understanding of the underlying theoretical principles"", and claim the typical explanation of DA as regularization to be insufficient.",,,,"Most strategies either add slightly modified copies of existing data or create synthetic data, aiming for the augmented data to act as a regularizer and reduce overfitting when training ML models (Shorten and Khoshgoftaar, 2019;Hernández-García and König, 2020).
 
-Data augmentation in NLP involves methods of increasing training data diversity without directly collecting more data.
-Most strategies involve adding slightly modified copies of existing data or creating synthetic data, with the goal for the augmented data to act as a regularizer and reduce overfitting during machine learning model training (Shorten and Khoshgoftaar, 2019; Hernández-García and König, 2020).
-In NLP, generating effective augmented examples that capture the desired invariances is less obvious due to the discrete nature of the input space.
-Despite the challenges associated with text, a variety of data augmentation techniques for NLP have been proposed, including rule-based manipulations (Zhang et al., 2015) and more complex generative approaches (Liu et al., 2020b).
-An ideal data augmentation technique should be both easy-to-implement and improve model performance.
-Most techniques present trade-offs between ease of implementation and the extent of performance improvement, with rule-based techniques being straightforward to implement but typically offering only incremental performance improvements (Li et al., 2017; Wei and Zou, 2019; Wei et al., 2021b).
-Techniques that utilize trained models may be more costly to implement but can introduce a greater variation in data, leading to significant improvements in performance.
-Additionally, the distribution of augmented data should maintain a balance, being neither too similar nor too divergent from the original dataset.
-This may result in either greater overfitting or poor performance if the training examples are not representative of the given domain.
-Kashefi and Hwa (2020) developed an unsupervised procedure based on KL-Divergence to selectively choose among data augmentation heuristics, offering a more efficient alternative to the time and cost-intensive approach of applying all available heuristics.
-Dao et al. (2019) observed that data augmentation is often conducted in an ad-hoc manner without a deep understanding of the theoretical principles behind it, challenging the common view of data augmentation merely as a form of regularization.
-Bishop (1995) demonstrated that training with noised examples can be equated to Tikhonov regularization, which includes L2 regularization.
-Rajput et al. (2019) demonstrate that data augmentation can enhance the positive margin for classifiers, but this requires exponentially many examples for common data augmentation methods.
-Dao et al. (2019) describe data augmentation transformations as kernels, highlighting their role in averaging features and in variance regularization.
-Chen et al. (2020d) demonstrated that data augmentation results in variance reduction by averaging over transformations that maintain the data distribution approximately invariant.","Questions:
+In NLP, where the input space is discrete, how to generate effective augmented examples that capture the desired invariances is less obvious.
+
+Despite challenges associated with text, many DA techniques for NLP have been proposed, ranging from rule-based manipulations (Zhang et al., 2015) to more complicated generative approaches (Liu et al., 2020b).
+
+As DA aims to provide an alternative to collecting more data, an ideal DA technique should be both easy-to-implement and improve model performance.
+
+Most offer trade-offs between these two.Rule-based techniques are easy-to-implement but usually offer incremental performance improvements (Li et al., 2017;Wei and Zou, 2019;Wei et al., 2021b).
+
+Techniques leveraging trained models may be more costly to implement but introduce more data variation, leading to better performance boosts.
+
+Model-based techniques customized for downstream tasks can have strong effects on performance but be difficult to develop and utilize.
+
+Further, the distribution of augmented data should neither be too similar nor too different from the original.
+
+Chen et al. (2020d) show that DA leads to variance reduction by averaging over orbits of the group that keep the data distribution approximately invariant.","Despite challenges associated with text, many DA techniques for NLP have been proposed, ranging from rule-based manipulations (Zhang et al., 2015) to more complicated generative approaches (Liu et al., 2020b).","Questions:
 
 What are the primary challenges and considerations in applying data augmentation techniques in NLP?
 
 Answer:
 
 Data augmentation (DA) encompasses methods of increasing training data diversity without directly collecting more data.
-Most strategies involve adding slightly modified copies of existing data or creating synthetic data, with the goal for the augmented data to serve as a regularizer and help reduce overfitting in machine learning model training (Shorten and Khoshgoftaar, 2019; Hernández-García and König, 2020).
+Most strategies involve adding slightly modified copies of existing data or creating synthetic data, with the goal for the augmented data to serve as a regularizer and help reduce overfitting in machine learning models (Shorten and Khoshgoftaar, 2019; Hernández-García and König, 2020).
 In NLP, generating effective augmented examples that capture the desired invariances is less obvious due to the discrete nature of the input space.
 Despite these challenges, a variety of data augmentation techniques for NLP have been proposed, including rule-based manipulations (Zhang et al., 2015) and more complex generative approaches (Liu et al., 2020b).
-An ideal data augmentation technique should be both easy to implement and enhance model performance.
-Rule-based techniques are straightforward to implement but typically yield only incremental performance improvements (Li et al., 2017; Wei and Zou, 2019; Wei et al., 2021b).
-Techniques that utilize trained models may require more resources to implement but can introduce greater data variation, resulting in significant improvements in performance.
-Additionally, the distribution of augmented data should maintain a balance, being neither too similar nor too divergent from the original data.
-This could result in either increased overfitting or diminished performance due to training on examples that do not accurately represent the domain.
-Kashefi and Hwa (2020) developed a method using KL-Divergence to selectively choose among data augmentation heuristics in an unsupervised manner, avoiding the time and cost-intensive approach of comparing all possible heuristics.
-Dao et al. (2019) observed that data augmentation is often conducted in an ad-hoc manner without a deep understanding of the underlying theoretical principles, suggesting that the common explanation of data augmentation serving merely as regularization is not comprehensive.
-Bishop (1995) demonstrated that training with noised examples can be equated to Tikhonov regularization, which includes L2 regularization.
-Rajput et al. (2019) demonstrate that data augmentation can enhance the positive margin for classifiers, but this requires exponentially many examples for common data augmentation methods.
-Dao et al. (2019) describe data augmentation transformations as functioning in two beneficial ways: by averaging features and by regularizing variance.
-Chen et al. (2020d) demonstrate that data augmentation results in variance reduction by averaging over transformations that maintain the data distribution approximately invariant."
+Additionally, the distribution of augmented data needs to maintain a balance, ensuring it is neither too similar nor too divergent from the original data.
+This could result in either increased overfitting or diminished performance due to training on examples that do not accurately represent the specific domain.
+Dao et al. (2019) note that data augmentation is often conducted in an ad hoc manner without a deep understanding of the underlying theoretical principles, suggesting that the common explanation of data augmentation as a form of regularization may be insufficient."
 Towards Argument Mining for Social Good: A Survey,s2,Framework,"['p2.0', 'p2.1', 'p2.2', 'p2.3', 'p2.4', 'p2.5', 'p2.6', 'p2.7', 'p2.8', 'p2.9', 'p2.10', 'p2.11', 'p2.12']",11,"Cabrio and Villata (2018) provide an elaborate overview of the AM framework in their data-driven analysis of the state of the art after five years of significant developments in the field of AM. Generally speaking, given a collection of natural language texts, the task at hand is implemented in two stages: Argument extraction The system first identifies the documents which contain the argumentative structure and the specific textual spans in which argumentation is encoded. Once the textual boundaries are defined, subportions of the argumentative spans are assigned to a set of pre-established argument components (e.g. claims, premises, rebuttal, etc.). A variety of models were used for this including Näive Bayes (Moens et al., 2007), SVMs (Mochales andMoens, 2011), RNNs (Niculae et al., 2017;Eger et al., 2017), Pre-trained Language Models (Chakrabarty et al., 2019;Lugini and Litman, 2020), and other supervised-learning techniques (Ein-Dor et al., 2020).
 
 Relation assignment The goal of the second stage is to model the relations between the argumentative spans identified in the first stage. These relations can exist between different arguments (support, attack) as well as within an argument (connecting the premises with the claim). Recent approaches to argumentative relation classification investigate for example relational models (Trautmann et al., 2020) or inject background knowledge by leveraging features from different knowledge bases (Kobbe et al., 2019). Detecting these relations is necessary to model the overall structure of the argumentation (discourse/debate). As this structure can be complex, the task is difficult, involving high-level knowledge representation and reasoning issues. After the relations are detected, the discourse structure can then be mapped to a graph representation, called argumentation graph, with the arguments as nodes and relations as edges.
@@ -209,7 +273,17 @@ A5: DC has been more apt to recycle parts of Intellectual Property, they even ma
 
 The seemingly simple example of an online exchange shows how a more conversational environment provides vaguer boundaries of argumentation structure and components. Each argument is more direct, not necessarily consisting of a claimpremise configuration, and the strength and productive quality of each argument is particularly relative to the context, each contribution affecting the argument differently either at a local or global level. Note, however, that the relations between arguments and claim are still relatively clear (e.g. A 2 supports while A 5 attacks the main claim in A 1 ; A 3 attacks A 2 directly; and A 4 closes any further 4 https://www.kialo.com/explore/ featured discussion on A 3 's premise).
 
-Clearly, the environment and type of platform under consideration have a significant impact on a system's capacity to implement such a framework and on the degree of complexity found in the components and relations to extract, assign, and predict. Working in the realm of overtly argumentative text (such as persuasive essays (Stab and Gurevych, 2017)), while challenging of course, can be quite standardized. The language use is generally in line with natural language expectations and often standard (e.g. claim, premise and stance are clear), the structure and collective goal of the debate are rather controlled and topic-specific, and the collection of participants involved is often a closed or an easilyclassified set (e.g. in parliamentary debates, news forums, etc.).","Cabrio and Villata (2018) provide an elaborate overview of the AM framework in their data-driven analysis of the state of the art after five years of significant developments in the field of AM.
+Clearly, the environment and type of platform under consideration have a significant impact on a system's capacity to implement such a framework and on the degree of complexity found in the components and relations to extract, assign, and predict. Working in the realm of overtly argumentative text (such as persuasive essays (Stab and Gurevych, 2017)), while challenging of course, can be quite standardized. The language use is generally in line with natural language expectations and often standard (e.g. claim, premise and stance are clear), the structure and collective goal of the debate are rather controlled and topic-specific, and the collection of participants involved is often a closed or an easilyclassified set (e.g. in parliamentary debates, news forums, etc.).","Generally speaking, given a collection of natural language texts, the task at hand is implemented in two stages: Argument extraction The system first identifies the documents which contain the argumentative structure and the specific textual spans in which argumentation is encoded.
+
+Once the textual boundaries are defined, subportions of the argumentative spans are assigned to a set of pre-established argument components (e.g. claims, premises, rebuttal, etc.).
+
+The goal of the second stage is to model the relations between the argumentative spans identified in the first stage.
+
+These relations can exist between different arguments (support, attack) as well as within an argument (connecting the premises with the claim).
+
+After the relations are detected, the discourse structure can then be mapped to a graph representation, called argumentation graph, with the arguments as nodes and relations as edges.
+
+Here, the argumentative text boundaries are first determined from the natural language discussion and the argument components (claims and premises) are extracted.","Cabrio and Villata (2018) provide an elaborate overview of the AM framework in their data-driven analysis of the state of the art after five years of significant developments in the field of AM.
 
 Generally speaking, given a collection of natural language texts, the task at hand is implemented in two stages: Argument extraction The system first identifies the documents which contain the argumentative structure and the specific textual spans in which argumentation is encoded.
 
@@ -231,41 +305,82 @@ After the relations are detected, the discourse structure can then be mapped to 
 
 To simplify the problem, some approaches reduce the graph to a tree-structure representation (Peldszus and Stede, 2015;Stab and Gurevych, 2017).
 
-Different methods to generate the structure have been investigated, e.g. SVMs (Habernal and Gurevych, 2017;Niculae et al., 2017) or textual entailment (Cabrio and Villata, 2013;Cocarascu et al., 2020).","Questions:
+Different methods to generate the structure have been investigated, e.g. SVMs (Habernal and Gurevych, 2017;Niculae et al., 2017) or textual entailment (Cabrio and Villata, 2013;Cocarascu et al., 2020).","Generally speaking, given a collection of natural language texts, the task at hand is implemented in two stages: Argument extraction The system first identifies the documents which contain the argumentative structure and the specific textual spans in which argumentation is encoded.
+
+Once the textual boundaries are defined, subportions of the argumentative spans are assigned to a set of pre-established argument components (e.g. claims, premises, rebuttal, etc.).
+
+The goal of the second stage is to model the relations between the argumentative spans identified in the first stage.
+
+These relations can exist between different arguments (support, attack) as well as within an argument (connecting the premises with the claim).
+
+After the relations are detected, the discourse structure can then be mapped to a graph representation, called argumentation graph, with the arguments as nodes and relations as edges.
+
+To simplify the problem, some approaches reduce the graph to a tree-structure representation (Peldszus and Stede, 2015;Stab and Gurevych, 2017).","Generally speaking, given a collection of natural language texts, the task at hand is implemented in two stages: Argument extraction The system first identifies the documents which contain the argumentative structure and the specific textual spans in which argumentation is encoded.
+
+Once the textual boundaries are defined, subportions of the argumentative spans are assigned to a set of pre-established argument components (e.g. claims, premises, rebuttal, etc.).
+
+The goal of the second stage is to model the relations between the argumentative spans identified in the first stage.
+
+These relations can exist between different arguments (support, attack) as well as within an argument (connecting the premises with the claim).
+
+After the relations are detected, the discourse structure can then be mapped to a graph representation, called argumentation graph, with the arguments as nodes and relations as edges.
+
+To simplify the problem, some approaches reduce the graph to a tree-structure representation (Peldszus and Stede, 2015;Stab and Gurevych, 2017).",,,,"Generally speaking, given a collection of natural language texts, the task at hand is implemented in two stages: Argument extraction The system first identifies the documents which contain the argumentative structure and the specific textual spans in which argumentation is encoded.
+
+Once the textual boundaries are defined, subportions of the argumentative spans are assigned to a set of pre-established argument components (e.g. claims, premises, rebuttal, etc.).
+
+The goal of the second stage is to model the relations between the argumentative spans identified in the first stage.
+
+These relations can exist between different arguments (support, attack) as well as within an argument (connecting the premises with the claim).
+
+Recent approaches to argumentative relation classification investigate for example relational models (Trautmann et al., 2020) or inject background knowledge by leveraging features from different knowledge bases (Kobbe et al., 2019).
+
+Detecting these relations is necessary to model the overall structure of the argumentation (discourse/debate).
+
+As this structure can be complex, the task is difficult, involving high-level knowledge representation and reasoning issues.
+
+After the relations are detected, the discourse structure can then be mapped to a graph representation, called argumentation graph, with the arguments as nodes and relations as edges.
+
+To simplify the problem, some approaches reduce the graph to a tree-structure representation (Peldszus and Stede, 2015;Stab and Gurevych, 2017).
+
+Different methods to generate the structure have been investigated, e.g. SVMs (Habernal and Gurevych, 2017;Niculae et al., 2017) or textual entailment (Cabrio and Villata, 2013;Cocarascu et al., 2020).
+
+Here, the argumentative text boundaries are first determined from the natural language discussion and the argument components (claims and premises) are extracted.
+
+Then, the relations between the two arguments are as follows: A 1 supports the argument while A 2 attacks it.","Generally speaking, given a collection of natural language texts, the task at hand is implemented in two stages: Argument extraction The system first identifies the documents which contain the argumentative structure and the specific textual spans in which argumentation is encoded.
+
+Once the textual boundaries are defined, subportions of the argumentative spans are assigned to a set of pre-established argument components (e.g. claims, premises, rebuttal, etc.).
+
+The goal of the second stage is to model the relations between the argumentative spans identified in the first stage.
+
+These relations can exist between different arguments (support, attack) as well as within an argument (connecting the premises with the claim).
+
+Recent approaches to argumentative relation classification investigate for example relational models (Trautmann et al., 2020) or inject background knowledge by leveraging features from different knowledge bases (Kobbe et al., 2019).
+
+Detecting these relations is necessary to model the overall structure of the argumentation (discourse/debate).
+
+After the relations are detected, the discourse structure can then be mapped to a graph representation, called argumentation graph, with the arguments as nodes and relations as edges.
+
+Different methods to generate the structure have been investigated, e.g. SVMs (Habernal and Gurevych, 2017;Niculae et al., 2017) or textual entailment (Cabrio and Villata, 2013;Cocarascu et al., 2020).
+
+Here, the argumentative text boundaries are first determined from the natural language discussion and the argument components (claims and premises) are extracted.","Questions:
 
 What are the stages involved in the argument mining framework and how are they implemented?
 
 Answer:
 
-Cabrio and Villata (2018) provide an elaborate overview of the argument mining (AM) framework, highlighting significant developments in the field over five years.
+Cabrio and Villata (2018) provide an elaborate overview of the argument mining (AM) framework, detailing significant developments in the field over the past five years.
 The process is typically carried out in two stages: initially, the system identifies documents that contain argumentative structures and then pinpoints the specific textual spans where the argumentation is encoded.
-Once the textual boundaries are defined, subportions of the argumentative spans are assigned to a set of pre-established argument components, such as claims, premises, and rebuttals.
-A variety of models have been employed for this purpose, including Näive Bayes, SVMs, RNNs, Pre-trained Language Models, and other supervised-learning techniques.
-The second stage aims to model the relations between the argumentative spans identified in the first stage.
-These relations can be of two types: those that exist between different arguments, such as support or attack, and those that exist within an argument, connecting the premises with the claim.
-Recent approaches to classifying argumentative relations include using relational models (Trautmann et al., 2020) or enhancing models by incorporating features from various knowledge bases (Kobbe et al., 2019).
-Detecting these relations is necessary to understand the overall structure of the argumentation.
-This complexity arises because the task involves intricate knowledge representation and reasoning issues.
-After detecting the relations, the discourse structure is mapped to an argumentation graph, where arguments serve as nodes and relations as edges.
-To simplify the problem, some approaches reduce the graph to a tree-structure representation (Peldszus and Stede, 2015; Stab and Gurevych, 2017).
-Different methods to generate the structure have been investigated, including SVMs (Habernal and Gurevych, 2017; Niculae et al., 2017) and textual entailment (Cabrio and Villata, 2013; Cocarascu et al., 2020).","Questions:
-
-What are the stages involved in the argument mining framework and how are they implemented?
-
-Answer:
-
-Cabrio and Villata (2018) provide an elaborate overview of the argument mining (AM) framework, highlighting significant developments in the field over the past five years.
-The process is typically carried out in two stages: initially, the system identifies documents that contain argumentative structures and the specific textual spans where argumentation is encoded.
 Once the textual boundaries are defined, subportions of the argumentative spans are categorized into pre-established argument components such as claims, premises, and rebuttals.
-A variety of models, including Näive Bayes (Moens et al., 2007), SVMs (Mochales and Moens, 2011), RNNs (Niculae et al., 2017; Eger et al., 2017), Pre-trained Language Models (Chakrabarty et al., 2019; Lugini and Litman, 2020), and other supervised-learning techniques (Ein-Dor et al., 2020), have been utilized in this process.
+A variety of models have been employed, including Näive Bayes (Moens et al., 2007), SVMs (Mochales and Moens, 2011), RNNs (Niculae et al., 2017; Eger et al., 2017), Pre-trained Language Models (Chakrabarty et al., 2019; Lugini and Litman, 2020), and other supervised-learning techniques (Ein-Dor et al., 2020).
 The second stage aims to model the relations between the argumentative spans identified in the first stage.
 These relations can be of two types: those that exist between different arguments, such as support or attack, and those that exist within an argument, connecting the premises with the claim.
 Recent approaches to classifying argumentative relations include using relational models (Trautmann et al., 2020) or enhancing models by incorporating features from various knowledge bases (Kobbe et al., 2019).
 Detecting these relations is crucial for modeling the overall structure of the argumentation.
-This complexity arises because the task involves intricate knowledge representation and reasoning challenges.
-After detecting the relations, the discourse structure is mapped to an argumentation graph, where arguments serve as nodes and relations as edges.
+This complexity arises from the need for sophisticated knowledge representation and reasoning capabilities.
+After detecting the relations, the discourse structure is represented as an argumentation graph, where arguments form the nodes and the relations between them are the edges.
 To address the complexity, some methods simplify the argumentation graph into a tree-structure representation (Peldszus and Stede, 2015; Stab and Gurevych, 2017).
-Different methods to generate the structure have been investigated, including SVMs (Habernal and Gurevych, 2017; Niculae et al., 2017) and textual entailment (Cabrio and Villata, 2013; Cocarascu et al., 2020)."
+Different methods to generate the argumentation structure include using SVMs (Habernal and Gurevych, 2017; Niculae et al., 2017) or textual entailment approaches (Cabrio and Villata, 2013; Cocarascu et al., 2020)."
 A Survey of Code-switching: Linguistic and Social Perspectives for Language Technologies,s2,"Code-switching, Borrowing, Transfer, Loan Translation","['p2.0', 'p2.1', 'p2.2']",5,"While C-S implies active alternation between grammatical systems, borrowing does not. It is difficult to know if a lone word insertion (e.g. example (2)) constitutes a borrowing or a C-S without considering how the items are integrated into the grammar of the receiving language (Poplack et al., 1988). When such analyses are done, most lone-item insertions are analyzable as one-time borrowings, called nonce borrowings (Sankoff et al., 1990). Similarly, what looks like complex C-S may not be perceived as switching at all. Auer (1999) distinguishes a continuum of mixing types: prototypical C-S is pragmatic and intentional, Language Mixing serves no pragmatic purpose, and Mixed Languages are the single code of a community. These can look structurally identical, but the latter can be modeled as a single language (e.g. languages like Michif Cree (Bakker, 1997) or Gurinji Kriol (Meakins, 2012)) rather than the intertwining of two. Bilaniuk (2004) describes the Surzhyk spoken by urban Russian-Ukrainian bilinguals (in Ukraine) as 'between C-S and Mixed Language' since speakers are highly bilingual and the direction of switching is indeterminate. Loan translation and transfer involve the words from only one language but the semantics and grammatical constructions from the other. In example 4, the Turkish verb yapmak,' to do', takes on the Dutch meaning of doen in Turkish spoken in the Netherlands (Dogruöz and Backus, 2009). 4.İlkokul-uİstanbul-da yap-tı-m.
 
 primary.school-ACCİstanbul-LOC do-past-1sg. 'I finished primary school in Istanbul.'
@@ -274,9 +389,47 @@ In transfer, grammatical constructions can be borrowed from one language to anot
 
 It is difficult to know if a lone word insertion (e.g. example (2)) constitutes a borrowing or a C-S without considering how the items are integrated into the grammar of the receiving language (Poplack et al., 1988).
 
+Auer (1999) distinguishes a continuum of mixing types: prototypical C-S is pragmatic and intentional, Language Mixing serves no pragmatic purpose, and Mixed Languages are the single code of a community.
+
+These can look structurally identical, but the latter can be modeled as a single language (e.g. languages like Michif Cree (Bakker, 1997) or Gurinji Kriol (Meakins, 2012)) rather than the intertwining of two.","While C-S implies active alternation between grammatical systems, borrowing does not.
+
+It is difficult to know if a lone word insertion (e.g. example (2)) constitutes a borrowing or a C-S without considering how the items are integrated into the grammar of the receiving language (Poplack et al., 1988).
+
 When such analyses are done, most lone-item insertions are analyzable as one-time borrowings, called nonce borrowings (Sankoff et al., 1990).
 
-Similarly, what looks like complex C-S may not be perceived as switching at all.
+Auer (1999) distinguishes a continuum of mixing types: prototypical C-S is pragmatic and intentional, Language Mixing serves no pragmatic purpose, and Mixed Languages are the single code of a community.
+
+Loan translation and transfer involve the words from only one language but the semantics and grammatical constructions from the other.
+
+In transfer, grammatical constructions can be borrowed from one language to another without the words being borrowed.","While C-S implies active alternation between grammatical systems, borrowing does not.
+
+It is difficult to know if a lone word insertion (e.g. example (2)) constitutes a borrowing or a C-S without considering how the items are integrated into the grammar of the receiving language (Poplack et al., 1988).
+
+When such analyses are done, most lone-item insertions are analyzable as one-time borrowings, called nonce borrowings (Sankoff et al., 1990).
+
+Auer (1999) distinguishes a continuum of mixing types: prototypical C-S is pragmatic and intentional, Language Mixing serves no pragmatic purpose, and Mixed Languages are the single code of a community.
+
+Loan translation and transfer involve the words from only one language but the semantics and grammatical constructions from the other.
+
+In transfer, grammatical constructions can be borrowed from one language to another without the words being borrowed.","While C-S implies active alternation between grammatical systems, borrowing does not.
+
+It is difficult to know if a lone word insertion (e.g. example (2)) constitutes a borrowing or a C-S without considering how the items are integrated into the grammar of the receiving language (Poplack et al., 1988).
+
+When such analyses are done, most lone-item insertions are analyzable as one-time borrowings, called nonce borrowings (Sankoff et al., 1990).
+
+Auer (1999) distinguishes a continuum of mixing types: prototypical C-S is pragmatic and intentional, Language Mixing serves no pragmatic purpose, and Mixed Languages are the single code of a community.
+
+Loan translation and transfer involve the words from only one language but the semantics and grammatical constructions from the other.
+
+In transfer, grammatical constructions can be borrowed from one language to another without the words being borrowed.","While C-S implies active alternation between grammatical systems, borrowing does not.","While C-S implies active alternation between grammatical systems, borrowing does not.
+
+It is difficult to know if a lone word insertion (e.g. example (2)) constitutes a borrowing or a C-S without considering how the items are integrated into the grammar of the receiving language (Poplack et al., 1988).","While C-S implies active alternation between grammatical systems, borrowing does not.
+
+It is difficult to know if a lone word insertion (e.g. example (2)) constitutes a borrowing or a C-S without considering how the items are integrated into the grammar of the receiving language (Poplack et al., 1988).","While C-S implies active alternation between grammatical systems, borrowing does not.
+
+It is difficult to know if a lone word insertion (e.g. example (2)) constitutes a borrowing or a C-S without considering how the items are integrated into the grammar of the receiving language (Poplack et al., 1988).
+
+When such analyses are done, most lone-item insertions are analyzable as one-time borrowings, called nonce borrowings (Sankoff et al., 1990).
 
 Auer (1999) distinguishes a continuum of mixing types: prototypical C-S is pragmatic and intentional, Language Mixing serves no pragmatic purpose, and Mixed Languages are the single code of a community.
 
@@ -284,35 +437,11 @@ These can look structurally identical, but the latter can be modeled as a single
 
 Bilaniuk (2004) describes the Surzhyk spoken by urban Russian-Ukrainian bilinguals (in Ukraine) as 'between C-S and Mixed Language' since speakers are highly bilingual and the direction of switching is indeterminate.
 
-Loan translation and transfer involve the words from only one language but the semantics and grammatical constructions from the other.
+In transfer, grammatical constructions can be borrowed from one language to another without the words being borrowed.","While C-S implies active alternation between grammatical systems, borrowing does not.
 
-In example 4, the Turkish verb yapmak,' to do', takes on the Dutch meaning of doen in Turkish spoken in the Netherlands (Dogruöz and Backus, 2009).
+It is difficult to know if a lone word insertion (e.g. example (2)) constitutes a borrowing or a C-S without considering how the items are integrated into the grammar of the receiving language (Poplack et al., 1988).
 
-In transfer, grammatical constructions can be borrowed from one language to another without the words being borrowed.
-
-Treffers-Daller (2012) demonstrates the transfer of verb particles from Germanic languages into French.
-
-In Brussels French (Belgium), the construction chercher après 'look after' (for 'look for') is a translation of the Dutch equivalent and, in Ontario French (Canada), chercher pour is the translation equivalent of English 'look for'.
-
-In reference French (France), there is normally no particle following the verb.","Questions:
-
-How do code-switching and borrowing differ in linguistic integration?
-
-Answer:
-
-Code-switching implies active alternation between grammatical systems, whereas borrowing does not.
-Determining whether a lone word insertion is a borrowing or code-switching requires examining how the items are integrated into the grammar of the receiving language (Poplack et al., 1988).
-When analyzed, most lone-item insertions are classified as one-time borrowings, known as nonce borrowings (Sankoff et al., 1990).
-Similarly, what appears to be complex code-switching may not actually be perceived as switching at all.
-Auer (1999) outlines a spectrum of mixing types: prototypical code-switching is pragmatic and intentional, language mixing lacks a pragmatic purpose, and mixed languages represent the unified code of a community.
-These instances may appear structurally identical, yet the latter can be considered a single language, such as Michif Cree (Bakker, 1997) or Gurinji Kriol (Meakins, 2012), rather than an intertwining of two languages.
-Bilaniuk (2004) describes Surzhyk, used by urban Russian-Ukrainian bilinguals in Ukraine, as existing between code-switching and mixed language due to the high bilingual proficiency of speakers and the indeterminate direction of switching.
-Loan translation and transfer involve using words from one language while adopting the semantics and grammatical constructions from another.
-For instance, in the Turkish community in the Netherlands, the verb ""yapmak,"" which means ""to do"" in Turkish, adopts the Dutch meaning of ""doen"" (Dogruöz and Backus, 2009).
-In transfer, grammatical constructions from one language can be adopted into another without borrowing the actual words.
-Treffers-Daller (2012) illustrates how verb particles from Germanic languages are transferred into French.
-In Brussels French (Belgium), the phrase ""chercher après,"" meaning 'look after' as a way to say 'look for,' is directly translated from Dutch, and in Ontario French (Canada), ""chercher pour"" serves as the translation equivalent of the English phrase 'look for'.
-In standard French as spoken in France, particles typically do not follow the verb.","Questions:
+When such analyses are done, most lone-item insertions are analyzable as one-time borrowings, called nonce borrowings (Sankoff et al., 1990).","Questions:
 
 How do code-switching and borrowing differ in linguistic integration?
 
@@ -320,18 +449,41 @@ Answer:
 
 Code-switching implies active alternation between grammatical systems, whereas borrowing does not.
 Determining whether a single word insertion constitutes borrowing or code-switching requires examining how the items are integrated into the grammar of the receiving language (Poplack et al., 1988).
-When these analyses are conducted, most lone-item insertions are identified as one-time borrowings, known as nonce borrowings (Sankoff et al., 1990).
-Similarly, what appears to be complex code-switching may not actually be perceived as switching at all.
-Auer (1999) identifies a spectrum of mixing types: prototypical code-switching is pragmatic and intentional, language mixing lacks a pragmatic purpose, and mixed languages represent the singular code of a community.
-These instances may appear structurally identical, yet the latter can be considered as a single language, exemplified by languages such as Michif Cree (Bakker, 1997) or Gurinji Kriol (Meakins, 2012), rather than an intertwining of two.
-Bilaniuk (2004) characterizes Surzhyk, used by urban Russian-Ukrainian bilinguals in Ukraine, as existing between code-switching and mixed language, noting that due to the high level of bilingualism, the direction of switching cannot be clearly determined.
+When analyzed, most lone-item insertions are categorized as one-time borrowings, known as nonce borrowings (Sankoff et al., 1990).
+Auer (1999) identifies a spectrum of mixing types: prototypical code-switching is pragmatic and intentional, Language Mixing lacks a pragmatic purpose, and Mixed Languages represent the unified code of a community.
 Loan translation and transfer involve using words from one language while adopting the semantics and grammatical constructions from another.
-For instance, the Turkish verb ""yapmak,"" meaning ""to do,"" adopts the Dutch meaning of ""doen"" when used by Turkish speakers in the Netherlands (Dogruöz and Backus, 2009).
-In transfer, the grammatical structures from one language can be adopted into another without actually borrowing the specific words.
-Treffers-Daller (2012) shows how verb particles from Germanic languages are transferred into French.
-In Brussels French, the phrase ""chercher après,"" which translates to ""look after"" but means ""look for,"" mirrors the Dutch equivalent, while in Ontario French, ""chercher pour"" directly translates the English phrase ""look for.""
-In standard French as spoken in France, particles typically do not follow the verb."
+In transfer, the borrowing of grammatical constructions from one language to another occurs without the actual borrowing of words."
 Measure and Improve Robustness in NLP Models: A Survey,s3,Robustness under Distribution Shift,['p3.0'],6,"Another line of research focuses on (x , y ) drawn from a different distribution that is naturallyoccurring (Hendrycks et al., 2021), where robustness can be defined around model's performance under distribution shift. Different from work on domain adaptation (Patel et al., 2015;Wilson and Cook, 2020) and transfer learning (Pan and Yang, 2010), existing definitions of robustness are closer to the concept of domain generalization (Muandet et al., 2013;Gulrajani and Lopez-Paz, 2021), or out-of-distribution generalization to unforeseen distribution shifts (Hendrycks et al., 2020a), where the test data (either labeled or unlabeled) is assumed not available during training, i.e., generalization without adaptation. In the context of NLP, robustness to natural distribution shifts can also mean models' performance should not degrade due to the differences in grammar errors, dialects, speakers, languages (Craig and Washington, 2002;Blodgett et al., 2016;Demszky et al., 2021), or newly collected datasets for the same task but in different domains (Miller et al., 2020). Another closely connected line of research is fairness, which has been studied in various NLP applications, see (Sun et al., 2019) for a more in-depth survey in this area. For example, gendered stereotypes or biases have been observed in NLP tasks including co-reference resolution (Zhao et al., 2018a;Rudinger et al., 2017), occupation classification (De-Arteaga et al., 2019), and neural machine translation (Prates et al., 2019;Font and Costa-jussà, 2019).","Another line of research focuses on (x , y ) drawn from a different distribution that is naturallyoccurring (Hendrycks et al., 2021), where robustness can be defined around model's performance under distribution shift.
+
+Different from work on domain adaptation (Patel et al., 2015;Wilson and Cook, 2020) and transfer learning (Pan and Yang, 2010), existing definitions of robustness are closer to the concept of domain generalization (Muandet et al., 2013;Gulrajani and Lopez-Paz, 2021), or out-of-distribution generalization to unforeseen distribution shifts (Hendrycks et al., 2020a), where the test data (either labeled or unlabeled) is assumed not available during training, i.e., generalization without adaptation.
+
+In the context of NLP, robustness to natural distribution shifts can also mean models' performance should not degrade due to the differences in grammar errors, dialects, speakers, languages (Craig and Washington, 2002;Blodgett et al., 2016;Demszky et al., 2021), or newly collected datasets for the same task but in different domains (Miller et al., 2020).","Another line of research focuses on (x , y ) drawn from a different distribution that is naturallyoccurring (Hendrycks et al., 2021), where robustness can be defined around model's performance under distribution shift.
+
+Different from work on domain adaptation (Patel et al., 2015;Wilson and Cook, 2020) and transfer learning (Pan and Yang, 2010), existing definitions of robustness are closer to the concept of domain generalization (Muandet et al., 2013;Gulrajani and Lopez-Paz, 2021), or out-of-distribution generalization to unforeseen distribution shifts (Hendrycks et al., 2020a), where the test data (either labeled or unlabeled) is assumed not available during training, i.e., generalization without adaptation.
+
+In the context of NLP, robustness to natural distribution shifts can also mean models' performance should not degrade due to the differences in grammar errors, dialects, speakers, languages (Craig and Washington, 2002;Blodgett et al., 2016;Demszky et al., 2021), or newly collected datasets for the same task but in different domains (Miller et al., 2020).","Another line of research focuses on (x , y ) drawn from a different distribution that is naturallyoccurring (Hendrycks et al., 2021), where robustness can be defined around model's performance under distribution shift.
+
+Different from work on domain adaptation (Patel et al., 2015;Wilson and Cook, 2020) and transfer learning (Pan and Yang, 2010), existing definitions of robustness are closer to the concept of domain generalization (Muandet et al., 2013;Gulrajani and Lopez-Paz, 2021), or out-of-distribution generalization to unforeseen distribution shifts (Hendrycks et al., 2020a), where the test data (either labeled or unlabeled) is assumed not available during training, i.e., generalization without adaptation.
+
+In the context of NLP, robustness to natural distribution shifts can also mean models' performance should not degrade due to the differences in grammar errors, dialects, speakers, languages (Craig and Washington, 2002;Blodgett et al., 2016;Demszky et al., 2021), or newly collected datasets for the same task but in different domains (Miller et al., 2020).","Another line of research focuses on (x , y ) drawn from a different distribution that is naturallyoccurring (Hendrycks et al., 2021), where robustness can be defined around model's performance under distribution shift.
+
+Different from work on domain adaptation (Patel et al., 2015;Wilson and Cook, 2020) and transfer learning (Pan and Yang, 2010), existing definitions of robustness are closer to the concept of domain generalization (Muandet et al., 2013;Gulrajani and Lopez-Paz, 2021), or out-of-distribution generalization to unforeseen distribution shifts (Hendrycks et al., 2020a), where the test data (either labeled or unlabeled) is assumed not available during training, i.e., generalization without adaptation.
+
+In the context of NLP, robustness to natural distribution shifts can also mean models' performance should not degrade due to the differences in grammar errors, dialects, speakers, languages (Craig and Washington, 2002;Blodgett et al., 2016;Demszky et al., 2021), or newly collected datasets for the same task but in different domains (Miller et al., 2020).","Another line of research focuses on (x , y ) drawn from a different distribution that is naturallyoccurring (Hendrycks et al., 2021), where robustness can be defined around model's performance under distribution shift.
+
+In the context of NLP, robustness to natural distribution shifts can also mean models' performance should not degrade due to the differences in grammar errors, dialects, speakers, languages (Craig and Washington, 2002;Blodgett et al., 2016;Demszky et al., 2021), or newly collected datasets for the same task but in different domains (Miller et al., 2020).","Another line of research focuses on (x , y ) drawn from a different distribution that is naturallyoccurring (Hendrycks et al., 2021), where robustness can be defined around model's performance under distribution shift.
+
+Different from work on domain adaptation (Patel et al., 2015;Wilson and Cook, 2020) and transfer learning (Pan and Yang, 2010), existing definitions of robustness are closer to the concept of domain generalization (Muandet et al., 2013;Gulrajani and Lopez-Paz, 2021), or out-of-distribution generalization to unforeseen distribution shifts (Hendrycks et al., 2020a), where the test data (either labeled or unlabeled) is assumed not available during training, i.e., generalization without adaptation.
+
+In the context of NLP, robustness to natural distribution shifts can also mean models' performance should not degrade due to the differences in grammar errors, dialects, speakers, languages (Craig and Washington, 2002;Blodgett et al., 2016;Demszky et al., 2021), or newly collected datasets for the same task but in different domains (Miller et al., 2020).","Another line of research focuses on (x , y ) drawn from a different distribution that is naturallyoccurring (Hendrycks et al., 2021), where robustness can be defined around model's performance under distribution shift.
+
+Different from work on domain adaptation (Patel et al., 2015;Wilson and Cook, 2020) and transfer learning (Pan and Yang, 2010), existing definitions of robustness are closer to the concept of domain generalization (Muandet et al., 2013;Gulrajani and Lopez-Paz, 2021), or out-of-distribution generalization to unforeseen distribution shifts (Hendrycks et al., 2020a), where the test data (either labeled or unlabeled) is assumed not available during training, i.e., generalization without adaptation.
+
+In the context of NLP, robustness to natural distribution shifts can also mean models' performance should not degrade due to the differences in grammar errors, dialects, speakers, languages (Craig and Washington, 2002;Blodgett et al., 2016;Demszky et al., 2021), or newly collected datasets for the same task but in different domains (Miller et al., 2020).","Another line of research focuses on (x , y ) drawn from a different distribution that is naturallyoccurring (Hendrycks et al., 2021), where robustness can be defined around model's performance under distribution shift.
+
+Different from work on domain adaptation (Patel et al., 2015;Wilson and Cook, 2020) and transfer learning (Pan and Yang, 2010), existing definitions of robustness are closer to the concept of domain generalization (Muandet et al., 2013;Gulrajani and Lopez-Paz, 2021), or out-of-distribution generalization to unforeseen distribution shifts (Hendrycks et al., 2020a), where the test data (either labeled or unlabeled) is assumed not available during training, i.e., generalization without adaptation.
+
+In the context of NLP, robustness to natural distribution shifts can also mean models' performance should not degrade due to the differences in grammar errors, dialects, speakers, languages (Craig and Washington, 2002;Blodgett et al., 2016;Demszky et al., 2021), or newly collected datasets for the same task but in different domains (Miller et al., 2020).","Another line of research focuses on (x , y ) drawn from a different distribution that is naturallyoccurring (Hendrycks et al., 2021), where robustness can be defined around model's performance under distribution shift.
 
 Different from work on domain adaptation (Patel et al., 2015;Wilson and Cook, 2020) and transfer learning (Pan and Yang, 2010), existing definitions of robustness are closer to the concept of domain generalization (Muandet et al., 2013;Gulrajani and Lopez-Paz, 2021), or out-of-distribution generalization to unforeseen distribution shifts (Hendrycks et al., 2020a), where the test data (either labeled or unlabeled) is assumed not available during training, i.e., generalization without adaptation.
 
@@ -341,22 +493,18 @@ How do NLP models maintain robustness under natural distribution shifts?
 
 Answer:
 
-Another line of research focuses on examples drawn from a different, naturally occurring distribution (Hendrycks et al., 2021), where robustness is defined by the model's performance under distribution shift.
-Existing definitions of robustness are more aligned with the concept of domain generalization or out-of-distribution generalization to unforeseen distribution shifts, where the test data is not available during training, emphasizing generalization without adaptation.
-In the context of NLP, maintaining robustness under natural distribution shifts involves ensuring that models' performance does not degrade due to differences in grammar errors, dialects, speakers, languages (Craig and Washington, 2002; Blodgett et al., 2016; Demszky et al., 2021), or when faced with newly collected datasets for the same task but from different domains (Miller et al., 2020).","Questions:
-
-How do NLP models maintain robustness under natural distribution shifts?
-
-Answer:
-
-Another line of research focuses on instances drawn from a naturally occurring different distribution (Hendrycks et al., 2021), where robustness is defined by the model's performance under distribution shift.
-Existing definitions of robustness are more aligned with the concept of domain generalization (Muandet et al., 2013; Gulrajani and Lopez-Paz, 2021), or out-of-distribution generalization to unforeseen distribution shifts (Hendrycks et al., 2020a), where the model must generalize without adaptation since the test data is not available during training.
-In the context of NLP, robustness to natural distribution shifts also encompasses the models' ability to maintain performance despite variations in grammar errors, dialects, speakers, languages (Craig and Washington, 2002; Blodgett et al., 2016; Demszky et al., 2021), or when faced with newly collected datasets for the same task but from different domains (Miller et al., 2020)."
+Another line of research focuses on data drawn from a naturally occurring different distribution (Hendrycks et al., 2021), where robustness is defined by the model's performance under distribution shift.
+Existing definitions of robustness in this context are more aligned with the concept of domain generalization or out-of-distribution generalization to unforeseen distribution shifts, where the model must generalize without adaptation since the test data is not available during training.
+In the context of NLP, robustness to natural distribution shifts also encompasses the idea that models' performance should remain stable despite variations in grammar errors, dialects, speakers, languages (Craig and Washington, 2002; Blodgett et al., 2016; Demszky et al., 2021), or when faced with newly collected datasets for the same task but from different domains (Miller et al., 2020)."
 "Vision-and-Language Navigation: A Survey of Tasks, Methods, and Future Directions",s9,Semantic Understanding,"['p9.0', 'p9.1', 'p9.2']",7,"Semantic understanding of VLN tasks incorporates knowledge about important features in VLN. In addition to the raw features, high-level semantic representations also improve performance in unseen environments.
 
 Intra-Modality Visual or textual modalities can be decomposed into many features, which matter differently in VLN. The overall visual features extracted by a neural model may actually hurt the performance in some cases (Thomason et al., 2019a;Hu et al., 2019;Zhang et al., 2020b). Therefore, it is important to find the feature(s) that best improve performance. High-level features such as visual appearance, route structure, and detected objects outperform the low level visual features extracted by CNN (Hu et al., 2019). Different types of tokens within the instruction also function differently (Zhu et al., 2021b). Extracting these tokens and encoding the object tokens and directions tokens are crucial (Qi et al., 2020a;Zhu et al., 2021b).
 
-Inter-Modality Semantic connections between different modalities: actions, scenes, observed objects, direction clues, and objects mentioned in instructions can be extracted and then softly aligned with attention mechanism (Qi et al., 2020a;Gao et al., 2021). The soft alignment also highlights relevant parts of the instruction with respect to the current step (Landi et al., 2019;Zhang et al., 2020a).","Semantic understanding of VLN tasks incorporates knowledge about important features in VLN.
+Inter-Modality Semantic connections between different modalities: actions, scenes, observed objects, direction clues, and objects mentioned in instructions can be extracted and then softly aligned with attention mechanism (Qi et al., 2020a;Gao et al., 2021). The soft alignment also highlights relevant parts of the instruction with respect to the current step (Landi et al., 2019;Zhang et al., 2020a).","In addition to the raw features, high-level semantic representations also improve performance in unseen environments.
+
+High-level features such as visual appearance, route structure, and detected objects outperform the low level visual features extracted by CNN (Hu et al., 2019).
+
+Inter-Modality Semantic connections between different modalities: actions, scenes, observed objects, direction clues, and objects mentioned in instructions can be extracted and then softly aligned with attention mechanism (Qi et al., 2020a;Gao et al., 2021).","Semantic understanding of VLN tasks incorporates knowledge about important features in VLN.
 
 In addition to the raw features, high-level semantic representations also improve performance in unseen environments.
 
@@ -366,7 +514,31 @@ Different types of tokens within the instruction also function differently (Zhu 
 
 Extracting these tokens and encoding the object tokens and directions tokens are crucial (Qi et al., 2020a;Zhu et al., 2021b).
 
-Semantic connections between different modalities: actions, scenes, observed objects, direction clues, and objects mentioned in instructions can be extracted and then softly aligned with attention mechanism (Qi et al., 2020a;Gao et al., 2021).
+Inter-Modality Semantic connections between different modalities: actions, scenes, observed objects, direction clues, and objects mentioned in instructions can be extracted and then softly aligned with attention mechanism (Qi et al., 2020a;Gao et al., 2021).
+
+The soft alignment also highlights relevant parts of the instruction with respect to the current step (Landi et al., 2019;Zhang et al., 2020a).","Semantic understanding of VLN tasks incorporates knowledge about important features in VLN.
+
+In addition to the raw features, high-level semantic representations also improve performance in unseen environments.
+
+High-level features such as visual appearance, route structure, and detected objects outperform the low level visual features extracted by CNN (Hu et al., 2019).
+
+Inter-Modality Semantic connections between different modalities: actions, scenes, observed objects, direction clues, and objects mentioned in instructions can be extracted and then softly aligned with attention mechanism (Qi et al., 2020a;Gao et al., 2021).","In addition to the raw features, high-level semantic representations also improve performance in unseen environments.
+
+High-level features such as visual appearance, route structure, and detected objects outperform the low level visual features extracted by CNN (Hu et al., 2019).
+
+Inter-Modality Semantic connections between different modalities: actions, scenes, observed objects, direction clues, and objects mentioned in instructions can be extracted and then softly aligned with attention mechanism (Qi et al., 2020a;Gao et al., 2021).",,,,"In addition to the raw features, high-level semantic representations also improve performance in unseen environments.
+
+High-level features such as visual appearance, route structure, and detected objects outperform the low level visual features extracted by CNN (Hu et al., 2019).
+
+Extracting these tokens and encoding the object tokens and directions tokens are crucial (Qi et al., 2020a;Zhu et al., 2021b).
+
+Inter-Modality Semantic connections between different modalities: actions, scenes, observed objects, direction clues, and objects mentioned in instructions can be extracted and then softly aligned with attention mechanism (Qi et al., 2020a;Gao et al., 2021).
+
+The soft alignment also highlights relevant parts of the instruction with respect to the current step (Landi et al., 2019;Zhang et al., 2020a).","In addition to the raw features, high-level semantic representations also improve performance in unseen environments.
+
+High-level features such as visual appearance, route structure, and detected objects outperform the low level visual features extracted by CNN (Hu et al., 2019).
+
+Inter-Modality Semantic connections between different modalities: actions, scenes, observed objects, direction clues, and objects mentioned in instructions can be extracted and then softly aligned with attention mechanism (Qi et al., 2020a;Gao et al., 2021).
 
 The soft alignment also highlights relevant parts of the instruction with respect to the current step (Landi et al., 2019;Zhang et al., 2020a).","Questions:
 
@@ -374,30 +546,26 @@ How does semantic understanding enhance Vision-and-Language Navigation (VLN) tas
 
 Answer:
 
-Semantic understanding enhances Vision-and-Language Navigation (VLN) tasks by incorporating knowledge about important features in these tasks.
-High-level semantic representations also improve performance in unseen environments.
-High-level features such as visual appearance, route structure, and detected objects outperform the low-level visual features extracted by CNNs (Hu et al., 2019).
-Different types of tokens within the instruction play distinct roles (Zhu et al., 2021b).
-Extracting and encoding object tokens and direction tokens are crucial steps in this process.
-Semantic connections between actions, scenes, observed objects, direction clues, and objects mentioned in instructions can be extracted and then softly aligned with the attention mechanism (Qi et al., 2020a; Gao et al., 2021).
-The soft alignment technique further emphasizes the relevant parts of the instruction in relation to the current step in the navigation process (Landi et al., 2019; Zhang et al., 2020a).","Questions:
-
-How does semantic understanding enhance Vision-and-Language Navigation (VLN) tasks?
-
-Answer:
-
 Semantic understanding enhances Vision-and-Language Navigation (VLN) tasks by incorporating knowledge about important features in VLN.
 High-level semantic representations also improve performance in unseen environments.
-High-level features such as visual appearance, route structure, and detected objects are more effective than the low-level visual features extracted by CNNs (Hu et al., 2019).
+High-level features such as visual appearance, route structure, and detected objects are more effective than the low-level visual features extracted by CNN (Hu et al., 2019).
 Different types of tokens within the instruction play distinct roles (Zhu et al., 2021b).
 Extracting and encoding the object tokens and direction tokens are crucial steps in this process (Qi et al., 2020a; Zhu et al., 2021b).
-Semantic connections between actions, scenes, observed objects, direction clues, and objects mentioned in instructions can be extracted and softly aligned using an attention mechanism (Qi et al., 2020a; Gao et al., 2021).
-The soft alignment technique emphasizes the parts of the instruction that are relevant to the current step in the process (Landi et al., 2019; Zhang et al., 2020a)."
+Semantic connections between different modalities such as actions, scenes, observed objects, direction clues, and objects mentioned in instructions can be extracted and then softly aligned using an attention mechanism (Qi et al., 2020a; Gao et al., 2021).
+The soft alignment technique emphasizes the parts of the instruction that are relevant to the current step (Landi et al., 2019; Zhang et al., 2020a)."
 What Do You Mean by Relation Extraction? A Survey on Datasets and Study on Scientific Relation Classification,s2,The Relation Extraction Task,"['p2.0', 'p2.1', 'p2.2']",11,"Conceptually, RE involves a pipeline of steps (see Figure 2). Starting from the raw text, the first step consists in identifying the entities and eventually assigning them a type. Entities involve either nominals or named entities, and hence it is either Named Entity Recognition (NER) or, more broadly, Mention Detection (MD). 5 After entities are identified, approaches start to be more blurry as studies have approached RE via different angles.
 
 One way is to take two steps, Relation Identification (RI) and subsequent Relation Classification (RC) , as illustrated in Figure 2. This means to first identify from all the possible entity pairs the ones which are in some kind of relation via a binary classification task (RI). As the proportion of positive samples over the negative is usually extremely unbalanced towards the latter (Gormley et al., 2015), a priori heuristics are generally applied to reduce the possible combinations (e.g., entity pairs involving distant entities, or entity type pairs not licensed by the relations are not even considered). The last step (RC) is usually a multi-class classification to assign a relation type r to the positive samples from the previous step. Some studies merge RI and RC (Seganti et al., 2021) into one step, by adding a no-relation (no-rel) label. Other studies instead reduce the task to RC, and assume there exists a relation between two entities and the task is to determine the type (without a no-rel label). Regardless, RI is influenced by the RC setup: Relations which are not in the RC label set are considered as negative samples in the RI phase. Some studies address this approximation by distinguishing between the no-rel and the None-Of-The-Above (NOTA) relation (Gao et al., 2019). Note that, in our definition, the NOTA label differs from no-rel in the sense that a relation holds between the two entities, but its type is not in the considered RC label set. 6 What Do You Mean by Relation Extraction? RE studies rarely address the whole pipeline. We 5 Some studies divide the entity extraction into two substeps: identification (often called MD), and subsequent classification into entity types. 6 Some studies name such relation Other (Hendrickx et al., 2010). analyze all the ACL papers published in the last five years which contain the Relation Extraction keyword in the title and determine which sub-task is performed (NER/MD, RI, RC). Table 2 shows such investigation. We leave out from this analysis (a) papers which make use of distant supervision or which somehow involve knowledge bases, (b) shared task papers, (c) the bioNLP field, (d) temporal RE, and (e) Open RE. The result shows that gold entities are usually assumed for RE, presumably given the complexity of the NER/MD task on its own. Most importantly, for end-to-end models, recent work has shown that ablations for steps like NER are lacking (Taillé et al., 2020). Our analysis further shows that it is difficult to determine the RI setup. While RC is always performed, the situation is different for RI (or no-rel). Sometimes RI is clearly not done (i.e., the paper assumes a scenario in which every instance contains at least one relation), but most of the times it is either not clear from the paper, or done in a simplified scenario (e.g., datasets which already clear out most of the no-rel entity pair instances). As this blurriness hampers fair evaluation, we propose that studies clearly state which step they include, i.e., whether the work focus is on RC, RI+RC or the full RE pipeline and how special cases (no-rel and NOTA) are handled. These details are utterly important as they impact both model estimation and evaluation.
 
-Pipeline or Joint Model? The traditional RE pipeline is, by definition of pipeline, prone to error propagation by sub-tasks. Joint entity and relation extraction approaches have been proposed in order to alleviate this problem (Miwa and Bansal, 2016;Zhang et al., 2017a;Bekoulis et al., 2018a,b;Wang and Lu, 2020;Wang et al., 2021). However, Taillé et al. (2020) recently discussed the challenge of properly evaluating such complex models. They surveyed the evaluation metrics of recently published works on end-to-end RE referring to the Strict, Boundaries, Relaxed evaluation setting pro-  posed by Bekoulis et al. (2018a). They observe unfair comparisons and overestimations of end-toend models, and claim the need for more rigorous reports of evaluation settings, including detailed datasets statistics. While some recent work shifts to joint models, it is still an open question which approach (joint or pipeline) is the most robust. Zhong and Chen (2021) found that when incorporating modern pretrained language models (e.g., BERT) using separate encoders can surpass existing joint models. Since the output label space is different, separate encoders could better capture distinct contextual information. At the moment it is not clear if one approach is more suitable than the other for RE. For this reason and because of our final goal, which is a closer look to sub-domains in the scientific field, we follow the pipeline approach and, following most work from Table 2, we here restrict the setup by focusing on the RC task.","Conceptually, RE involves a pipeline of steps (see Figure 2).
+Pipeline or Joint Model? The traditional RE pipeline is, by definition of pipeline, prone to error propagation by sub-tasks. Joint entity and relation extraction approaches have been proposed in order to alleviate this problem (Miwa and Bansal, 2016;Zhang et al., 2017a;Bekoulis et al., 2018a,b;Wang and Lu, 2020;Wang et al., 2021). However, Taillé et al. (2020) recently discussed the challenge of properly evaluating such complex models. They surveyed the evaluation metrics of recently published works on end-to-end RE referring to the Strict, Boundaries, Relaxed evaluation setting pro-  posed by Bekoulis et al. (2018a). They observe unfair comparisons and overestimations of end-toend models, and claim the need for more rigorous reports of evaluation settings, including detailed datasets statistics. While some recent work shifts to joint models, it is still an open question which approach (joint or pipeline) is the most robust. Zhong and Chen (2021) found that when incorporating modern pretrained language models (e.g., BERT) using separate encoders can surpass existing joint models. Since the output label space is different, separate encoders could better capture distinct contextual information. At the moment it is not clear if one approach is more suitable than the other for RE. For this reason and because of our final goal, which is a closer look to sub-domains in the scientific field, we follow the pipeline approach and, following most work from Table 2, we here restrict the setup by focusing on the RC task.","Starting from the raw text, the first step consists in identifying the entities and eventually assigning them a type.
+
+Entities involve either nominals or named entities, and hence it is either Named Entity Recognition (NER) or, more broadly, Mention Detection (MD).
+
+One way is to take two steps, Relation Identification (RI) and subsequent Relation Classification (RC) , as illustrated in Figure 2.
+
+This means to first identify from all the possible entity pairs the ones which are in some kind of relation via a binary classification task (RI).
+
+The last step (RC) is usually a multi-class classification to assign a relation type r to the positive samples from the previous step.","Conceptually, RE involves a pipeline of steps (see Figure 2).
 
 Starting from the raw text, the first step consists in identifying the entities and eventually assigning them a type.
 
@@ -411,40 +579,133 @@ Other studies instead reduce the task to RC, and assume there exists a relation 
 
 Pipeline or Joint Model? The traditional RE pipeline is, by definition of pipeline, prone to error propagation by sub-tasks.
 
-Joint entity and relation extraction approaches have been proposed in order to alleviate this problem (Miwa and Bansal, 2016;Zhang et al., 2017a;Bekoulis et al., 2018a,b;Wang and Lu, 2020;Wang et al., 2021).","Questions:
+Joint entity and relation extraction approaches have been proposed in order to alleviate this problem (Miwa and Bansal, 2016;Zhang et al., 2017a;Bekoulis et al., 2018a,b;Wang and Lu, 2020;Wang et al., 2021).","Starting from the raw text, the first step consists in identifying the entities and eventually assigning them a type.
+
+One way is to take two steps, Relation Identification (RI) and subsequent Relation Classification (RC) , as illustrated in Figure 2.
+
+This means to first identify from all the possible entity pairs the ones which are in some kind of relation via a binary classification task (RI).
+
+The last step (RC) is usually a multi-class classification to assign a relation type r to the positive samples from the previous step.
+
+Some studies merge RI and RC (Seganti et al., 2021) into one step, by adding a no-relation (no-rel) label.
+
+Other studies instead reduce the task to RC, and assume there exists a relation between two entities and the task is to determine the type (without a no-rel label).
+
+Regardless, RI is influenced by the RC setup: Relations which are not in the RC label set are considered as negative samples in the RI phase.
+
+Some studies address this approximation by distinguishing between the no-rel and the None-Of-The-Above (NOTA) relation (Gao et al., 2019).","Conceptually, RE involves a pipeline of steps (see Figure 2).
+
+Starting from the raw text, the first step consists in identifying the entities and eventually assigning them a type.
+
+One way is to take two steps, Relation Identification (RI) and subsequent Relation Classification (RC) , as illustrated in Figure 2.
+
+This means to first identify from all the possible entity pairs the ones which are in some kind of relation via a binary classification task (RI).
+
+The last step (RC) is usually a multi-class classification to assign a relation type r to the positive samples from the previous step.
+
+Some studies merge RI and RC (Seganti et al., 2021) into one step, by adding a no-relation (no-rel) label.
+
+Other studies instead reduce the task to RC, and assume there exists a relation between two entities and the task is to determine the type (without a no-rel label).
+
+Pipeline or Joint Model? The traditional RE pipeline is, by definition of pipeline, prone to error propagation by sub-tasks.","One way is to take two steps, Relation Identification (RI) and subsequent Relation Classification (RC) , as illustrated in Figure 2.","One way is to take two steps, Relation Identification (RI) and subsequent Relation Classification (RC) , as illustrated in Figure 2.
+
+This means to first identify from all the possible entity pairs the ones which are in some kind of relation via a binary classification task (RI).
+
+The last step (RC) is usually a multi-class classification to assign a relation type r to the positive samples from the previous step.",,"Starting from the raw text, the first step consists in identifying the entities and eventually assigning them a type.
+
+Entities involve either nominals or named entities, and hence it is either Named Entity Recognition (NER) or, more broadly, Mention Detection (MD).
+
+5 After entities are identified, approaches start to be more blurry as studies have approached RE via different angles.
+
+One way is to take two steps, Relation Identification (RI) and subsequent Relation Classification (RC) , as illustrated in Figure 2.
+
+This means to first identify from all the possible entity pairs the ones which are in some kind of relation via a binary classification task (RI).
+
+The last step (RC) is usually a multi-class classification to assign a relation type r to the positive samples from the previous step.
+
+Some studies merge RI and RC (Seganti et al., 2021) into one step, by adding a no-relation (no-rel) label.
+
+Other studies instead reduce the task to RC, and assume there exists a relation between two entities and the task is to determine the type (without a no-rel label).
+
+Regardless, RI is influenced by the RC setup: Relations which are not in the RC label set are considered as negative samples in the RI phase.
+
+As this blurriness hampers fair evaluation, we propose that studies clearly state which step they include, i.e., whether the work focus is on RC, RI+RC or the full RE pipeline and how special cases (no-rel and NOTA) are handled.","Starting from the raw text, the first step consists in identifying the entities and eventually assigning them a type.
+
+Entities involve either nominals or named entities, and hence it is either Named Entity Recognition (NER) or, more broadly, Mention Detection (MD).
+
+One way is to take two steps, Relation Identification (RI) and subsequent Relation Classification (RC) , as illustrated in Figure 2.
+
+This means to first identify from all the possible entity pairs the ones which are in some kind of relation via a binary classification task (RI).
+
+The last step (RC) is usually a multi-class classification to assign a relation type r to the positive samples from the previous step.
+
+Some studies merge RI and RC (Seganti et al., 2021) into one step, by adding a no-relation (no-rel) label.
+
+Regardless, RI is influenced by the RC setup: Relations which are not in the RC label set are considered as negative samples in the RI phase.
+
+As this blurriness hampers fair evaluation, we propose that studies clearly state which step they include, i.e., whether the work focus is on RC, RI+RC or the full RE pipeline and how special cases (no-rel and NOTA) are handled.","Questions:
 
 What are the primary steps involved in the relation extraction process from text?
 
 Answer:
 
-Conceptually, the relation extraction process involves a pipeline of steps.
-Starting from the raw text, the first step involves identifying the entities and possibly assigning them a type.
-One approach involves two steps: Relation Identification (RI) and subsequent Relation Classification (RC).
-The last step involves a multi-class classification to assign a specific relation type to the positive samples identified in the previous steps.
-Some studies combine Relation Identification and Relation Classification into a single step by introducing a no-relation label.
-Other studies simplify the process by assuming a relation exists between two entities and focus solely on determining the relation type, without considering a no-relation label.
-The traditional relation extraction pipeline is prone to error propagation by sub-tasks due to its sequential nature.
-To alleviate the problem of error propagation in the traditional sequential pipeline, joint entity and relation extraction approaches have been proposed (Miwa and Bansal, 2016; Zhang et al., 2017a; Bekoulis et al., 2018a,b; Wang and Lu, 2020; Wang et al., 2021).","Questions:
-
-What are the primary steps involved in the relation extraction process from text?
-
-Answer:
-
-Conceptually, the relation extraction process involves a pipeline of steps.
-The initial step involves identifying entities within the raw text and possibly categorizing them by type.
-One approach involves two main steps: first, Relation Identification (RI) to detect the relations, and then, Relation Classification (RC) to categorize these relations.
+Relation extraction involves a conceptual pipeline of steps.
+The first step involves identifying the entities from the raw text and possibly categorizing them into types.
+One approach involves two primary steps: Relation Identification (RI) and subsequent Relation Classification (RC).
 The final step, Relation Classification (RC), typically involves multi-class classification to assign a specific relation type to the positively identified samples from the previous step.
 Some studies combine Relation Identification and Relation Classification into a single step by introducing a no-relation label (Seganti et al., 2021).
-Other studies simplify the process by focusing solely on Relation Classification, operating under the assumption that a relation exists between two entities and the task is to identify its type.
-The traditional relation extraction pipeline is prone to error propagation due to its sequential processing of sub-tasks.
-To mitigate this issue, some researchers have proposed joint entity and relation extraction approaches (Miwa and Bansal, 2016; Zhang et al., 2017a; Bekoulis et al., 2018a,b; Wang and Lu, 2020; Wang et al., 2021)."
+Other studies simplify the process by focusing solely on Relation Classification, operating under the assumption that a relation exists between two entities and the task is to identify its type, without considering a no-relation option.
+The traditional relation extraction pipeline is prone to error propagation by sub-tasks due to its sequential nature.
+To address this issue, some researchers have proposed joint entity and relation extraction approaches (Miwa and Bansal, 2016; Zhang et al., 2017a; Bekoulis et al., 2018a,b; Wang and Lu, 2020; Wang et al., 2021)."
 A Survey of Active Learning for Natural Language Processing,s3,Output Uncertainty,"['p3.0', 'p3.1']",11,"Uncertainty sampling (Lewis and Gale, 1994) is probably the simplest and the most commonly utilized query strategy. It prefers the most uncertain instances judged by the model outputs. For probabilistic models, entropy-based (Shannon, 1948), least-confidence (Culotta and McCallum, 2005) and margin-sampling (Scheffer et al., 2001;Schein and Ungar, 2007) are three typical uncertainty sampling strategies (Settles, 2009). Schröder et al. (2022) revisit some of these uncertainty-based strategies with Transformer-based models and provide empirical results for text classification. For non-probabilistic models, similar ideas can be utilized, such as selecting the instances that are close to the decision boundary in an SVM (Schohn and Cohn, 2000;Tong and Koller, 2001).
 
 Another way to measure output uncertainty is to check the divergence of a model's predictions with respect to an instance's local region. If an instance is near the decision boundary, the model's outputs may be different within its local region. In this spirit, recent works examine different ways to check instances' local divergence, such as nearestneighbour searches (Margatina et al., 2021), adversarial perturbation (Zhang et al., 2022b) and data augmentation (Jiang et al., 2020).","Uncertainty sampling (Lewis and Gale, 1994) is probably the simplest and the most commonly utilized query strategy.
 
+It prefers the most uncertain instances judged by the model outputs.
+
 For probabilistic models, entropy-based (Shannon, 1948), least-confidence (Culotta and McCallum, 2005) and margin-sampling (Scheffer et al., 2001;Schein and Ungar, 2007) are three typical uncertainty sampling strategies (Settles, 2009).
 
-For non-probabilistic models, similar ideas can be utilized, such as selecting the instances that are close to the decision boundary in an SVM (Schohn and Cohn, 2000;Tong and Koller, 2001).","Questions:
+For non-probabilistic models, similar ideas can be utilized, such as selecting the instances that are close to the decision boundary in an SVM (Schohn and Cohn, 2000;Tong and Koller, 2001).
+
+Another way to measure output uncertainty is to check the divergence of a model's predictions with respect to an instance's local region.","Uncertainty sampling (Lewis and Gale, 1994) is probably the simplest and the most commonly utilized query strategy.
+
+For probabilistic models, entropy-based (Shannon, 1948), least-confidence (Culotta and McCallum, 2005) and margin-sampling (Scheffer et al., 2001;Schein and Ungar, 2007) are three typical uncertainty sampling strategies (Settles, 2009).
+
+Schröder et al. (2022) revisit some of these uncertainty-based strategies with Transformer-based models and provide empirical results for text classification.
+
+For non-probabilistic models, similar ideas can be utilized, such as selecting the instances that are close to the decision boundary in an SVM (Schohn and Cohn, 2000;Tong and Koller, 2001).
+
+Another way to measure output uncertainty is to check the divergence of a model's predictions with respect to an instance's local region.","Uncertainty sampling (Lewis and Gale, 1994) is probably the simplest and the most commonly utilized query strategy.
+
+For probabilistic models, entropy-based (Shannon, 1948), least-confidence (Culotta and McCallum, 2005) and margin-sampling (Scheffer et al., 2001;Schein and Ungar, 2007) are three typical uncertainty sampling strategies (Settles, 2009).","Uncertainty sampling (Lewis and Gale, 1994) is probably the simplest and the most commonly utilized query strategy.
+
+For probabilistic models, entropy-based (Shannon, 1948), least-confidence (Culotta and McCallum, 2005) and margin-sampling (Scheffer et al., 2001;Schein and Ungar, 2007) are three typical uncertainty sampling strategies (Settles, 2009).","For probabilistic models, entropy-based (Shannon, 1948), least-confidence (Culotta and McCallum, 2005) and margin-sampling (Scheffer et al., 2001;Schein and Ungar, 2007) are three typical uncertainty sampling strategies (Settles, 2009).","For probabilistic models, entropy-based (Shannon, 1948), least-confidence (Culotta and McCallum, 2005) and margin-sampling (Scheffer et al., 2001;Schein and Ungar, 2007) are three typical uncertainty sampling strategies (Settles, 2009).","For probabilistic models, entropy-based (Shannon, 1948), least-confidence (Culotta and McCallum, 2005) and margin-sampling (Scheffer et al., 2001;Schein and Ungar, 2007) are three typical uncertainty sampling strategies (Settles, 2009).","Uncertainty sampling (Lewis and Gale, 1994) is probably the simplest and the most commonly utilized query strategy.
+
+It prefers the most uncertain instances judged by the model outputs.
+
+For probabilistic models, entropy-based (Shannon, 1948), least-confidence (Culotta and McCallum, 2005) and margin-sampling (Scheffer et al., 2001;Schein and Ungar, 2007) are three typical uncertainty sampling strategies (Settles, 2009).
+
+Schröder et al. (2022) revisit some of these uncertainty-based strategies with Transformer-based models and provide empirical results for text classification.
+
+For non-probabilistic models, similar ideas can be utilized, such as selecting the instances that are close to the decision boundary in an SVM (Schohn and Cohn, 2000;Tong and Koller, 2001).
+
+Another way to measure output uncertainty is to check the divergence of a model's predictions with respect to an instance's local region.
+
+If an instance is near the decision boundary, the model's outputs may be different within its local region.
+
+In this spirit, recent works examine different ways to check instances' local divergence, such as nearestneighbour searches (Margatina et al., 2021), adversarial perturbation (Zhang et al., 2022b) and data augmentation (Jiang et al., 2020).","Uncertainty sampling (Lewis and Gale, 1994) is probably the simplest and the most commonly utilized query strategy.
+
+It prefers the most uncertain instances judged by the model outputs.
+
+For probabilistic models, entropy-based (Shannon, 1948), least-confidence (Culotta and McCallum, 2005) and margin-sampling (Scheffer et al., 2001;Schein and Ungar, 2007) are three typical uncertainty sampling strategies (Settles, 2009).
+
+For non-probabilistic models, similar ideas can be utilized, such as selecting the instances that are close to the decision boundary in an SVM (Schohn and Cohn, 2000;Tong and Koller, 2001).
+
+Another way to measure output uncertainty is to check the divergence of a model's predictions with respect to an instance's local region.
+
+If an instance is near the decision boundary, the model's outputs may be different within its local region.
+
+In this spirit, recent works examine different ways to check instances' local divergence, such as nearestneighbour searches (Margatina et al., 2021), adversarial perturbation (Zhang et al., 2022b) and data augmentation (Jiang et al., 2020).","Questions:
 
 What are the primary strategies for uncertainty sampling in active learning for NLP?
 
@@ -452,12 +713,6 @@ Answer:
 
 Uncertainty sampling (Lewis and Gale, 1994) is the simplest and most commonly utilized query strategy in active learning for NLP.
 For probabilistic models, three typical uncertainty sampling strategies are entropy-based (Shannon, 1948), least-confidence (Culotta and McCallum, 2005), and margin-sampling (Scheffer et al., 2001; Schein and Ungar, 2007) (Settles, 2009).
-For non-probabilistic models, instances close to the decision boundary, such as in an SVM, can be selected following a similar rationale.","Questions:
-
-What are the primary strategies for uncertainty sampling in active learning for NLP?
-
-Answer:
-
-Uncertainty sampling (Lewis and Gale, 1994) is the simplest and most commonly utilized query strategy in active learning for NLP.
-For probabilistic models, three typical uncertainty sampling strategies are entropy-based (Shannon, 1948), least-confidence (Culotta and McCallum, 2005), and margin-sampling (Scheffer et al., 2001; Schein and Ungar, 2007) (Settles, 2009).
-For non-probabilistic models, strategies like selecting instances close to the decision boundary in an SVM (Schohn and Cohn, 2000; Tong and Koller, 2001) can be applied."
+Schröder et al. (2022) revisit some of these uncertainty-based strategies with Transformer-based models and provide empirical results for text classification.
+For non-probabilistic models, strategies like selecting instances close to the decision boundary in an SVM (Schohn and Cohn, 2000; Tong and Koller, 2001) can be applied.
+Another strategy involves measuring the output uncertainty by examining the divergence of a model's predictions within an instance's local region."
