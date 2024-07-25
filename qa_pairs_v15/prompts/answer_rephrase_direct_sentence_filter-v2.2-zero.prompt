@@ -1,0 +1,24 @@
+You're creating a dataset for answering scientific questions. 
+You will receive a question and a set of sequential sentences extracted from a scientific paper. 
+For each sentence, you should select it if it directly answers the question.
+
+You should be careful about the type of question. 
+If the question is about “how”, then the selected sentence should discuss “how”.
+If the question is about “what”, then the selected sentence should discuss “what”.
+If the question is about “why”, then the selected sentence should discuss “why”.
+If the question is about “comparison / difference”, then the selected sentence should discuss “comparison / difference”.
+
+For each sentence, you should only return it with high confidence. If you are not very confident, you should reject the sentence.
+If none of the sentences directly answers the question, you should return a single word "None".
+You should only care about returning one or several sentences that directly answer the question. 
+You should not care about the number of sentences returned or the length of the sentences.
+
+List them line by line.
+Without any modification of the sentence.
+Without any modification of the sentence.
+Without any modification of the sentence.
+
+## Question: [QUESTION]
+# Extracted Sentences: 
+[SEGMENTED_SENTENCES]
+# Selected sentences(s) that directly answer the quetion with high confidence (if none is selected, return 'None'):

@@ -1,0 +1,83 @@
+You are building a scientific question-answering dataset.
+You will be given a question, a previous part of the answer and a sentence from a research paper.
+You should rephrase the sentence to be the continued part of the answer to the question.
+
+### The requirements of the rephrased beginning sentence:
+1. Decontextualized: remove the contents anchored in external tables, figures, sections, etc., and rephrase the first-person expressions 
+2. Relevant: remove all other irrelevant details that do not answer the question
+3. No new information: do not include any information that is not mentioned in the content, except for necessary connective words 
+4. Content preservative: retain the relevant information in the content as closely as possible to the original
+5. Citation preservative: keep the relevant inline citations in the content exactly the same as in the original content, such as (Author, Year), (Author), Author (Year), or [1], etc.
+
+## Question: Can you summarize the recent measures used to assess social bias in natural language generation systems?
+# Previous part of the answer:
+Bias metrics can be categorized by how they define associations between demographic group attributes and text. 
+Biases can be towards people described in text, people who produce the text, or people to whom the text is addressed (Dinan et al., 2020b). 
+Most existing works define bias metrics through the first association—these biases are relatively easier to analyze, since both the demographic and the textual signals of bias are encapsulated within the text. 
+# Extracted sentence:
+There are also works that define biases towards people who produce the text (Groenwold et al., 2020) or people to whom the text is addressed (Sheng et al., 2021b), though there are relatively fewer works that study these latter associations.
+# Rephrased sentence to be the continued part of the answer:
+There are also works that define biases towards people who produce the text (Groenwold et al., 2020) or people to whom the text is addressed (Sheng et al., 2021b), though there are relatively fewer works that study these latter associations.
+
+## Question: How do multilingual NLP models handle joint vocabularies during pretraining?
+# Previous part of the answer:
+Cross-lingual polyglot pre-training aims to learn joint multi-lingual representations, enabling knowledge transfer from data-rich languages like English to data-scarce languages like Romanian. 
+In some cases, shared vocabularies combined with multilingual pretraining are used to achieve transfer to lower resource languages.  
+# Extracted sentence:
+Artetxe and Schwenk (2019) use a BiLSTM encoder-decoder framework with a shared BPE vocabulary for 93 languages.
+# Rephrased sentence to be the continued part of the answer:
+For example, Artetxe and Schwenk (2019) use a BiLSTM encoder-decoder framework with a shared BPE vocabulary for 93 languages.
+
+## Question: In contrastive learning objectives, what are recent perspectives on negative sampling?
+# Previous part of the answer:
+Noise contrastive estimation is the objective used by most contrastive learning approaches within NLP. 
+# Extracted sentence:
+Importance of negative sampling semantics and lessons learned: How positive and negative samples are generated or sampled is a key component of effective contrastive learning.
+# Rephrased sentence to be the continued part of the answer:
+How positive and negative samples are generated or sampled is a key component of effective contrastive learning. 
+
+## Question: What are the differences between publicly available linguistic typology databases?
+# Previous part of the answer:
+Some typological databases store information pertaining to multiple levels of linguistic description. 
+These include WALS (Dryer and Haspelmath 2013) and the Atlas of Pidgin and Creole Language Structures (APiCS) (Michaelis et al. 2013). 
+Among all presently available databases, WALS has been the most widely used in NLP. Other databases only cover features related to a specific level of linguistic description. 
+# Extracted sentence:
+For example, both Syntactic Structures of the World’s Languages (SSWL) (Collins and Kayne 2009) and AUTOTYP (Bickel et al. 2017) focus on syntax.
+# Rephrased sentence to be the continued part of the answer:
+For example, both Syntactic Structures of the World’s Languages (SSWL) (Collins and Kayne 2009) and AUTOTYP (Bickel et al. 2017) focus on syntax.
+
+## Question: What linguistic phenomena can be caught by NLP models?
+# Previous part of the answer:
+NLP models are able to learn a substantial amount of information on various linguistic phenomena. 
+These models are especially successful at capturing frequent properties, while some rare properties are more difficult to learn. 
+Linzen et al. (2016), for instance, found that long short-term memory (LSTM) language models are able to capture subject-verb agreement in many common cases, while direct supervision is required for solving harder cases.
+# Extracted sentence:
+Another theme that emerges in several studies is the hierarchical nature of the learned representations.
+# Rephrased sentence to be the continued part of the answer:
+Another theme that emerges in several studies is the hierarchical nature of the learned representations.
+
+## Question: How can we utilize sparsity to enhance efficiency in designing NLP models?
+# Previous part of the answer:
+To leverage sparsity for efficiency, many models follow the mixture-of-experts (MoE) concept (Jacobs et al., 1991; Shazeer et al., 2017; Fedus et al., 2022a), which routes computation through small subnetworks instead of passing the input through the entire model. 
+Relevant works on this line include GShard (Lepikhin et al., 2021), Switch Transformer (Fedus et al., 2022b), and ST-MoE (Zoph et al., 2022), which replace the feed forward layers in transformers with MoE layers. 
+More recently, Rajbhandari et al. (2022) scaled transformers up by compressing and optimizing the usage of MoE. 
+# Extracted sentence:
+Overall, MoE models have been shown to achieve strong performance across several NLP tasks while reducing the overall resource consumption (Sec. 8).
+# Rephrased sentence to be the continued part of the answer:
+Overall, MoE models have been shown to achieve strong performance across several NLP tasks while reducing the overall resource consumption.
+
+## Question: Why do conversation models often produce responses that are inconsistent with previous turns?
+# Previous part of the answer:
+It has been shown that the popular seq2seq approach often produces conversations that are incoherent (Li et al., 2016b), where the system may for instance contradict what it had just said in the previous turn (or sometimes even in the same turn). 
+While some of this effect can be attributed to the limitation of the learning algorithms, Li et al. (2016b) suggested that the main cause of this inconsistency is probably due to the training data itself. 
+# Extracted sentence:
+Indeed, conversational datasets (see Sec. 5.5) feature multiple speakers, which often have different or conflicting personas and backgrounds.
+# Rephrased sentence to be the continued part of the answer:
+Conversational datasets feature multiple speakers, which often have different or conflicting personas and backgrounds.
+
+## Question: [QUESTION]
+# Previous part of the answer:
+[PARTIAL_ANSWER]
+# Extracted sentence:
+[SENTENCE]
+# Rephrased sentence to be the continued part of the answer:

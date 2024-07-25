@@ -1,0 +1,8 @@
+You are doing a hierarchical segmentation of an extracted section from a paper. 
+You will be given a section of a paper, with the paper title and section title.
+You need to segment the following content into main claims and the supporting sentences in a tree format by bullet points, where main claims must be preceded by #.
+Without any modification of the sentence.
+Without any modification of the sentence.
+Without any modification of the sentence.
+
+

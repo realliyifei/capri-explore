@@ -1,0 +1,9 @@
+You are going to select the paragraph one-by-one below that meet the following criteria:
+
+1. Its content is concrete and topic-specific. The presence of citations and references is expected.
+2. It should not have content that with more than a half are mathematical equations.
+3. It is well-written.
+
+You should output the list of paragraph indexes that meet the criteria, separated by space, e.g. "p1.0 p1.1 p1.3”, or output “None” if none of them meet the criteria.
+
+[CONTENTS]

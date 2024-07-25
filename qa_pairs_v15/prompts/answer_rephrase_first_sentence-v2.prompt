@@ -1,0 +1,65 @@
+You are building a scientific question-answering dataset.
+You will be given a question and a sentence from a research paper.
+You should rephrase the sentence to be the beginning sentence of the answer to the question.
+
+### The requirements of the rephrased beginning sentence:
+1. Decontextualized: remove the contents anchored in external tables, figures, sections, etc., and rephrase the first-person expressions 
+2. Relevant: remove all other irrelevant details that do not answer the question
+3. No new information: do not include any information that is not mentioned in the content, except for necessary connective words 
+4. Content preservative: retain the relevant information in the content as closely as possible to the original
+5. Citation preservative: keep the relevant inline citations in the content exactly the same as in the original content, such as (Author, Year), (Author), Author (Year), or [1], etc.
+
+### Below are good examples of how to rephrase the beginning sentence of the answer:
+## Question: Can you summarize the recent measures used to assess social bias in natural language generation systems?
+# Extracted beginning sentence:
+Language generation tasks often involve stochastic generation of open-ended and lengthy texts, traits that are not directly compatible with traditional algorithmic bias definitions (e.g., equalized odds, equal opportunity, demographic parity (Dwork et al., 2012; Hardt et al., 2016)).
+# Rephrased beginning sentence:
+Language generation tasks often involve stochastic generation of open-ended and lengthy texts, traits that are not directly compatible with traditional algorithmic bias definitions (e.g., equalized odds, equal opportunity, demographic parity (Dwork et al., 2012; Hardt et al., 2016)).
+
+## Question: How do multilingual NLP models handle joint vocabularies during pretraining?
+# Extracted beginning sentence:
+Cross-lingual polyglot pre-training aims to learn joint multi-lingual representations, enabling knowledge transfer from data-rich languages like English to data-scarce languages like Romanian.
+# Rephrased beginning sentence:
+Cross-lingual polyglot pre-training aims to learn joint multi-lingual representations, enabling knowledge transfer from data-rich languages like English to data-scarce languages like Romanian.
+
+## Question: In contrastive learning objectives, what are recent perspectives on negative sampling?
+# Extracted beginning sentence:
+Noise contrastive estimation is the objective used by most contrastive learning approaches within NLP.
+# Rephrased beginning sentence:
+Noise contrastive estimation is the objective used by most contrastive learning approaches within NLP.
+
+## Question: What are the differences between publicly available linguistic typology databases?
+# Extracted beginning sentence:
+Some databases store information pertaining to multiple levels of linguistic description.
+# Rephrased beginning sentence:
+Some typological databases store information pertaining to multiple levels of linguistic description.
+
+## Question: What linguistic phenomena can be caught by NLP models?
+# Extracted beginning sentence:
+See Table SM1 for references. While it is difficult to synthesize a holistic picture from this diverse body of work, it appears that neural networks are able to learn a substantial amount of information on various linguistic phenomena.
+# Rephrased beginning sentence:
+NLP models are able to learn a substantial amount of information on various linguistic phenomena.
+
+## Question: How can we utilize sparsity to enhance efficiency in designing NLP models?
+# Extracted beginning sentence:
+To leverage sparsity for efficiency, many models follow the mixture-of-experts (MoE) concept (Jacobs et al., 1991; Shazeer et al., 2017; Fedus et al., 2022a), which routes computation through small subnetworks instead of passing the input through the entire model.
+# Rephrased beginning sentence:
+To leverage sparsity for efficiency, many models follow the mixture-of-experts (MoE) concept (Jacobs et al., 1991; Shazeer et al., 2017; Fedus et al., 2022a), which routes computation through small subnetworks instead of passing the input through the entire model.
+
+## Question: Why do conversation models often produce responses that are inconsistent with previous turns?
+# Extracted beginning sentence:
+It has been shown that the popular seq2seq approach often produces conversations that are incoherent (Li et al., 2016b), where the system may for instance contradict what it had just said in the previous turn (or sometimes even in the same turn).
+# Rephrased beginning sentence:
+It has been shown that the popular seq2seq approach often produces conversations that are incoherent (Li et al., 2016b), where the system may for instance contradict what it had just said in the previous turn (or sometimes even in the same turn).
+
+### Repeat again the requirements of the rephrased beginning sentence:
+1. Decontextualized: remove the contents anchored in external tables, figures, sections, etc., and rephrase the first-person expressions 
+2. Relevant: remove all other irrelevant details that do not answer the question
+3. No new information: do not include any information that is not mentioned in the content, except for necessary connective words 
+4. Content preservative: retain the relevant information in the content as closely as possible to the origina !!!
+5. Citation preservative: keep the relevant inline citations in the content exactly the same as in the original content, such as (Author, Year), (Author), Author (Year), or [1], etc !!!
+
+## Question: [QUESTION]
+# Extracted beginning sentence:
+[SENTENCE]
+# Rephrased beginning sentence:

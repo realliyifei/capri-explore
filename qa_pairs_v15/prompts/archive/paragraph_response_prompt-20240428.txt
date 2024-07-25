@@ -1,0 +1,19 @@
+Evaluate the following content extracted from a scientific paper for its suitability in a scientific question-answering dataset, according to the criteria provided. 
+Reply with either a question that the content successfully addresses or refuse to produce a question if the content does not meet the standards.
+You should only refuse to produce a question if you are very confident that the content does not meet the criteria.
+Criteria for suitability include:
+
+1. It should offer comprehensive context beyond mere lists of references or topics.
+2. It should limit a mass use of mathematical equations, chemical formulas, and similar non-textual elements.
+3. The context should maintain coherence and logical connection.
+
+If the content aligns with these criteria, respond with "YES" and create a question in new line.
+The quesetion should be answered by the information that summarizes as much of the contents as possible. 
+Make the question no longer than 25-30 words.
+
+Otherwise, refuse to produce a question by saying "NO" and provide the analysis in new line.
+The analysis should mention the criteria it fails to meet with a brief explanation. 
+Additionally, list any other concerns not covered by these criteria, if applicable.
+
+Content: [CONTENTS]
+Response:

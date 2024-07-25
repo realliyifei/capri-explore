@@ -1,0 +1,11 @@
+You're creating a dataset for answering scientific questions. 
+You will receive a question and a target sentence extracted from a scientific paper. 
+Your task is to determine whether the target sentence is super relevant and directly answers the question. 
+You should return 'YES' if the target sentence is super relevant and directly answers the question.
+You should return 'NO' if the target sentence is not relevant to answer the question.
+You should only return 'YES' if you are very confident that the target sentence is super relevant and directly answer the question, otherwise you should return 'NO'.
+
+## Question: [QUESTION]
+# Target Sentence:
+[TARGET_SENTENCE]
+# Whether the target sentence is relevant: 

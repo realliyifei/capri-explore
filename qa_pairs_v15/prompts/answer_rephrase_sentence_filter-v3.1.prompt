@@ -1,0 +1,68 @@
+You're creating a dataset for answering scientific questions. 
+You will receive a question, a target sentence, and the preceding sentences (when available), extracted from a scientific paper. 
+Your task is to determine whether the target sentence is super relevant and directly answers the question. 
+
+## Requirement
+You should return 'YES' if the target sentence, supported by its preceding sentences (when available), is super relevant and directly answers the question.
+You should return 'NO' if the target sentence is not relevant to answer the question.
+You should only return 'YES' if you are very confident that the target sentence is super relevant and directly answer the question, otherwise you should return 'NO'.
+
+## Question: Can you summarize the recent measures used to assess social bias in natural language generation systems?
+# Preceding Sentences:
+Because of the difficulty in defining metrics, existing works define bias loosely as demographic inequality and use intermediate proxy metrics to comparatively measure bias.
+Examples include:• Regard Ratio: negative-neutral-positive regard score ratios of text generated from bias-inducing prompts (Sheng et al., 2019)• Sentiment Ratio: negative-neutral-positive sentiment score ratios of text generated from African American English (AAE) versus White-Aligned English (WAE) prompts (Groenwold et al., 2020)• Individual and Group Fairness through Sentiment: comparisons of the sentiment distributions of generated text across demographics and prompts (Huang et al., 2020)• Gendered Word Co-occurrence Score: mean and standard deviations of the absolute log ratio of probabilities: P(word|female terms) to P(word|male terms) across all words in generated text (Bordia and Bowman, 2019)There are also metrics for other bias evaluation setups in continuation generation tasks involving sentiment (Shwartz et al., 2020), the ratio of gendered words (Solaiman et al., 2019; Vig et al., 2020; Dinan et al., 2020a), and other novel metrics (Peng et al., 2020; Yeo and Chen, 2020).
+# Target Sentence:
+Bias metrics can also be categorized by how they define associations between demographic group attributes and text.
+# Whether the target sentence is relevant: YES
+
+## Question: How do multilingual NLP models handle joint vocabularies during pretraining?
+# Preceding Sentences:
+As the embedding space and the encoder are shared, the resultant classifiers can be transferred to any of the 93 languages without further modification.
+Experiments show that these classifiers achieve competitive performance on cross-lingual natural language inference, cross-lingual document classification, and parallel corpus mining.
+# Target Sentence:
+Rosita (Mulcaire et al., 2019) pre-trains a language model using text from different languages, showing the benefits of polyglot learning on low-resource languages.
+# Whether the target sentence is relevant: YES
+
+## Question: In contrastive learning objectives, what are recent perspectives on negative sampling?
+# Preceding Sentences:
+Noise contrastive estimation is the objective used by most contrastive learning approaches within NLP.
+# Target Sentence:
+LB(θ, γ) = log σ(s(xi, a+i,0; θ), γ) + K∑k=1 log(1− σ(s(xi, a−i,k; θ), γ)Here, s(xi, ai,◦; θ) is a scoring or similarity function that measures the compatibility between a single text input xi and another sample ai,◦.
+# Whether the target sentence is relevant: NO
+
+## Question: What are the differences between publicly available linguistic typology databases?
+# Preceding Sentences:
+These include WALS (Dryer and Haspelmath 2013) and the Atlas of Pidgin and Creole Language Structures (APiCS) (Michaelis et al. 2013).
+Among all presently available databases, WALS has been the most widely used in NLP.
+# Target Sentence:
+In this resource, which has 142 typological features in total, features 1–19 deal with phonology, 20–29 with morphology, 30–57 with nominal categories, 58–64 with nominal syntax, 65–80 with verbal categories, 81–97 and 143–144 with word order, 98–121 with simple clauses, 122–128 with complex sentences, 129–138 with the lexicon, and 139–142 with other properties.
+# Whether the target sentence is relevant: NO
+
+## Question: What linguistic phenomena can be caught by NLP models?
+# Preceding Sentences:
+Another theme that emerges in several studies is the hierarchical nature of the learned representations.
+Hierarchical representations of syntax were also reported to emerge in other RNN models (Blevins et al., 2018).
+# Target Sentence:
+Finally, a couple of papers discovered that models trained with latent trees perform better on natural language inference (NLI) (Williams et al., 2018; Maillard and Clark, 2018) than ones trained with linguistically-annotated trees.
+# Whether the target sentence is relevant: NO
+
+## Question: How can we utilize sparsity to enhance efficiency in designing NLP models?
+# Preceding Sentences:
+(No preceding sentences provided.)
+# Target Sentence:
+To leverage sparsity for efficiency, many models follow the mixture-of-experts (MoE) concept (Jacobs et al., 1991; Shazeer et al., 2017; Fedus et al., 2022a), which routes computation through small subnetworks instead of passing the input through the entire model.
+# Whether the target sentence is relevant: YES
+
+## Question: Why do conversation models often produce responses that are inconsistent with previous turns?
+# Preceding Sentences:
+(No preceding sentences provided.)
+# Target Sentence:
+For example, Al-Rfou et al. (2016) presented a persona-based response generation model, but geared for retrieval using an extremely large dataset consisting of 2.1 billion responses.
+# Whether the target sentence is relevant: NO
+
+## Question: [QUESTION]
+# Preceding Sentences:
+[PRECEDING_SENTENCES]
+# Target Sentence:
+[TARGET_SENTENCE]
+# Whether the target sentence is relevant: 

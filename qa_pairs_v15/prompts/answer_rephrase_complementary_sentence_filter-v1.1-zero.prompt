@@ -1,0 +1,21 @@
+You're creating a dataset for answering scientific questions. 
+You will receive a question and a set of sequential sentences extracted from a scientific paper. 
+You will also receive a subset of these sequential sentences that are the direct answer to the question.
+You should select the sentences that can provide additional examples, exaplanations, or extends to complement the direct answer sentences. 
+
+For each sentence, you should only return it with high confidence. If you are not very confident, you should reject the sentence.
+If none of the sentences can complement the direct answer sentences, you should return a single word "None".
+You should only care about returning one or several sentences that complement the direct answer sentences.
+You should not care about the number of sentences returned or the length of the sentences.
+
+List them line by line.
+Without any modification of the sentence.
+Without any modification of the sentence.
+Without any modification of the sentence.
+
+## Question: [QUESTION]
+# Extracted Sentences: 
+[SEGMENTED_SENTENCES]
+# Direct Answer Sentences:
+[DIRECT_ANSWER_SENTENCES]
+# Selected sentences(s) that complement the direct answer sentences with high confidence (if none is selected, return 'None'):
