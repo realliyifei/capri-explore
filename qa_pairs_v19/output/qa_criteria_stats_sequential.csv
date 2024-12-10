@@ -1,0 +1,5 @@
+criteria,count,percentage
+total_qas,281,1.0
+passed_question_citation_criteria,277,0.9857651245551602
+passed_answer_length_criteria,261,0.9288256227758007
+passed_all_qa_criteria,261,0.9288256227758007
